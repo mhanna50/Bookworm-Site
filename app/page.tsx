@@ -12,6 +12,7 @@ import {
   WandSparkles,
 } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
+import { ProductShowcases } from "@/components/ProductShowcases";
 
 const features = [
   { icon: PenLine, title: "Manuscript", text: "Draft chapters in a focused writing space that still knows the rest of your story." },
@@ -117,30 +118,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section section-paper">
-        <div className="site-container product-story">
-          <div className="product-copy">
-            <span className="eyebrow">Built around your story, not a database</span>
-            <h2>Plan deeply.<br /><em>Write naturally.</em></h2>
-            <p>
-              Structure when you need structure. Disappear into the page when you need focus. Bookworm keeps the context nearby without asking you to stare at it all day.
-            </p>
-            <Link className="inline-link" href="/features">See how the workspace fits together <ArrowRight size={15} /></Link>
-          </div>
-          <div className="manuscript-preview">
-            <div className="page-ribbon">Chapter 12</div>
-            <h3>Where the Pines Remember</h3>
-            <p>
-              The bells had not rung in Avarin for twelve years, yet Odessa woke before dawn certain she had heard them.
-            </p>
-            <p>
-              Beyond the frost-glazed window, the eastern ridge was still only a charcoal line against the sky.
-            </p>
-            <div className="entity-chip">Odessa Atkins <span>Character</span></div>
-            <div className="margin-note">Linked to 3 events<br/>and 2 foreshadowing clues</div>
-          </div>
-        </div>
-      </section>
+      <ProductShowcases />
 
       <section className="section">
         <div className="site-container cta-panel">
