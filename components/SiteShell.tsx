@@ -37,10 +37,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </nav>
 
           <div className="nav-actions">
-            <a className="text-link desktop-only" href="https://app.bookworm.com/login">
+            <a className="text-link desktop-only" href="https://production-phi-flame.vercel.app/login?mode=signin">
               Log in
             </a>
-            <a className="button small desktop-only" href="https://app.bookworm.com/login">
+            <a className="button small desktop-only" href="https://production-phi-flame.vercel.app/login?mode=signup">
               Start writing <ArrowUpRight size={14} />
             </a>
             <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -57,8 +57,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                   {item.label}
                 </Link>
               ))}
-              <a href="https://app.bookworm.com/login">Log in</a>
-              <a className="button" href="https://app.bookworm.com/login">Start writing</a>
+              <a href="https://production-phi-flame.vercel.app/login?mode=signin">Log in</a>
+              <a className="button" href="https://production-phi-flame.vercel.app/login?mode=signup">Start writing</a>
             </div>
           </div>
         )}

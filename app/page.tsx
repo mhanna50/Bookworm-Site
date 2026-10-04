@@ -36,7 +36,7 @@ export default function HomePage() {
               Write your manuscript, shape your plot, build your world, and keep every thread connected—without turning your creative process into project management.
             </p>
             <div className="hero-actions">
-              <a className="button large" href="https://app.bookworm.com/login">Start writing <ArrowRight size={16} /></a>
+              <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start writing <ArrowRight size={16} /></a>
               <Link className="button ghost large" href="/features">Explore the workspace</Link>
             </div>
             <div className="hero-notes">
@@ -126,7 +126,7 @@ export default function HomePage() {
           <span className="eyebrow">Your next chapter is enough</span>
           <h2>Build the story as you write it.</h2>
           <p>Start with a blank page. Add structure only when it becomes useful.</p>
-          <a className="button large" href="https://app.bookworm.com/login">Enter Bookworm <ArrowRight size={16} /></a>
+          <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Enter Bookworm <ArrowRight size={16} /></a>
         </div>
       </section>
     </SiteShell>

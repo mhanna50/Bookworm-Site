@@ -40,7 +40,7 @@ export default function FeaturesPage() {
         <div className="site-container cta-split">
           <BookOpenText size={30} strokeWidth={1.5} />
           <div><span className="eyebrow">A writing tool first</span><h2>Structure should support the page, not replace it.</h2></div>
-          <a className="button" href="https://app.bookworm.com/login">Start writing <ArrowRight size={15}/></a>
+          <a className="button" href="https://production-phi-flame.vercel.app/login?mode=signup">Start writing <ArrowRight size={15}/></a>
         </div>
       </section>
     </SiteShell>
