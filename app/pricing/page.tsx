@@ -35,7 +35,7 @@ export default function PricingPage() {
                 <div key={item}><Check size={15}/><span>{item}</span></div>
               ))}
             </div>
-            <a className="button large full" href="https://app.bookworm.com/login">Start free</a>
+            <a className="button large full" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free</a>
             <p className="fine-print">Pricing is a launch target and may change before public release.</p>
           </div>
         </div>
