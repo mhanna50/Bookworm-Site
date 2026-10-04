@@ -397,7 +397,7 @@ em{font-weight:500;color:var(--mocha)}
 .progress-stats>div{border:1px solid var(--line);border-radius:12px;background:rgba(255,250,242,.82);padding:14px}
 .progress-stats svg{color:var(--mocha)}
 .progress-stats strong,.progress-stats span{display:block}.progress-stats strong{font-family:"Playfair Display",Georgia,serif;font-size:1.2rem;margin-top:7px}.progress-stats span{font-size:.65rem;color:var(--muted);margin-top:3px}
-.progress-chart{height:180px;display:flex;align-items:end;gap:8px;padding:26px 8px 0;position:relative;z-index:2}
+.progress-chart{height:180px;display:flex;align-items:flex-end;gap:8px;padding:26px 8px 0;position:relative;z-index:2}
 .progress-chart span{flex:1;min-width:8px;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,#7d8f70,#a8b49e);opacity:.92}
 
 @media (max-width:1050px){
