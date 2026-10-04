@@ -36,8 +36,8 @@ export const supplementalPages: ContentPage[] = [
     intent: "commercial",
     sections: [
       { heading: "Track the metrics that change decisions", body: [
-        "Bookworm's writing progress area is designed around overall target word count, daily and weekly goals, words written today, writing streak, progress over time, words per chapter, and writing sessions.",
-        "An estimated completion date can translate recent pace into a planning signal, while chapter-level counts show where the manuscript is becoming unusually long or short."
+        "Bookworm's Goals & Progress page tracks target word count, daily and weekly goals, today's net manuscript change, current and longest writing streaks, progress over time, chapter word counts, recent writing sessions, and an estimated completion date when there is enough history.",
+        "The estimate is based on recent positive writing days, while chapter-level counts follow the current Story Builder order."
       ] },
       { heading: "Separate consistency from quality", body: [
         "Word count is a production metric, not a quality score. A revision day that removes 1,000 words can improve a book even though the total shrinks.",
@@ -61,15 +61,19 @@ export const supplementalPages: ContentPage[] = [
     intro: "A basic text editor can hold a manuscript. A book writing app becomes useful when it reduces the mental overhead around that manuscript: organization, planning, continuity, reference material, and progress.",
     intent: "commercial",
     sections: [
-      { heading: "Write chapter by chapter", body: [
-        "Bookworm's manuscript area keeps the writing experience focused while the rest of the project remains nearby. Chapters can connect back to story planning and story entities without filling the editor with constant panels.",
-        "Entity linking is designed to make names in the manuscript useful entry points to character and story context."
+      { heading: "Write and revise chapter by chapter", body: [
+        "Bookworm's manuscript includes focus mode, formatting controls, search and replace, automatic story-reference links, anchored comments, tracked manuscript changes, grammar/style review, and read-aloud.",
+        "Chapter and scene context stays connected to story entities, so you can move from the page into characters, events, world entries, or relationships when you need context."
       ] },
       { heading: "Keep planning beside writing", body: [
-        "The Story Builder, chapter details, events, characters, world, foreshadowing, and relationships all exist inside the same book project. You can move into planning when you need context and return to prose when you are ready to write."
+        "Story Builder, chapter details, Plot Points, Story Events, characters, worldbuilding, foreshadowing, images, relationships, Story Health, and Goals & Progress all live inside the same book project."
       ] },
-      { heading: "Keep ownership and recovery in mind", body: [
-        "Long-form writing software should treat backups, recovery, and export as core product responsibilities. Bookworm includes backup and recovery work as part of the product rather than treating lost work as an edge case."
+      { heading: "Bring work in and get it back out", body: [
+        "Bookworm can import a Microsoft Word .docx manuscript, detect chapters, let you preview/select them, and either append them or replace the current manuscript while preserving planning data.",
+        "For export, you can create DOCX or PDF files from the whole manuscript or selected chapters. PDF import is not currently supported."
+      ] },
+      { heading: "Keep recovery close", body: [
+        "Projects are continuously saved to the cloud. Settings includes recoverable snapshots and Trash-backed recovery, and destructive entity edits can surface an Undo action."
       ] }
     ],
     related: [

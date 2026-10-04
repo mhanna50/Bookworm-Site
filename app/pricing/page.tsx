@@ -31,7 +31,7 @@ export default function PricingPage() {
               <p>Start with a 14-day free trial. No credit card required.</p>
             </div>
             <div className="price-features">
-              {["Unlimited projects","Full manuscript editor","Story Builder","Characters & world","Events & foreshadowing","Relationships graph","Story Health","Writing progress","Backups & recovery"].map(item => (
+              {["Multiple book projects","Manuscript editor + revision tools","Story Builder","Characters & flexible worldbuilding","Plot Points, Events & Foreshadowing","Relationships graph","Story Health","Goals, streaks & writing sessions","DOCX import + DOCX/PDF export","Backups, snapshots & Trash recovery"].map(item => (
                 <div key={item}><Check size={15}/><span>{item}</span></div>
               ))}
             </div>
