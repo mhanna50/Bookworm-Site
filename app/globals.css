@@ -27,9 +27,10 @@ body{
   font-family:var(--font-inter),ui-sans-serif,system-ui,sans-serif;
   -webkit-font-smoothing:antialiased;
 }
+body{position:relative}
 body:before{
   content:"";
-  position:fixed;
+  position:absolute;
   inset:0;
   pointer-events:none;
   opacity:.22;
@@ -502,3 +503,13 @@ em{font-weight:500;color:var(--mocha)}
 .trial-callout span,.trial-callout strong{border:1px solid var(--line);background:rgba(255,250,242,.72);border-radius:999px;padding:8px 12px;font-size:.72rem;line-height:1.2}
 .trial-callout strong{color:var(--mocha);border-color:var(--line-strong)}
 @media (max-width:760px){.trial-callout{display:grid;grid-template-columns:1fr 1fr}.trial-callout span,.trial-callout strong{text-align:center}}
+
+/* Defer off-screen rendering work on long marketing/resource pages. */
+.resource-section,
+.resource-table-section,
+.showcase-grid,
+.resource-related,
+.resource-discovery{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 560px;
+}
