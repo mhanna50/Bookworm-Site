@@ -113,6 +113,29 @@ export default async function SearchContentPage({
               </section>
             ))}
 
+            {page.intent === "hub" && (
+              <section className="resource-directory">
+                <span className="eyebrow">Browse the library</span>
+                {[
+                  ["Writing software", contentPages.filter((item) => item.intent === "commercial")],
+                  ["Comparisons & alternatives", contentPages.filter((item) => item.intent === "comparison")],
+                  ["Writing guides", contentPages.filter((item) => item.intent === "guide")],
+                ].map(([label, items]) => (
+                  <div className="resource-directory-group" key={label as string}>
+                    <h2>{label as string}</h2>
+                    <div className="resource-directory-links">
+                      {(items as typeof contentPages).map((item) => (
+                        <Link key={item.slug} href={"/" + item.slug}>
+                          <span>{item.title}</span>
+                          <ArrowRight size={14} />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </section>
+            )}
+
             {page.sources && page.sources.length > 0 && (
               <section className="resource-sources">
                 <span className="small-caps">Sources for current competitor details</span>
