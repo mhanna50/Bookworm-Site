@@ -23,6 +23,22 @@ Bookworm is designed for novelists and aspiring fiction authors across genres.
 - /pricing — Pricing and common questions
 - /about — Product philosophy
 
+## Public writing resources
+- /resources — Resource hub
+- /novel-writing-software — Novel writing software overview
+- /story-planning-software — Story planning software
+- /story-bible-software — Story bible software
+- /worldbuilding-software-for-writers — Worldbuilding software
+- /foreshadowing-tracker — Foreshadowing tracking
+- /story-continuity-checker — Story continuity checking
+- /alternatives/scrivener — Scrivener alternative
+- /alternatives/dabble — Dabble alternative
+- /alternatives/novelpad — NovelPad alternative
+- /guides/how-to-plan-a-novel — Novel planning guide
+- /guides/how-to-build-a-story-bible — Story bible guide
+- /guides/how-to-track-foreshadowing — Foreshadowing guide
+- /guides/how-to-track-story-continuity — Continuity guide
+
 ## Product access
 Use the Bookworm application to create an account, sign in, and work on books.
 `;
