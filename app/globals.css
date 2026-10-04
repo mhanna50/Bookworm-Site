@@ -490,3 +490,12 @@ em{font-weight:500;color:var(--mocha)}
 .resource-home-grid{margin-top:40px}
 .resource-home-link{margin-top:20px}
 @media (max-width:760px){.resource-directory-links{grid-template-columns:1fr}}
+
+.resource-table-section{margin:6px 0 48px}
+.resource-table-section h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:500;letter-spacing:-.025em;line-height:1.08;margin:0 0 20px}
+.resource-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:rgba(255,250,243,.7)}
+.resource-table{width:100%;border-collapse:collapse;min-width:690px;font-size:.74rem;line-height:1.45}
+.resource-table th,.resource-table td{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.resource-table thead th{font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);background:rgba(239,232,222,.65)}
+.resource-table tbody th{font-weight:700;color:var(--ink);background:rgba(250,247,241,.55)}
+.resource-table tr:last-child th,.resource-table tr:last-child td{border-bottom:0}
