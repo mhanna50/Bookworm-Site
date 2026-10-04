@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = "https://bookworm-site.vercel.app";
+const productionHost = process.env.NEXT_PUBLIC_SITE_URL
+  ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+const siteUrl = productionHost;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
