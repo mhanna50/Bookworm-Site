@@ -479,3 +479,14 @@ em{font-weight:500;color:var(--mocha)}
   .related-resource-grid{grid-template-columns:1fr}
   .resource-summary{display:grid;gap:9px}
 }
+
+.resource-directory{margin:16px 0 54px;padding-top:8px}
+.resource-directory-group{margin-top:32px}
+.resource-directory-group h2{font-family:"Playfair Display",Georgia,serif;font-size:1.75rem;font-weight:500;margin:0 0 13px}
+.resource-directory-links{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.resource-directory-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,250,243,.62);font-size:.77rem;line-height:1.4;color:var(--smoke);transition:.18s ease}
+.resource-directory-links a:hover{border-color:#bca789;color:var(--ink);transform:translateY(-1px)}
+.resource-directory-links svg{flex:0 0 auto;color:var(--mocha)}
+.resource-home-grid{margin-top:40px}
+.resource-home-link{margin-top:20px}
+@media (max-width:760px){.resource-directory-links{grid-template-columns:1fr}}
