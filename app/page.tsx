@@ -15,11 +15,11 @@ import { SiteShell } from "@/components/SiteShell";
 import { ProductShowcases } from "@/components/ProductShowcases";
 
 const features = [
-  { icon: PenLine, title: "Manuscript", text: "Draft chapters in a focused writing space that still knows the rest of your story." },
+  { icon: PenLine, title: "Manuscript", text: "Draft chapter by chapter with focus mode, comments, tracked changes, grammar/style review, read-aloud, and automatic story-reference links." },
   { icon: GitFork, title: "Story Builder", text: "Shape acts, chapters, plot points, and beats without losing the big picture." },
-  { icon: Users, title: "Characters", text: "Keep motivations, relationships, appearances, and notes close to the manuscript." },
-  { icon: Map, title: "World", text: "Build places, lore, factions, rules, and details in a structure that stays usable." },
-  { icon: HeartPulse, title: "Story Health", text: "Surface continuity gaps, unresolved threads, and missing links before readers do." },
+  { icon: Users, title: "Characters", text: "Track goals, conflicts, arc, history, secrets, aliases, relationships, and where characters connect to the story." },
+  { icon: Map, title: "World", text: "Organize locations, factions, objects, and custom world entries with flexible fields and relationships." },
+  { icon: HeartPulse, title: "Story Health", text: "Review continuity, plot threads, character activity, timeline signals, orphaned elements, broken references, and structure." },
   { icon: Sparkles, title: "Foreshadowing", text: "Plant clues with intention and trace where each promise is eventually paid off." },
 ];
 
@@ -91,7 +91,7 @@ export default function HomePage() {
       <section className="quiet-strip">
         <div className="site-container quiet-strip-inner">
           <span className="small-caps">One writing room</span>
-          <p>Manuscript · Plot · Characters · World · Relationships · Progress</p>
+          <p>Manuscript · Story Builder · Characters · Plot Points · Events · Foreshadowing · World · Relationships · Progress</p>
         </div>
       </section>
 
@@ -103,7 +103,7 @@ export default function HomePage() {
               <h2>Less switching.<br /><em>More writing.</em></h2>
             </div>
             <p>
-              Bookworm is designed around the way stories actually grow: one chapter changes a character, one clue changes an event, and everything is connected.
+              Bookworm is designed around the way stories actually grow: the manuscript, planning data, characters, events, clues, world entries, relationships, and progress stay inside the same project.
             </p>
           </div>
           <div className="feature-grid">
@@ -144,7 +144,7 @@ export default function HomePage() {
           <BookOpen size={28} strokeWidth={1.5} />
           <span className="eyebrow">Your next chapter is enough</span>
           <h2>Build the story as you write it.</h2>
-          <p>Start with a blank page. Add structure only when it becomes useful. Your first 14 days are free—no card required.</p>
+          <p>Start from a blank project, explore the sample book, or import an existing DOCX manuscript. Your first 14 days are free—no card required.</p>
           <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free <ArrowRight size={16} /></a>
         </div>
       </section>
