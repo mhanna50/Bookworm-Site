@@ -79,6 +79,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             <Link href="/features">Features</Link>
             <Link href="/pricing">Pricing</Link>
             <Link href="/about">About</Link>
+            <Link href="/resources">Resources</Link>
           </div>
           <p className="footer-note">© {new Date().getFullYear()} Bookworm. Made for writers.</p>
         </div>
