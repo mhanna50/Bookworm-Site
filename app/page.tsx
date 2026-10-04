@@ -120,6 +120,24 @@ export default function HomePage() {
 
       <ProductShowcases />
 
+      <section className="section resource-discovery">
+        <div className="site-container">
+          <div className="section-heading split-heading">
+            <div>
+              <span className="eyebrow">The Bookworm library</span>
+              <h2>Useful answers for the <em>hard parts of a novel.</em></h2>
+            </div>
+            <p>Planning, continuity, characters, foreshadowing, worldbuilding, and choosing the right writing workflow—written to be useful even if you never use Bookworm.</p>
+          </div>
+          <div className="related-resource-grid resource-home-grid">
+            <Link href="/guides/how-to-plan-a-novel" className="related-resource-card"><span>How to plan a novel</span><ArrowRight size={15}/></Link>
+            <Link href="/guides/how-to-track-foreshadowing" className="related-resource-card"><span>How to track foreshadowing</span><ArrowRight size={15}/></Link>
+            <Link href="/alternatives/scrivener" className="related-resource-card"><span>Looking for a Scrivener alternative?</span><ArrowRight size={15}/></Link>
+          </div>
+          <Link className="inline-link resource-home-link" href="/resources">Explore all writing resources <ArrowRight size={15}/></Link>
+        </div>
+      </section>
+
       <section className="section">
         <div className="site-container cta-panel">
           <BookOpen size={28} strokeWidth={1.5} />
