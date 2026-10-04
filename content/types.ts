@@ -15,4 +15,5 @@ export type ContentPage = {
   related: { href: string; label: string }[];
   ctaTitle?: string;
   ctaText?: string;
+  sources?: { label: string; href: string }[];
 };
