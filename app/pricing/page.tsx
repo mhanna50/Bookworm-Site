@@ -1,3 +1,4 @@
+import Link from "next/link";
 "use client";
 
 import { SiteShell } from "@/components/SiteShell";
@@ -37,6 +38,20 @@ export default function PricingPage() {
             </div>
             <a className="button large full" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free</a>
             <p className="fine-print">Pricing is a launch target and may change before public release.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="site-container">
+          <div className="section-heading split-heading">
+            <div><span className="eyebrow">Compare your options</span><h2>Choose the workflow, not just the price.</h2></div>
+            <p>Bookworm is not automatically the right tool for every writer. Compare how its connected-story model differs from established alternatives.</p>
+          </div>
+          <div className="related-resource-grid">
+            <Link href="/compare/scrivener-vs-bookworm" className="related-resource-card"><span>Bookworm vs Scrivener</span><span>→</span></Link>
+            <Link href="/compare/dabble-vs-bookworm" className="related-resource-card"><span>Bookworm vs Dabble</span><span>→</span></Link>
+            <Link href="/alternatives/plottr" className="related-resource-card"><span>Bookworm vs Plottr</span><span>→</span></Link>
           </div>
         </div>
       </section>
