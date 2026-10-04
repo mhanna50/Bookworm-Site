@@ -11,8 +11,8 @@ export const commercialPages: ContentPage[] = [
     sections: [
       { heading: "What should novel writing software actually do?", body: [
         "The best novel writing software should make drafting easier while helping you keep track of the information that grows around a long manuscript. At minimum, writers usually need a focused manuscript editor, a way to organize chapters, somewhere to store character and world notes, and a reliable view of progress.",
-        "Bookworm goes further by connecting those parts. A character can be related to chapters, events, locations, and other characters. A foreshadowing clue can point toward the event or reveal it is meant to support. Story Health can surface continuity gaps, unresolved threads, and timeline issues that deserve another look."
-      ], bullets: ["Focused chapter-based manuscript editor","Acts, chapters, plot points, and beats","Characters, locations, events, and worldbuilding","Foreshadowing and relationship tracking","Story Health signals","Writing goals, streaks, and progress"] },
+        "Bookworm goes further by connecting those parts. Characters, Story Events, Plot Points, world entries, foreshadowing, images, and relationships can all sit beside the manuscript. Story Health uses that project structure to surface continuity, plot-thread, character-activity, timeline, orphaned-element, broken-reference, and structure signals worth reviewing."
+      ], bullets: ["Chapter-based manuscript editor with focus mode","Comments, tracked changes, grammar/style review, and read-aloud","Acts, chapters, plot points, and beats","Characters, Story Events, worldbuilding, foreshadowing, images, and relationships","Story Health diagnostics","Goals, streaks, chapter word counts, writing sessions, and estimated completion","DOCX import plus DOCX/PDF export","Cloud saves, snapshots, Trash, and Undo"] },
       { heading: "Why connected story data matters", body: [
         "Long projects become difficult when every note is isolated. You may remember that a clue exists but forget where it was planted. You may change a character's background and miss an earlier chapter that contradicts it. Connected story data makes those relationships visible.",
         "Bookworm is built around the idea that planning information should support the manuscript rather than compete with it. You can plan deeply when you need to, then return to a clean writing view."
@@ -176,7 +176,7 @@ export const commercialPages: ContentPage[] = [
         "Some writers want a one-sentence chapter goal. Others want several beats and linked events. Bookworm supports both approaches. You can keep an outline lightweight at first and deepen it only where the story needs more thought."
       ] },
       { heading: "Move between planning and writing", body: [
-        "The most useful plotting software is not a separate stage of the process. Bookworm is designed so the plan, manuscript, characters, world, and progress views remain parts of the same project."
+        "The most useful plotting software is not a separate stage of the process. In Bookworm, Story Builder, the manuscript, Characters, Plot Points, Story Events, Foreshadowing, World, Relationships, Story Health, and Goals & Progress remain views inside the same book project."
       ] }
     ],
     related: [
