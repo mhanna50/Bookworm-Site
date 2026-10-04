@@ -2,6 +2,24 @@ import type { ContentPage } from "./types";
 
 export const templatePages: ContentPage[] = [
   {
+    slug: "templates",
+    eyebrow: "Free writing templates",
+    title: "Free novel-writing templates that stay practical",
+    description: "Use free templates for story bibles, character profiles, character arcs, novel outlines, chapter plans, foreshadowing, worldbuilding, and plot threads.",
+    intro: "These templates are intentionally lightweight. Use the parts that solve a real writing problem and ignore the rest.",
+    intent: "hub",
+    sections: [
+      { heading: "Planning templates", body: ["Build only enough structure to make the next writing decision easier."], bullets: ["Novel outline template","Chapter plan template","Plot thread tracker"] },
+      { heading: "Character templates", body: ["Keep character information focused on choices, continuity, relationships, and change."], bullets: ["Character profile template","Character arc template"] },
+      { heading: "Story-reference templates", body: ["Preserve the facts and promises that are easiest to lose across a long manuscript."], bullets: ["Story bible template","Foreshadowing tracker","Worldbuilding template"] }
+    ],
+    related: [
+      { href: "/templates/story-bible", label: "Story bible template" },
+      { href: "/templates/novel-outline", label: "Novel outline template" },
+      { href: "/templates/character-profile", label: "Character profile template" }
+    ]
+  },
+  {
     slug: "templates/story-bible",
     eyebrow: "Free writing template",
     title: "Story bible template for novels and series",
