@@ -113,6 +113,26 @@ export default async function SearchContentPage({
               </section>
             ))}
 
+            {page.table && (
+              <section className="resource-table-section">
+                <h2>{page.table.caption}</h2>
+                <div className="resource-table-wrap">
+                  <table className="resource-table">
+                    <thead>
+                      <tr>{page.table.columns.map((column) => <th key={column}>{column}</th>)}</tr>
+                    </thead>
+                    <tbody>
+                      {page.table.rows.map((row) => (
+                        <tr key={row.join("|")}>
+                          {row.map((cell, index) => index === 0 ? <th scope="row" key={cell}>{cell}</th> : <td key={index}>{cell}</td>)}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            )}
+
             {page.intent === "hub" && (
               <section className="resource-directory">
                 <span className="eyebrow">Browse the library</span>
