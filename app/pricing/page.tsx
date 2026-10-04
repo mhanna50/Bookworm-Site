@@ -1,5 +1,6 @@
-import Link from "next/link";
 "use client";
+
+import Link from "next/link";
 
 import { SiteShell } from "@/components/SiteShell";
 import { Check, Minus } from "lucide-react";
