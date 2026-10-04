@@ -56,6 +56,29 @@ Bookworm is designed for novelists and aspiring fiction authors across genres.
 - /guides/what-is-foreshadowing — Foreshadowing definition
 - /guides/what-is-a-character-arc — Character arc definition
 
+## Additional writing references
+- /guides/what-is-a-plot-beat — Plot beat definition
+- /guides/what-is-an-inciting-incident — Inciting incident definition
+- /guides/what-is-a-story-midpoint — Story midpoint definition
+- /guides/what-is-a-subplot — Subplot definition
+- /guides/scene-vs-chapter — Scene vs chapter
+- /guides/plot-vs-story — Plot vs story
+- /guides/story-bible-vs-outline — Story bible vs outline
+- /guides/plotter-vs-pantser — Plotter vs pantser
+- /guides/what-is-worldbuilding — Worldbuilding definition
+- /guides/what-is-a-story-arc — Story arc definition
+- /guides/what-is-a-character-bible — Character bible definition
+- /series-bible-software — Series bible software
+- /timeline-software-for-writers — Timeline software for writers
+- /writing-software-for-science-fiction-authors — Science fiction author workflow
+- /writing-software-for-thriller-authors — Thriller author workflow
+
+## Pricing
+- 14-day free trial
+- No credit card required to start the trial
+- $11.99 per month after the trial
+- Month-to-month; cancel anytime
+
 ## Product access
 Use the Bookworm application to create an account, sign in, and work on books.
 `;
