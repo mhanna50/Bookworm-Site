@@ -27,7 +27,7 @@ export default function AboutPage() {
             <span className="eyebrow">The design principle</span>
             <h2>Bookworm should disappear when you are writing and become useful the moment you look up.</h2>
             <p>That is the standard for every feature we add.</p>
-            <a className="inline-link" href="https://app.bookworm.com/login">Try the workspace <ArrowRight size={15}/></a>
+            <a className="inline-link" href="https://production-phi-flame.vercel.app/login?mode=signup">Try the workspace <ArrowRight size={15}/></a>
           </div>
         </div>
       </section>
