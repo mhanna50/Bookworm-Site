@@ -133,6 +133,7 @@ export default function HomePage() {
             <Link href="/guides/how-to-plan-a-novel" className="related-resource-card"><span>How to plan a novel</span><ArrowRight size={15}/></Link>
             <Link href="/guides/how-to-track-foreshadowing" className="related-resource-card"><span>How to track foreshadowing</span><ArrowRight size={15}/></Link>
             <Link href="/alternatives/scrivener" className="related-resource-card"><span>Looking for a Scrivener alternative?</span><ArrowRight size={15}/></Link>
+            <Link href="/templates" className="related-resource-card"><span>Free novel-writing templates</span><ArrowRight size={15}/></Link>
           </div>
           <Link className="inline-link resource-home-link" href="/resources">Explore all writing resources <ArrowRight size={15}/></Link>
         </div>

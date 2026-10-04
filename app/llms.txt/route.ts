@@ -79,6 +79,17 @@ Bookworm is designed for novelists and aspiring fiction authors across genres.
 - $11.99 per month after the trial
 - Month-to-month; cancel anytime
 
+## Free writing templates
+- /templates — Templates hub
+- /templates/story-bible — Story bible template
+- /templates/character-profile — Character profile template
+- /templates/character-arc — Character arc template
+- /templates/novel-outline — Novel outline template
+- /templates/chapter-plan — Chapter planning template
+- /templates/foreshadowing — Foreshadowing tracker template
+- /templates/worldbuilding — Worldbuilding template
+- /templates/plot-thread-tracker — Plot thread tracker template
+
 ## Product access
 Use the Bookworm application to create an account, sign in, and work on books.
 `;
