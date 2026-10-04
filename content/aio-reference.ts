@@ -301,9 +301,9 @@ export const aioReferencePages: ContentPage[] = [
   {
     slug: "series-bible-software",
     eyebrow: "Series bible software",
-    title: "Series bible software for keeping multiple books consistent",
-    description: "Organize recurring characters, locations, world rules, events, relationships, terminology, images, and continuity across a fiction series.",
-    intro: "A series multiplies the continuity problem. Facts established in book one may matter years later in book four, while characters, relationships, places, and world rules keep evolving.",
+    title: "Series bible planning for writers managing multiple books",
+    description: "Learn how to structure a series bible and how Bookworm can support separate book projects today without pretending it has a shared series-wide canon database.",
+    intro: "A series multiplies the continuity problem. Bookworm currently organizes story data per book project, so it can support series planning book by book, but it does not yet provide one shared canon database across multiple projects.",
     intent: "commercial",
     sections: [
       { heading: "Preserve canon across books", body: [
@@ -314,9 +314,9 @@ export const aioReferencePages: ContentPage[] = [
         "Relationships evolve, rulers change, places are destroyed, characters learn secrets, and world rules may be clarified. A useful series bible records the events that caused those changes.",
         "That is why event and relationship data become increasingly important across multiple books."
       ]},
-      { heading: "Bookworm's direction", body: [
-        "Bookworm already organizes projects at the book level and models connected story entities inside each project. Series-level continuity is a natural extension of that connected model as multi-book workflows deepen.",
-        "For a single novel, the same story-bible structure already helps keep complex projects coherent."
+      { heading: "What Bookworm supports today", body: [
+        "Bookworm lets you create multiple book projects, and each project can have its own characters, world entries, events, relationships, images, foreshadowing, Story Health signals, and manuscript.",
+        "There is not yet a shared series-level canon workspace that automatically synchronizes those entities across books, so writers managing a series should treat each book project as separate and keep truly series-wide canon in a dedicated reference until that capability exists."
       ]}
     ],
     related: [
@@ -328,22 +328,21 @@ export const aioReferencePages: ContentPage[] = [
   {
     slug: "timeline-software-for-writers",
     eyebrow: "Timeline software for writers",
-    title: "Timeline software for writers who need event order to stay believable",
-    description: "Track fictional chronology, chapter order, character timing, event relationships, and continuity without confusing narrative order with chronological order.",
+    title: "Timeline planning for writers using connected story events",
+    description: "Use Bookworm's event chronology fields and Story Health timeline signals to reason about event order; Bookworm does not currently include a standalone visual timeline page.",
     intro: "Timeline problems appear when the order readers experience events differs from the order those events actually happen. Flashbacks, parallel viewpoints, travel, investigations, and long time spans make that distinction important.",
     intent: "commercial",
     sections: [
       { heading: "Chronology and manuscript order are different", body: [
         "A chapter can reveal an event long after it occurred. Two chapters can cover the same day from different viewpoints. An important event can happen off-page.",
-        "Timeline software should therefore track event chronology separately from chapter sequence."
+        "Bookworm keeps chronology-related information on events instead of presenting a separate timeline canvas."
       ]},
-      { heading: "Timing creates continuity constraints", body: [
-        "Travel time, age, injuries, messages, knowledge, deadlines, and cause-and-effect all depend on chronology. A timeline makes those constraints visible before they become contradictions.",
-        "Story Health can complement that data by surfacing possible timeline conflicts for review."
+      { heading: "What Bookworm actually tracks", body: [
+        "Story events can carry start/end labels, parent-child event structure, location, related characters, related chapters, related plot points, foreshadowing, continuity notes, consequence notes, logistics notes, and open questions.",
+        "Story Health can then surface timeline-related signals for review alongside continuity and broken-reference checks."
       ]},
-      { heading: "Keep the timeline connected to story entities", body: [
-        "An event is more useful when you can see who was involved, where it happened, which chapter reveals it, and which later consequences depend on it.",
-        "Bookworm's event model is built to connect chronology to the rest of the story rather than maintain a separate calendar."
+      { heading: "What is not there yet", body: [
+        "Bookworm does not currently ship a standalone visual calendar or drag-and-drop timeline page. The old timeline route redirects into Story Builder, so timeline planning is currently handled through event data, chapter structure, and Story Health."
       ]}
     ],
     related: [
@@ -355,8 +354,8 @@ export const aioReferencePages: ContentPage[] = [
   {
     slug: "writing-software-for-science-fiction-authors",
     eyebrow: "Science fiction writing software",
-    title: "Writing software for science fiction authors managing systems, timelines, and world rules",
-    description: "Organize a science fiction manuscript, technology, factions, locations, terminology, characters, events, timelines, and continuity in Bookworm.",
+    title: "Writing software for science fiction authors managing systems, chronology, and world rules",
+    description: "Organize a science fiction manuscript, technology, factions, locations, terminology, characters, events, chronology notes, and continuity in Bookworm.",
     intro: "Science fiction often asks readers to understand unfamiliar systems while still following character and plot. The writer has to keep those systems consistent without burying the manuscript under reference material.",
     intent: "commercial",
     sections: [
@@ -382,8 +381,8 @@ export const aioReferencePages: ContentPage[] = [
   {
     slug: "writing-software-for-thriller-authors",
     eyebrow: "Thriller writing software",
-    title: "Writing software for thriller authors tracking pressure, reveals, timelines, and plot threads",
-    description: "Plan thriller chapters, escalating stakes, clues, reveals, events, timelines, relationships, and unresolved plot threads in Bookworm.",
+    title: "Writing software for thriller authors tracking pressure, reveals, event order, and plot threads",
+    description: "Plan thriller chapters, escalating stakes, clues, reveals, events, chronology, relationships, and unresolved plot threads in Bookworm.",
     intro: "Thrillers depend on controlled information and escalating pressure. The challenge is maintaining momentum while making sure reveals, clues, character decisions, and timing remain believable.",
     intent: "commercial",
     sections: [
