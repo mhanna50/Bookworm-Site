@@ -41,7 +41,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               Log in
             </a>
             <a className="button small desktop-only" href="https://production-phi-flame.vercel.app/login?mode=signup">
-              Start writing <ArrowUpRight size={14} />
+              Start free <ArrowUpRight size={14} />
             </a>
             <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle menu">
               {open ? <X size={20} /> : <Menu size={20} />}
@@ -58,7 +58,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 </Link>
               ))}
               <a href="https://production-phi-flame.vercel.app/login?mode=signin">Log in</a>
-              <a className="button" href="https://production-phi-flame.vercel.app/login?mode=signup">Start writing</a>
+              <a className="button" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free — no card</a>
             </div>
           </div>
         )}

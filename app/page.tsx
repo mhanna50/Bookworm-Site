@@ -36,13 +36,13 @@ export default function HomePage() {
               Write your manuscript, shape your plot, build your world, and keep every thread connected—without turning your creative process into project management.
             </p>
             <div className="hero-actions">
-              <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start writing <ArrowRight size={16} /></a>
+              <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free for 14 days <ArrowRight size={16} /></a>
               <Link className="button ghost large" href="/features">Explore the workspace</Link>
             </div>
             <div className="hero-notes">
-              <span><Check size={14} /> Built for long-form fiction</span>
-              <span><Check size={14} /> Calm by default</span>
-              <span><Check size={14} /> Your story stays connected</span>
+              <span><Check size={14} /> 14-day free trial</span>
+              <span><Check size={14} /> No credit card required</span>
+              <span><Check size={14} /> Then $11.99/month</span>
             </div>
           </div>
 
@@ -143,8 +143,8 @@ export default function HomePage() {
           <BookOpen size={28} strokeWidth={1.5} />
           <span className="eyebrow">Your next chapter is enough</span>
           <h2>Build the story as you write it.</h2>
-          <p>Start with a blank page. Add structure only when it becomes useful.</p>
-          <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Enter Bookworm <ArrowRight size={16} /></a>
+          <p>Start with a blank page. Add structure only when it becomes useful. Your first 14 days are free—no card required.</p>
+          <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free <ArrowRight size={16} /></a>
         </div>
       </section>
     </SiteShell>

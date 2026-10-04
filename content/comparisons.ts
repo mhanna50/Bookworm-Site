@@ -110,7 +110,7 @@ export const comparisonPages: ContentPage[] = [
         "Dabble's current strengths include collaboration, versioning, comments, read-to-me, grammar/style tools on higher plans, and a mature multi-device ecosystem."
       ] },
       { heading: "Pricing context", body: [
-        "Dabble's public Writer plan is currently listed at $19 per month, with higher Author and Bestseller tiers. Bookworm's public pricing is still a launch target while the product is being tested, so price should not be the only basis for choosing between them yet."
+        "Dabble's public Writer plan is currently listed at $19 per month, with higher Author and Bestseller tiers. Bookworm is $11.99 per month after a 14-day free trial that does not require a credit card."
       ] }
     ],
     sources: [

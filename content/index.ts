@@ -4,6 +4,7 @@ import { guidePages } from "./guides";
 import { supplementalPages } from "./supplemental";
 import { expansionPages } from "./expansion";
 import { competitorExpansionPages } from "./competitor-expansion";
+import { aioReferencePages } from "./aio-reference";
 import type { ContentPage } from "./types";
 
 export const contentPages: ContentPage[] = [
@@ -13,6 +14,7 @@ export const contentPages: ContentPage[] = [
   ...supplementalPages,
   ...expansionPages,
   ...competitorExpansionPages,
+  ...aioReferencePages,
 ];
 
 export const contentPageMap = new Map(contentPages.map((page) => [page.slug, page]));
