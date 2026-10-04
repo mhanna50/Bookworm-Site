@@ -133,7 +133,7 @@ export default async function SearchContentPage({
               </section>
             )}
 
-            {page.intent === "hub" && (
+            {page.slug === "resources" && (
               <section className="resource-directory">
                 <span className="eyebrow">Browse the library</span>
                 {[
