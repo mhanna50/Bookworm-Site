@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { ArrowRight, BookOpenText, GitFork, HeartPulse, Images, Map, PenLine, Users } from "lucide-react";
 
@@ -33,6 +34,20 @@ export default function FeaturesPage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="site-container">
+          <div className="section-heading split-heading">
+            <div><span className="eyebrow">Go deeper</span><h2>Explore the problems each feature is built to solve.</h2></div>
+            <p>These guides explain the workflows behind Bookworm's planning, continuity, worldbuilding, and relationship tools.</p>
+          </div>
+          <div className="related-resource-grid">
+            <Link href="/story-planning-software" className="related-resource-card"><span>Story planning software</span><ArrowRight size={15}/></Link>
+            <Link href="/story-continuity-checker" className="related-resource-card"><span>Story continuity checker</span><ArrowRight size={15}/></Link>
+            <Link href="/worldbuilding-software-for-writers" className="related-resource-card"><span>Worldbuilding software</span><ArrowRight size={15}/></Link>
+          </div>
         </div>
       </section>
 

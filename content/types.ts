@@ -16,4 +16,9 @@ export type ContentPage = {
   ctaTitle?: string;
   ctaText?: string;
   sources?: { label: string; href: string }[];
+  table?: {
+    caption: string;
+    columns: string[];
+    rows: string[][];
+  };
 };
