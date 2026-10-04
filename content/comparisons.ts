@@ -22,6 +22,10 @@ export const comparisonPages: ContentPage[] = [
         "Bookworm is still evolving, so writers who need a decades-mature production tool today should weigh that maturity difference alongside the newer connected-story approach."
       ] }
     ],
+    sources: [
+      { label: "Scrivener overview", href: "https://www.literatureandlatte.com/scrivener/overview" },
+      { label: "Scrivener store", href: "https://www.literatureandlatte.com/store/scrivener" }
+    ],
     related: [
       { href: "/compare/scrivener-vs-bookworm", label: "Bookworm vs Scrivener" },
       { href: "/novel-writing-software", label: "Novel writing software" },
@@ -48,6 +52,10 @@ export const comparisonPages: ContentPage[] = [
         "Scrivener has mature desktop applications for macOS and Windows plus an iOS version. Bookworm is browser-based, which prioritizes access and cloud-connected project data.",
         "There is no universal winner: the better choice depends on whether you value Scrivener's mature desktop document system or Bookworm's connected story model."
       ] }
+    ],
+    sources: [
+      { label: "Scrivener overview", href: "https://www.literatureandlatte.com/scrivener/overview" },
+      { label: "Scrivener store", href: "https://www.literatureandlatte.com/store/scrivener" }
     ],
     related: [
       { href: "/alternatives/scrivener", label: "Scrivener alternative" },
@@ -76,6 +84,9 @@ export const comparisonPages: ContentPage[] = [
         "As Bookworm develops, the comparison will continue to change, so this page should be treated as a workflow comparison rather than a permanent feature checklist."
       ] }
     ],
+    sources: [
+      { label: "Dabble pricing", href: "https://www.dabblewriter.com/pricing" }
+    ],
     related: [
       { href: "/compare/dabble-vs-bookworm", label: "Bookworm vs Dabble" },
       { href: "/story-continuity-checker", label: "Story continuity checker" },
@@ -102,6 +113,9 @@ export const comparisonPages: ContentPage[] = [
         "Dabble's public Writer plan is currently listed at $19 per month, with higher Author and Bestseller tiers. Bookworm's public pricing is still a launch target while the product is being tested, so price should not be the only basis for choosing between them yet."
       ] }
     ],
+    sources: [
+      { label: "Dabble pricing", href: "https://www.dabblewriter.com/pricing" }
+    ],
     related: [
       { href: "/alternatives/dabble", label: "Dabble alternative" },
       { href: "/novel-writing-software", label: "Novel writing software" },
@@ -127,6 +141,9 @@ export const comparisonPages: ContentPage[] = [
       { heading: "Choose based on the hard problem", body: [
         "If the hardest part of your process is reliable offline drafting and ownership of a desktop application, NovelPad's model is compelling. If the hardest part is remembering how a large story fits together, Bookworm's connected data model may be more useful."
       ] }
+    ],
+    sources: [
+      { label: "NovelPad pricing", href: "https://novelpad.co/pricing" }
     ],
     related: [
       { href: "/novel-writing-software", label: "Novel writing software" },
