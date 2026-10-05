@@ -16,10 +16,10 @@ function toSectionId(value: string) {
     .replace(/\s+/g, "-");
 }
 
-function practicalSteps(intent: ContentPage["intent"], title: string) {
+function practicalSteps(intent: ContentPage["intent"]) {
   if (intent === "comparison") {
     return [
-      `Start with the writing job you need ${title.toLowerCase()} to solve, not the longest feature list.`,
+      "Start with the writing job the tools need to solve, not the longest feature list.",
       "Test the manuscript and planning workflow together so you can see how much context switching the tool creates.",
       "Check how easily characters, chapters, events, notes, and plot threads stay connected as a project grows.",
       "Look at export, portability, and switching cost before you move a real manuscript into a new system.",
@@ -28,7 +28,7 @@ function practicalSteps(intent: ContentPage["intent"], title: string) {
 
   if (intent === "commercial") {
     return [
-      `Define the exact friction you want ${title.toLowerCase()} to remove from your current writing process.`,
+      "Define the exact friction this kind of tool should remove from your current writing process.",
       "Try the tool with a real chapter and a real planning problem instead of judging it from a feature checklist.",
       "Pay attention to how much duplicate data entry is required between manuscript, outline, character, and worldbuilding views.",
       "Choose a workflow you can keep using during drafting and revision, not only during the exciting setup stage.",
@@ -45,8 +45,8 @@ function practicalSteps(intent: ContentPage["intent"], title: string) {
   }
 
   return [
-    `Decide what ${title.toLowerCase()} changes in your specific story before adding more detail.`,
-    "Connect the idea to the chapter, character, event, plot point, or relationship it actually affects.",
+    "Decide what this idea changes in your specific story before adding more detail.",
+    "Connect it to the chapter, character, event, plot point, or relationship it actually affects.",
     "Write down the before-and-after state so the narrative consequence is easy to see during revision.",
     "Use only as much structure as helps you make the next writing decision; stop before the planning becomes a second draft.",
   ];
@@ -96,7 +96,7 @@ export default async function SearchContentPage({
   if (!page) notFound();
 
   const breadcrumbItems = page.slug.split("/");
-  const steps = practicalSteps(page.intent, page.title);
+  const steps = practicalSteps(page.intent);
   const schema = {
     "@context": "https://schema.org",
     "@type": page.intent === "guide" ? "Article" : "WebPage",
