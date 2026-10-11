@@ -53,7 +53,7 @@ button{color:inherit}
   background:rgba(249,245,237,.84);
   backdrop-filter:blur(16px);
 }
-.nav-wrap{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav-wrap{min-height:98px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-playfair),Georgia,serif;font-size:1.24rem;font-weight:600;letter-spacing:.015em}
 .brand-logo{display:block;width:138px;height:auto;object-fit:contain}
 .footer-logo{width:150px}
@@ -775,18 +775,18 @@ em{font-weight:500;color:var(--mocha)}
   height:auto;
   flex:none;
   opacity:1;
-  filter:brightness(0);
+  filter:none;
   mix-blend-mode:normal;
 }
 .footer-logo{width:150px}
 .brand-feather{
   display:block;
-  width:32px;
-  height:38px;
+  width:80px;
+  height:90px;
   object-fit:contain;
   flex:none;
 }
 @media(max-width:600px){
   .brand-logo{width:112px}
-  .brand-feather{width:26px;height:32px}
+  .brand-feather{width:57px;height:64px}
 }
