@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ArrowUpRight, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, ArrowRight, ChevronDown, CircleUserRound, BookOpen, UsersRound, PencilLine, FileText, CircleHelp, LibraryBig } from "lucide-react";
 import { useState } from "react";
 
 const nav = [
+  { href: "/about", label: "About" },
   { href: "/features", label: "Features" },
   { href: "/pricing", label: "Pricing" },
   { href: "/resources", label: "Resources" },
-  { href: "/about", label: "About" },
 ];
 
 const footerGroups = [
@@ -65,7 +65,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </Link>
 
           <nav className="desktop-nav" aria-label="Main navigation">
-            {nav.map((item) => (
+            {nav.filter((item) => item.href !== "/resources").map((item) => (
               <Link
                 key={item.href}
                 className={pathname === item.href ? "nav-link active" : "nav-link"}
@@ -74,14 +74,30 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 {item.label}
               </Link>
             ))}
+            <div className="resources-nav">
+              <Link className={pathname.startsWith("/resources") ? "nav-link resources-trigger active" : "nav-link resources-trigger"} href="/resources" aria-haspopup="true">
+                Resources <ChevronDown size={18} aria-hidden="true" />
+              </Link>
+              <div className="resources-dropdown">
+                <div className="resources-dropdown-col">
+                  <span className="resources-dropdown-heading">Explore writing</span>
+                  <Link href="/resources"><LibraryBig size={22} /><span><strong>Resource library</strong><small>Guides and ideas for every stage of your novel.</small></span></Link>
+                  <Link href="/guides/how-to-plot-a-novel"><PencilLine size={22} /><span><strong>Plotting a novel</strong><small>Shape your story from idea to outline.</small></span></Link>
+                  <Link href="/guides/what-is-worldbuilding"><BookOpen size={22} /><span><strong>Worldbuilding</strong><small>Build a setting that feels alive.</small></span></Link>
+                </div>
+                <div className="resources-dropdown-col">
+                  <span className="resources-dropdown-heading">More from Quilly</span>
+                  <Link href="/guides/what-is-a-story-bible"><FileText size={22} /><span><strong>Story bibles</strong><small>Keep characters, details, and lore together.</small></span></Link>
+                  <Link href="/character-relationship-mapper-for-writers"><UsersRound size={22} /><span><strong>Character relationships</strong><small>Track the connections in your cast.</small></span></Link>
+                  <Link href="/guides/what-is-foreshadowing"><CircleHelp size={22} /><span><strong>Foreshadowing guide</strong><small>Plant clues and build satisfying payoffs.</small></span></Link>
+                </div>
+              </div>
+            </div>
           </nav>
 
           <div className="nav-actions">
-            <a className="text-link desktop-only" href="https://production-phi-flame.vercel.app/login?mode=signin">
-              Log in
-            </a>
-            <a className="button small desktop-only" href="https://production-phi-flame.vercel.app/login?mode=signup">
-              Start free <ArrowUpRight size={14} />
+            <a className="header-signin desktop-only" href="https://production-phi-flame.vercel.app/login?mode=signin">
+              <CircleUserRound size={25} strokeWidth={1.9} aria-hidden="true" /> <span>Sign in</span>
             </a>
             <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle menu">
               {open ? <X size={20} /> : <Menu size={20} />}
