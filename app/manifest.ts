@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: "#f7f1e7",
     theme_color: "#6b4f3a",
     icons: [
-      { src: "/quilly-favicon.png?v=2", sizes: "48x48", type: "image/png" }
+      { src: "/quilly-favicon-v2.png", sizes: "48x48", type: "image/png" }
     ]
   };
 }
