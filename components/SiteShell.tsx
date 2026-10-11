@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Feather, ArrowUpRight, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const nav = [
@@ -60,8 +60,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <header className="site-header">
         <div className="site-container nav-wrap">
           <Link className="brand" href="/" onClick={() => setOpen(false)}>
-            <span className="brand-seal"><Feather size={15} strokeWidth={1.8} /></span>
-            <span>Bookworm</span>
+            <img className="brand-logo" src="/quilly-logo.webp" alt="Quilly" />
           </Link>
 
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -127,11 +126,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <div className="footer-main">
             <div className="footer-intro">
               <Link className="brand footer-brand" href="/">
-                <span className="brand-seal"><Feather size={15} /></span>
-                <span>Bookworm</span>
+                <img className="brand-logo footer-logo" src="/quilly-logo.webp" alt="Quilly" />
               </Link>
               <p className="footer-copy">A quieter, more connected workspace for novelists who want planning to support the draft instead of getting in its way.</p>
-              <Link className="footer-about-link" href="/about">Why we built Bookworm <ArrowRight size={13} /></Link>
+              <Link className="footer-about-link" href="/about">Why we built Quilly <ArrowRight size={13} /></Link>
             </div>
 
             <div className="footer-groups">
@@ -149,7 +147,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </div>
 
           <div className="footer-bottom">
-            <p className="footer-note">© {new Date().getFullYear()} Bookworm. Made for writers.</p>
+            <p className="footer-note">© {new Date().getFullYear()} Quilly. Made for writers.</p>
             <div>
               <Link href="/about">About</Link>
               <Link href="/resources">Resources</Link>
