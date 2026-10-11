@@ -831,3 +831,17 @@ em{font-weight:500;color:var(--mocha)}
 .resources-dropdown-col>a small{font-size:.84rem;line-height:1.5;color:var(--smoke)}
 @media(max-width:1050px){.desktop-nav{gap:18px}.desktop-nav .nav-link{font-size:.9rem}.header-signin{font-size:.9rem;gap:6px}.nav-wrap{gap:12px}}
 @media(max-width:760px){.resources-dropdown{display:none}.site-header .nav-wrap{min-height:74px}}
+
+/* Keep Resources hovered while moving from its trigger down into the mega menu. */
+.site-header .desktop-nav{align-self:stretch}
+.site-header .resources-nav{height:auto;align-self:stretch}
+.site-header .resources-dropdown{top:100%;transform:none}
+.site-header .resources-nav:hover .resources-dropdown,
+.site-header .resources-nav:focus-within .resources-dropdown{transform:none}
+/* Compact, bottom-aligned Quilly logo lockup. */
+.site-header .brand:has(.brand-logo){gap:2px}
+.site-header .brand-feather{width:78px;height:66px}
+@media(max-width:600px){
+ .site-header .brand:has(.brand-logo){gap:2px}
+ .site-header .brand-feather{width:58px;height:49px}
+}
