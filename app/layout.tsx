@@ -36,11 +36,11 @@ const siteUrl = productionHost;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Bookworm | Novel Writing & Story Planning Software",
-    template: "%s | Bookworm",
+    default: "Quilly | Novel Writing & Story Planning Software",
+    template: "%s | Quilly",
   },
   description:
-    "Bookworm is a writing and story-planning workspace for novelists. Draft manuscripts, organize plots, build characters and worlds, track foreshadowing, relationships, story health, and writing progress in one connected place. Start with a 14-day free trial—no credit card required—then $11.99/month.",
+    "Quilly is a writing and story-planning workspace for novelists. Draft manuscripts, organize plots, build characters and worlds, track foreshadowing, relationships, story health, and writing progress in one connected place. Start with a 14-day free trial—no credit card required—then $11.99/month.",
   keywords: [
     "novel writing software",
     "story planning software",
@@ -52,20 +52,20 @@ export const metadata: Metadata = {
     "worldbuilding software",
     "plotting software",
   ],
-  applicationName: "Bookworm",
+  applicationName: "Quilly",\n  icons: {\n    icon: "/quilly-favicon.png",\n    shortcut: "/quilly-favicon.png",\n    apple: "/quilly-favicon.png",\n  },
   category: "Writing Software",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: "Bookworm | Novel Writing & Story Planning Software",
+    title: "Quilly | Novel Writing & Story Planning Software",
     description:
       "Write your manuscript, plan your plot, build your world, and keep every story thread connected. 14 days free, no card required, then $11.99/month.",
-    siteName: "Bookworm",
+    siteName: "Quilly",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bookworm | Novel Writing & Story Planning Software",
+    title: "Quilly | Novel Writing & Story Planning Software",
     description:
       "A connected writing workspace for novelists. Try it free for 14 days with no credit card required.",
   },
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Bookworm",
+  name: "Quilly",
   applicationCategory: "WritingApplication",
   operatingSystem: "Web",
   url: siteUrl,
@@ -119,7 +119,7 @@ const softwareSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Bookworm",
+  name: "Quilly",
   url: siteUrl,
   description: "Novel writing and story planning software for fiction authors.",
 };
