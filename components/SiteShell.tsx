@@ -60,6 +60,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <header className="site-header">
         <div className="site-container nav-wrap">
           <Link className="brand" href="/" onClick={() => setOpen(false)}>
+            <img className="brand-feather" src="/quilly-favicon-v2.png" alt="" aria-hidden="true" />
             <img className="brand-logo" src="/quilly-logo.webp?v=2" alt="Quilly" />
           </Link>
 
@@ -126,6 +127,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <div className="footer-main">
             <div className="footer-intro">
               <Link className="brand footer-brand" href="/">
+                <img className="brand-feather" src="/quilly-favicon-v2.png" alt="" aria-hidden="true" />
                 <img className="brand-logo footer-logo" src="/quilly-logo.webp?v=2" alt="Quilly" />
               </Link>
               <p className="footer-copy">A quieter, more connected workspace for novelists who want planning to support the draft instead of getting in its way.</p>
