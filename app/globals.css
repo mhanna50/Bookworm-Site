@@ -54,7 +54,7 @@ button{color:inherit}
   backdrop-filter:blur(16px);
 }
 .nav-wrap{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-playfair),Georgia,serif;font-size:1.24rem;font-weight:600;letter-spacing:.015em}
+.brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-playfair),Georgia,serif;font-size:1.24rem;font-weight:600;letter-spacing:.015em}\n.brand-logo{display:block;width:138px;height:auto;object-fit:contain}\n.footer-logo{width:150px}
 .brand-seal{
   width:32px;height:32px;border:1px solid var(--line-strong);border-radius:50%;
   display:grid;place-items:center;color:var(--mocha);
