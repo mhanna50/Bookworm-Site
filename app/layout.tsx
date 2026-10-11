@@ -54,9 +54,9 @@ export const metadata: Metadata = {
   ],
   applicationName: "Quilly",
   icons: {
-    icon: "/quilly-favicon.png?v=2",
-    shortcut: "/quilly-favicon.png?v=2",
-    apple: "/quilly-favicon.png?v=2",
+    icon: "/quilly-favicon-v2.png",
+    shortcut: "/quilly-favicon-v2.png",
+    apple: "/quilly-favicon-v2.png",
   },
   category: "Writing Software",
   alternates: { canonical: "/" },
