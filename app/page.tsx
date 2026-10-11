@@ -46,7 +46,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="hero-visual" aria-label="Bookworm workspace preview">
+          <div className="hero-visual" aria-label="Quilly workspace preview">
             <div className="ornament ornament-top">❦</div>
             <div className="mock-window">
               <div className="mock-sidebar">
@@ -103,7 +103,7 @@ export default function HomePage() {
               <h2>Less switching.<br /><em>More writing.</em></h2>
             </div>
             <p>
-              Bookworm is designed around the way stories actually grow: the manuscript, planning data, characters, events, clues, world entries, relationships, and progress stay inside the same project.
+              Quilly is designed around the way stories actually grow: the manuscript, planning data, characters, events, clues, world entries, relationships, and progress stay inside the same project.
             </p>
           </div>
           <div className="feature-grid">
@@ -124,10 +124,10 @@ export default function HomePage() {
         <div className="site-container">
           <div className="section-heading split-heading">
             <div>
-              <span className="eyebrow">The Bookworm library</span>
+              <span className="eyebrow">The Quilly library</span>
               <h2>Useful answers for the <em>hard parts of a novel.</em></h2>
             </div>
-            <p>Planning, continuity, characters, foreshadowing, worldbuilding, and choosing the right writing workflow—written to be useful even if you never use Bookworm.</p>
+            <p>Planning, continuity, characters, foreshadowing, worldbuilding, and choosing the right writing workflow—written to be useful even if you never use Quilly.</p>
           </div>
           <div className="related-resource-grid resource-home-grid">
             <Link href="/guides/how-to-plan-a-novel" className="related-resource-card"><span>How to plan a novel</span><ArrowRight size={15}/></Link>
