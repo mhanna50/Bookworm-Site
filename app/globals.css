@@ -791,7 +791,11 @@ em{font-weight:500;color:var(--mocha)}
   .brand-feather{width:76px;height:82px}
 }
 
-/* Keep the large feather prominent without stretching navigation or crowding the wordmark. */
-.site-header .brand-feather{width:105px;height:85px}
-.site-header .brand-logo{width:125px}
-@media(max-width:600px){.site-header .brand-feather{width:76px;height:64px}.site-header .brand-logo{width:108px}}
+/* Header logo lockup: feather slightly smaller, wordmark larger, bottoms aligned. */
+.site-header .brand:has(.brand-logo){align-items:flex-end;gap:8px}
+.site-header .brand-feather{width:90px;height:74px;object-fit:contain;object-position:center bottom}
+.site-header .brand-logo{width:148px;height:auto;align-self:flex-end}
+@media(max-width:600px){
+  .site-header .brand-feather{width:66px;height:56px}
+  .site-header .brand-logo{width:124px}
+}
