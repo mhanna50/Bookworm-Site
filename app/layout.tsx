@@ -52,7 +52,12 @@ export const metadata: Metadata = {
     "worldbuilding software",
     "plotting software",
   ],
-  applicationName: "Quilly",\n  icons: {\n    icon: "/quilly-favicon.png",\n    shortcut: "/quilly-favicon.png",\n    apple: "/quilly-favicon.png",\n  },
+  applicationName: "Quilly",
+  icons: {
+    icon: "/quilly-favicon.png",
+    shortcut: "/quilly-favicon.png",
+    apple: "/quilly-favicon.png",
+  },
   category: "Writing Software",
   alternates: { canonical: "/" },
   openGraph: {
