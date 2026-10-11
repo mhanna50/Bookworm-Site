@@ -104,7 +104,7 @@ button{color:inherit}
 .hero h1,.page-hero h1,.section-heading h2,.product-copy h2,.cta-panel h2,.feature-row h2,.faq-wrap h2,.manifesto-grid h2,.story-note h2,.cta-split h2{
   font-family:var(--font-playfair),Georgia,serif;font-weight:500;letter-spacing:-.035em;margin:0;color:#201b17
 }
-.hero h1{font-size:clamp(3.8rem,7vw,6.7rem);line-height:.94;margin-top:22px}
+.hero h1{font-size:clamp(3rem,5.2vw,5rem);line-height:1.12;margin-top:22px;overflow-wrap:normal}
 em{font-weight:500;color:var(--mocha)}
 .hero-lede{font-size:1.08rem;line-height:1.8;color:var(--smoke);max-width:630px;margin:26px 0 0}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
@@ -180,7 +180,7 @@ em{font-weight:500;color:var(--mocha)}
 
 .page-hero{padding:108px 0 74px;text-align:center}
 .page-hero .narrow{margin:0 auto}
-.page-hero h1{font-size:clamp(3.2rem,6vw,5.7rem);line-height:.98;margin-top:18px}
+.page-hero h1{font-size:clamp(2.7rem,4.8vw,4.7rem);line-height:1.13;margin-top:18px}
 .page-hero p{font-size:1.04rem;line-height:1.8;color:var(--smoke);max-width:650px;margin:24px auto 0}
 .feature-rows{border-top:1px solid var(--line)}
 .feature-row{display:grid;grid-template-columns:70px 48px 1fr;gap:24px;align-items:start;padding:38px 0;border-bottom:1px solid var(--line)}
@@ -244,7 +244,7 @@ em{font-weight:500;color:var(--mocha)}
   .desktop-nav,.desktop-only{display:none}
   .menu-button{display:grid;place-items:center}
   .hero{padding:68px 0 48px}
-  .hero h1{font-size:clamp(3.1rem,15vw,4.7rem)}
+  .hero h1{font-size:clamp(2.6rem,10vw,3.8rem);line-height:1.15}
   .hero-visual{min-height:410px}
   .mock-window{grid-template-columns:1fr;height:360px}
   .mock-sidebar{display:none}
@@ -425,8 +425,8 @@ em{font-weight:500;color:var(--mocha)}
 .breadcrumb a:hover{color:var(--mocha)}
 .resource-hero h1{
   font-family:var(--font-playfair),Georgia,serif;
-  font-size:clamp(3rem,6vw,5.5rem);
-  line-height:.98;
+  font-size:clamp(2.65rem,4.8vw,4.6rem);
+  line-height:1.13;
   letter-spacing:-.04em;
   font-weight:500;
   margin:16px 0 22px;
@@ -781,12 +781,17 @@ em{font-weight:500;color:var(--mocha)}
 .footer-logo{width:150px}
 .brand-feather{
   display:block;
-  width:80px;
-  height:90px;
+  width:105px;
+  height:112px;
   object-fit:contain;
   flex:none;
 }
 @media(max-width:600px){
   .brand-logo{width:112px}
-  .brand-feather{width:57px;height:64px}
+  .brand-feather{width:76px;height:82px}
 }
+
+/* Keep the large feather prominent without stretching navigation or crowding the wordmark. */
+.site-header .brand-feather{width:105px;height:85px}
+.site-header .brand-logo{width:125px}
+@media(max-width:600px){.site-header .brand-feather{width:76px;height:64px}.site-header .brand-logo{width:108px}}
