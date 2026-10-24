@@ -60,7 +60,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <header className="site-header">
         <div className="site-container nav-wrap">
           <Link className="brand" href="/" onClick={() => setOpen(false)}>
-            <img className="brand-logo" src="/quilly-logo-transparent.svg" alt="Quilly" />
+            <img className="brand-logo" src="/quilly-logo-transparent.svg?v=20261024-fixed" alt="Quilly" />
           </Link>
 
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -142,7 +142,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <div className="footer-main">
             <div className="footer-intro">
               <Link className="brand footer-brand" href="/">
-                <img className="brand-logo footer-logo" src="/quilly-logo-transparent.svg" alt="Quilly" />
+                <img className="brand-logo footer-logo" src="/quilly-logo-transparent.svg?v=20261024-fixed" alt="Quilly" />
               </Link>
               <p className="footer-copy">A quieter, more connected workspace for novelists who want planning to support the draft instead of getting in its way.</p>
               <Link className="footer-about-link" href="/about">Why we built Quilly <ArrowRight size={13} /></Link>
