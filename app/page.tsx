@@ -30,14 +30,14 @@ export default function HomePage() {
         <div className="hero-glow" />
         <div className="site-container hero-grid">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="eyebrow-mark">✦</span> An author workspace for whole stories</div>
-            <h1>Your whole story,<br /><em>held in one place.</em></h1>
+            <div className="eyebrow"><span className="eyebrow-mark">✦</span> A happier home for your next big idea</div>
+            <h1>Big ideas. Messy drafts.<br /><em>Brilliant stories.</em></h1>
             <p className="hero-lede">
-              Write your manuscript, shape your plot, build your world, and keep every thread connected—without turning your creative process into project management.
+              Meet Quilly, your creative corner for writing, plotting, and bringing every part of your story together. A little less juggling, a lot more storytelling.
             </p>
             <div className="hero-actions">
               <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free for 14 days <ArrowRight size={16} /></a>
-              <Link className="button ghost large" href="/features">Explore the workspace</Link>
+              <Link className="button ghost large" href="/features">Take a look around</Link>
             </div>
             <div className="hero-notes">
               <span><Check size={14} /> 14-day free trial</span>
@@ -90,7 +90,7 @@ export default function HomePage() {
 
       <section className="quiet-strip">
         <div className="site-container quiet-strip-inner">
-          <span className="small-caps">One writing room</span>
+          <span className="small-caps">Your story, your space</span>
           <p>Manuscript · Story Builder · Characters · Plot Points · Events · Foreshadowing · World · Relationships · Progress</p>
         </div>
       </section>
@@ -99,11 +99,11 @@ export default function HomePage() {
         <div className="site-container">
           <div className="section-heading split-heading">
             <div>
-              <span className="eyebrow">Everything that matters, close at hand</span>
-              <h2>Less switching.<br /><em>More writing.</em></h2>
+              <span className="eyebrow">All the good stuff, together</span>
+              <h2>Less organizing.<br /><em>More imagining.</em></h2>
             </div>
             <p>
-              Quilly is designed around the way stories actually grow: the manuscript, planning data, characters, events, clues, world entries, relationships, and progress stay inside the same project.
+              From the first spark of an idea to the final chapter, keep your characters, plot twists, world, and words happily connected in one welcoming workspace.
             </p>
           </div>
           <div className="feature-grid">
@@ -124,8 +124,8 @@ export default function HomePage() {
         <div className="site-container">
           <div className="section-heading split-heading">
             <div>
-              <span className="eyebrow">The Quilly library</span>
-              <h2>Useful answers for the <em>hard parts of a novel.</em></h2>
+              <span className="eyebrow">A little help along the way</span>
+              <h2>Good stories start with <em>curiosity.</em></h2>
             </div>
             <p>Planning, continuity, characters, foreshadowing, worldbuilding, and choosing the right writing workflow—written to be useful even if you never use Quilly.</p>
           </div>
@@ -142,8 +142,8 @@ export default function HomePage() {
       <section className="section">
         <div className="site-container cta-panel">
           <BookOpen size={28} strokeWidth={1.5} />
-          <span className="eyebrow">Your next chapter is enough</span>
-          <h2>Build the story as you write it.</h2>
+          <span className="eyebrow">Every story starts somewhere</span>
+          <h2>Your next chapter starts here.</h2>
           <p>Start from a blank project, explore the sample book, or import an existing DOCX manuscript. Your first 14 days are free—no card required.</p>
           <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free <ArrowRight size={16} /></a>
         </div>
