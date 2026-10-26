@@ -15,7 +15,7 @@ const faqSchema = {
       name: "Do I need a credit card for the Quilly free trial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Quilly includes a 14-day free trial with no credit card required."
+        text: "No. Quilly includes a 14-day free trial of Basic features with no credit card required. Story Health is not included in the free trial."
       }
     },
     {
