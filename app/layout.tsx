@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     template: "%s | Quilly",
   },
   description:
-    "Quilly is a writing and story-planning workspace for novelists. Draft manuscripts, organize plots, build characters and worlds, track foreshadowing, relationships, story health, and writing progress in one connected place. Start with a 14-day free trial—no credit card required—then $11.99/month.",
+    "Quilly is a writing and story-planning workspace for novelists. Draft manuscripts, organize plots, build characters and worlds, track foreshadowing, relationships, story health, and writing progress in one connected place. Start with a 14-day free trial—no credit card required—plans from $11.99/month.",
   keywords: [
     "novel writing software",
     "story planning software",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Quilly | Novel Writing & Story Planning Software",
     description:
-      "Write your manuscript, plan your plot, build your world, and keep every story thread connected. 14 days free, no card required, then $11.99/month.",
+      "Write your manuscript, plan your plot, build your world, and keep every story thread connected. 14 days free, no card required, plans from $11.99/month.",
     siteName: "Quilly",
   },
   twitter: {
@@ -96,13 +96,10 @@ const softwareSchema = {
   url: siteUrl,
   description:
     "A connected writing and story-planning workspace for novelists with manuscript editing, story structure, characters, worldbuilding, relationships, story health, and writing progress.",
-  offers: {
-    "@type": "Offer",
-    price: "11.99",
-    priceCurrency: "USD",
-    category: "subscription",
-    description: "14-day free trial with no credit card required, then $11.99 per month. Cancel anytime.",
-  },
+  offers: [
+    { "@type": "Offer", name: "Quilly Basic", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Basic writing and planning tools. 14-day free trial, no card required." },
+    { "@type": "Offer", name: "Quilly Plus", price: "16.99", priceCurrency: "USD", category: "subscription", description: "Everything in Basic plus Story Health diagnostics. 14-day free trial, no card required." },
+  ],
   featureList: [
     "Chapter-based manuscript editor with focus mode",
     "Anchored manuscript comments and tracked revision changes",
@@ -113,7 +110,7 @@ const softwareSchema = {
     "Flexible worldbuilding with custom categories and fields",
     "Plot points, story events and foreshadowing",
     "Relationship graph with custom and derived connections",
-    "Story Health diagnostics",
+    "Story Health diagnostics (Plus)",
     "Writing goals, streaks, chapter word counts and writing sessions",
     "DOCX manuscript import",
     "DOCX and PDF manuscript export",
