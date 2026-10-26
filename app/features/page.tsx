@@ -49,7 +49,7 @@ const rows = [
   },
   {
     icon: HeartPulse,
-    title: "Story Health: concrete signals, not a writing score",
+    title: "Story Health in Plus: concrete signals, not a writing score",
     text: "Review continuity, plot threads, character activity, unplaced events, timeline signals, orphaned elements, broken references, and structural issues. You decide whether each signal matters.",
   },
   {
