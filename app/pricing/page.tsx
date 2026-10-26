@@ -12,11 +12,11 @@ export default function PricingPage() {
         <div className="site-container narrow">
           <span className="eyebrow">Simple pricing</span>
           <h1>Try the whole workspace <em>free for 14 days.</em></h1>
-          <p>No credit card required. Explore Bookworm with the full workspace, then continue for $11.99/month if it fits the way you write.</p>
-          <div className="trial-callout" role="note" aria-label="Bookworm trial terms">
+          <p>No credit card required. Explore Quilly with the full workspace, then choose Basic at $11.99/month or Plus at $16.99/month. Your trial includes a preview of Plus.</p>
+          <div className="trial-callout" role="note" aria-label="Quilly trial terms">
             <strong>14 days free</strong>
             <span>No credit card required</span>
-            <span>Then $11.99/month</span>
+            <span>Plans from $11.99/month</span>
             <span>Cancel anytime</span>
           </div>
         </div>
@@ -24,20 +24,23 @@ export default function PricingPage() {
 
       <section className="section pricing-section">
         <div className="site-container pricing-wrap">
-          <div className="price-card">
+          {([
+            { name: "Quilly Basic", price: "11.99", plus: false, description: "Your connected writing workspace." },
+            { name: "Quilly Plus", price: "16.99", plus: true, description: "Everything in Basic, plus Story Health diagnostics." },
+          ]).map(plan => <div className="price-card" key={plan.name}>
             <div className="price-card-top">
-              <span className="small-caps">Bookworm</span>
-              <div className="price"><strong>$11.99</strong><span>/ month</span></div>
-              <p>Start with a 14-day free trial. No credit card required.</p>
+              <span className="small-caps">{plan.name}</span>
+              <div className="price"><strong>${plan.price}</strong><span>/ month</span></div>
+              <p>{plan.description}</p>
             </div>
             <div className="price-features">
-              {["Multiple book projects","Manuscript editor + revision tools","Story Builder","Characters & flexible worldbuilding","Plot Points, Events & Foreshadowing","Relationships graph","Story Health","Goals, streaks & writing sessions","DOCX import + DOCX/PDF export","Backups, snapshots & Trash recovery"].map(item => (
+              {["Multiple book projects","Manuscript editor + revision tools","Story Builder","Characters & flexible worldbuilding","Plot Points, Events & Foreshadowing","Relationships graph","Goals, streaks & writing sessions","DOCX import + DOCX/PDF export","Backups, snapshots & Trash recovery", ...(plan.plus ? ["Story Health diagnostics"] : [])].map(item => (
                 <div key={item}><Check size={15}/><span>{item}</span></div>
               ))}
             </div>
             <a className="button large full" href={appSignup}>Start your free 14-day trial</a>
-            <p className="fine-print">No card upfront. After 14 days, add a payment method to continue at $11.99/month. Cancel anytime.</p>
-          </div>
+            <p className="fine-print">No card upfront. Trial includes a Plus preview. Subscribe to {plan.name} for ${plan.price}/month after your trial. Cancel anytime.</p>
+          </div>)}
         </div>
       </section>
 
@@ -45,12 +48,12 @@ export default function PricingPage() {
         <div className="site-container">
           <div className="section-heading split-heading">
             <div><span className="eyebrow">Compare your options</span><h2>Choose the workflow, not just the price.</h2></div>
-            <p>Bookworm is not automatically the right tool for every writer. Compare how its connected-story model differs from established alternatives.</p>
+            <p>Quilly is not automatically the right tool for every writer. Compare how its connected-story model differs from established alternatives.</p>
           </div>
           <div className="related-resource-grid">
-            <Link href="/compare/scrivener-vs-bookworm" className="related-resource-card"><span>Bookworm vs Scrivener</span><span>→</span></Link>
-            <Link href="/compare/dabble-vs-bookworm" className="related-resource-card"><span>Bookworm vs Dabble</span><span>→</span></Link>
-            <Link href="/alternatives/plottr" className="related-resource-card"><span>Bookworm vs Plottr</span><span>→</span></Link>
+            <Link href="/compare/scrivener-vs-bookworm" className="related-resource-card"><span>Quilly vs Scrivener</span><span>→</span></Link>
+            <Link href="/compare/dabble-vs-bookworm" className="related-resource-card"><span>Quilly vs Dabble</span><span>→</span></Link>
+            <Link href="/alternatives/plottr" className="related-resource-card"><span>Quilly vs Plottr</span><span>→</span></Link>
           </div>
         </div>
       </section>
