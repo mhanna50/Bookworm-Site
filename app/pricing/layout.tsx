@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing — 14 Days Free, Then $11.99/Month",
-  description: "Try Bookworm free for 14 days with no credit card required. Continue for $11.99/month with manuscript, Story Builder, characters, worldbuilding, Story Health, relationships, writing progress, backups, and recovery.",
+  title: "Pricing — Basic $11.99 or Plus $16.99/Month",
+  description: "Try Quilly free for 14 days with no credit card required. Choose Basic for $11.99/month with writing, planning, relationships and exports, or Plus for $16.99/month including Story Health.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -12,26 +12,26 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Do I need a credit card for the Bookworm free trial?",
+      name: "Do I need a credit card for the Quilly free trial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Bookworm includes a 14-day free trial with no credit card required."
+        text: "No. Quilly includes a 14-day free trial with no credit card required."
       }
     },
     {
       "@type": "Question",
-      name: "What does Bookworm cost after the free trial?",
+      name: "What does Quilly cost after the free trial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "After the 14-day free trial, Bookworm costs $11.99 per month."
+        text: "After the 14-day free trial, Basic is $11.99/month and Plus is $16.99/month. Story Health is included in Plus."
       }
     },
     {
       "@type": "Question",
-      name: "Can I cancel Bookworm anytime?",
+      name: "Can I cancel Quilly anytime?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Bookworm is a month-to-month subscription with no long-term contract."
+        text: "Yes. Quilly is a month-to-month subscription with no long-term contract."
       }
     },
     {
@@ -44,10 +44,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Is Bookworm only for fantasy writers?",
+      name: "Is Quilly only for fantasy writers?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Bookworm is built for long-form fiction across genres."
+        text: "No. Quilly is built for long-form fiction across genres."
       }
     }
   ]
