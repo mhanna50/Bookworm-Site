@@ -11,8 +11,8 @@ export default function PricingPage() {
       <section className="page-hero">
         <div className="site-container narrow">
           <span className="eyebrow">Simple pricing</span>
-          <h1>Try the whole workspace <em>free for 14 days.</em></h1>
-          <p>No credit card required. Explore Quilly with the full workspace, then choose Basic at $11.99/month or Plus at $16.99/month. Your trial includes a preview of Plus.</p>
+          <h1>Try Quilly <em>free for 14 days.</em></h1>
+          <p>No credit card required. Explore Quilly’s Basic writing and planning tools, then choose Basic at $11.99/month or Plus at $16.99/month. Story Health requires a Plus subscription and is not included in the trial.</p>
           <div className="trial-callout" role="note" aria-label="Quilly trial terms">
             <strong>14 days free</strong>
             <span>No credit card required</span>
@@ -39,7 +39,7 @@ export default function PricingPage() {
               ))}
             </div>
             <a className="button large full" href={appSignup}>Start your free 14-day trial</a>
-            <p className="fine-print">No card upfront. Trial includes a Plus preview. Subscribe to {plan.name} for ${plan.price}/month after your trial. Cancel anytime.</p>
+            <p className="fine-print">No card upfront. Trial includes Basic features; Story Health is not included. Subscribe to {plan.name} for ${plan.price}/month after your trial. Cancel anytime.</p>
           </div>)}
         </div>
       </section>
