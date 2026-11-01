@@ -810,8 +810,10 @@ em{font-weight:500;color:var(--mocha)}
 .resources-trigger{display:inline-flex;align-items:center;gap:7px}
 .resources-trigger svg{transition:transform .2s ease}
 .resources-nav:hover .resources-trigger svg,.resources-nav:focus-within .resources-trigger svg{transform:rotate(180deg)}
-.header-signin{display:inline-flex;align-items:center;gap:10px;font-size:1.02rem;font-weight:700;white-space:nowrap;color:var(--ink)}
-.header-signin:hover{color:var(--mocha)}
+.header-signin{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:1.02rem;font-weight:700;white-space:nowrap;color:#fffaf4;background:var(--mocha);border:1px solid var(--mocha);border-radius:999px;padding:11px 18px;min-height:44px;box-shadow:0 5px 0 rgba(70,38,27,.08);transition:background .18s ease,box-shadow .18s ease}
+.header-signin:hover{color:#fffaf4;background:var(--mocha-deep);box-shadow:0 9px 20px rgba(88,46,28,.14)}
+.header-signin:focus-visible{outline:3px solid #dfa66f;outline-offset:3px}
+@media(max-width:760px){.header-signin.desktop-only{display:none}}
 .resources-dropdown{
   position:absolute;top:calc(100% - 2px);right:0;width:min(850px,100%);
   display:grid;grid-template-columns:1fr 1fr;gap:34px;

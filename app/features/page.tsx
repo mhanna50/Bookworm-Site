@@ -126,7 +126,7 @@ export default function FeaturesPage() {
         <div className="site-container cta-split">
           <BookOpenText size={30} strokeWidth={1.5} />
           <div><span className="eyebrow">A writing tool first</span><h2>Structure should support the manuscript, not replace it.</h2></div>
-          <a className="button" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free for 14 days <ArrowRight size={15}/></a>
+          <a className="button" href="https://app.quillywriter.com/login?mode=signup">Start free for 14 days <ArrowRight size={15}/></a>
         </div>
       </section>
     </SiteShell>

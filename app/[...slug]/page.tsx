@@ -6,7 +6,7 @@ import { SiteShell } from "@/components/SiteShell";
 import { contentPages, getContentPage } from "@/content";
 import type { ContentPage } from "@/content/types";
 
-const appSignup = "https://production-phi-flame.vercel.app/login?mode=signup";
+const appSignup = "https://app.quillywriter.com/login?mode=signup";
 
 function toSectionId(value: string) {
   return value

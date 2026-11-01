@@ -36,7 +36,7 @@ export default function HomePage() {
               Meet Quilly, your creative corner for writing, plotting, and bringing every part of your story together. A little less juggling, a lot more storytelling.
             </p>
             <div className="hero-actions">
-              <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free for 14 days <ArrowRight size={16} /></a>
+              <a className="button large" href="https://app.quillywriter.com/login?mode=signup">Start free for 14 days <ArrowRight size={16} /></a>
               <Link className="button ghost large" href="/features">Take a look around</Link>
             </div>
             <div className="hero-notes">
@@ -145,7 +145,7 @@ export default function HomePage() {
           <span className="eyebrow">Every story starts somewhere</span>
           <h2>Your next chapter starts here.</h2>
           <p>Start from a blank project, explore the sample book, or import an existing DOCX manuscript. Your first 14 days are free—no card required.</p>
-          <a className="button large" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free <ArrowRight size={16} /></a>
+          <a className="button large" href="https://app.quillywriter.com/login?mode=signup">Start free <ArrowRight size={16} /></a>
         </div>
       </section>
     </SiteShell>

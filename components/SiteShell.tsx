@@ -95,7 +95,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </nav>
 
           <div className="nav-actions">
-            <a className="header-signin desktop-only" href="https://production-phi-flame.vercel.app/login?mode=signin">
+            <a className="header-signin desktop-only" href="https://app.quillywriter.com/login?mode=signin">
               <CircleUserRound size={25} strokeWidth={1.9} aria-hidden="true" /> <span>Sign in</span>
             </a>
             <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -112,8 +112,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                   {item.label}
                 </Link>
               ))}
-              <a href="https://production-phi-flame.vercel.app/login?mode=signin">Log in</a>
-              <a className="button" href="https://production-phi-flame.vercel.app/login?mode=signup">Start free — no card</a>
+              <a href="https://app.quillywriter.com/login?mode=signin">Log in</a>
+              <a className="button" href="https://app.quillywriter.com/login?mode=signup">Start free — no card</a>
             </div>
           </div>
         )}
@@ -130,10 +130,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               <p>Bring manuscript, chapters, plot points, characters, worldbuilding, relationships, foreshadowing, and progress into the same workspace.</p>
             </div>
             <div className="footer-cta-actions">
-              <a className="button" href="https://production-phi-flame.vercel.app/login?mode=signup">
+              <a className="button" href="https://app.quillywriter.com/login?mode=signup">
                 Start writing free <ArrowUpRight size={14} />
               </a>
-              <a className="inline-link" href="https://production-phi-flame.vercel.app/login?mode=signin">
+              <a className="inline-link" href="https://app.quillywriter.com/login?mode=signin">
                 Log in <ArrowRight size={14} />
               </a>
             </div>
@@ -167,7 +167,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             <div>
               <Link href="/about">About</Link>
               <Link href="/resources">Resources</Link>
-              <a href="https://production-phi-flame.vercel.app/login?mode=signin">Log in</a>
+              <a href="https://app.quillywriter.com/login?mode=signin">Log in</a>
             </div>
           </div>
         </div>

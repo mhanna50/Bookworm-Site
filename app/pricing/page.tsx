@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
 import { PricingFaq } from "@/components/PricingFaq";
 
-const appSignup = "https://production-phi-flame.vercel.app/login?mode=signup";
+const appSignup = "https://app.quillywriter.com/login?mode=signup";
 
 export default function PricingPage() {
   return (
