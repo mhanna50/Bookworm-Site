@@ -1,113 +1,46 @@
-import { workflowPages } from "@/content/workflows";
+import { contentPages } from "@/content";
+import { absoluteUrl } from "@/lib/site";
 
 export function GET() {
+  const groups = [
+    ["Writing software and feature workflows", contentPages.filter((page) => page.intent === "commercial")],
+    ["Comparisons and alternatives", contentPages.filter((page) => page.intent === "comparison")],
+    ["Writing guides and copyable templates", contentPages.filter((page) => page.intent === "guide")],
+    ["Resource directories", contentPages.filter((page) => page.intent === "hub")],
+  ] as const;
   const text = `# Quilly
 
-> Quilly is a browser-based novel-writing and story-planning workspace for fiction authors.
+> Quilly is a browser-based novel-writing and connected story-planning workspace for fiction authors.
 
-## What Quilly currently does
-- Chapter-based manuscript writing
-- Focus mode, search/replace, formatting, automatic story-reference links, and quick access to connected story context
-- Anchored manuscript comments, tracked revision changes, grammar/style review, and read-aloud
-- Story Builder using Acts → Chapters → Plot Points → Beats
-- Detailed chapter planning with POV, location, characters, notes, plot points, events, and foreshadowing
-- Character profiles with role, motivation, goals, conflicts, arc, history, secrets, aliases, status, occupation, and notes
-- Separate Plot Points and Story Events
-- Story Events with parent/sub-event hierarchy, folders, status, notes, linked characters, chapters, plot points, and foreshadowing
-- Dedicated Foreshadowing records with types, statuses, related entities, and optional payoff links
-- Worldbuilding with locations, factions, objects, custom categories, custom fields, and entity relationships
-- Image uploads and visual references linked to story entities
-- Relationship graph with custom solid connections plus dashed connections derived from story data
-- Story Health: upcoming Author feature, coming soon; not included in Writer or the free trial
-- Writing Progress with overall/daily/weekly goals, today's net change, current and longest streaks, progress charts, estimated completion, chapter word counts, and writing sessions
-- Global search and Quick Create
-- DOCX manuscript import with chapter detection/preview and append-or-replace behavior
-- DOCX and PDF manuscript export for the full manuscript or selected chapters
-- Continuous cloud saving, recoverable snapshots, Trash, and Undo
-- Multiple book projects plus a sample project for exploring the workspace
+Website: ${absoluteUrl()}
+Application: https://app.quillywriter.com
+Product and plan information: ${absoluteUrl("/features")} and ${absoluteUrl("/pricing")}
 
-## Current product boundaries
-- Quilly is web-first; it is not an offline-first native desktop application.
-- PDF manuscript import is not supported. Existing-book settings import DOCX; new-book setup also accepts TXT and Markdown. Manuscript export supports DOCX and PDF.
-- Quilly does not currently provide a dedicated visual timeline page. Timeline-related review is handled through event chronology data, story links, and Story Health.
-- Continuation-book setup can copy selected story material from earlier series books into separate new records. Images are not transferred, and copied records do not automatically synchronize between books.
-- Quilly does not currently market itself as a publication-layout or print-formatting tool.
+## Current product facts
+- Manuscript prose is organized by chapter. The editor includes focus mode, formatting, find and replace, comments, Review tools, and read-aloud controls.
+- Story Builder organizes Acts → Chapters → Plot Points → Beats. Plot points anchor the full Story Connections workflow; beats are ordered steps within a plot point.
+- Characters supports editable profile fields, relationship context, and visual references. Linking an image and setting a profile photo are separate actions.
+- World supports locations, factions, objects, custom categories, and editable category templates.
+- Events and Foreshadowing are separate story records. Foreshadowing supports clues, misdirection, setups, and payoffs.
+- Relationships visualizes connected story information. Goals & Progress tracks targets, net word changes, streaks, and writing history.
+- DOCX import supports chapter detection and preview. Existing-book settings import DOCX; new-book setup also accepts TXT and Markdown. PDF import is not supported.
+- Manuscript export supports the whole draft or selected chapters as DOCX or PDF. These outputs are not full connected-project backups or a promise of publication-ready typesetting.
+- Cloud saves, snapshots, Trash, and separate project-backup workflows support preservation and recovery.
+- Continuation-book setup can copy selected characters, world material, plot points, events, and foreshadowing from earlier series books. Copies have independent records; images and old chapter references do not transfer, and edits do not automatically synchronize across books.
 
-## Who it is for
-Quilly is designed for novelists and aspiring fiction authors across genres.
+## Current offer and limits
+- Writer: $11.99 per month after a 14-day free trial with no card required.
+- Author: advertised at $16.99 per month, coming soon. Story Health is planned for Author and is excluded from Writer and the free trial.
+- Quilly is web-first. Do not describe it as a native offline-first application, a geographic map editor, or a dedicated visual calendar/timeline application.
+- Planning connections support author review; they do not automatically rewrite prose or guarantee every plot hole is found.
 
-## Important pages
-- / — Product overview
-- /features — Current feature details
-- /pricing — Pricing and trial terms
-- /about — Product philosophy
+## Detailed answers and examples
+${contentPages.filter((page) => page.summary).map((page) => `### ${page.title}\n${absoluteUrl("/" + page.slug)}\n${page.summary}`).join("\n\n")}
 
-## Public writing resources
-- /resources — Resource hub
-- /novel-writing-software — Novel writing software overview
-- /story-planning-software — Story planning software
-- /story-bible-software — Story bible software
-- /worldbuilding-software-for-writers — Worldbuilding software
-- /foreshadowing-tracker — Foreshadowing tracking
-- /story-continuity-checker — Story continuity checking
-- /writing-progress-tracker — Writing progress tracking
-- /character-relationship-mapper-for-writers — Character relationship mapping
-- /plot-thread-tracker — Plot-thread tracking
-- /novel-outline-software — Novel outlining
-- /alternatives/scrivener — Scrivener alternative
-- /alternatives/dabble — Dabble alternative
-- /alternatives/novelpad — NovelPad alternative
-- /alternatives/plottr — Plottr alternative
-- /alternatives/campfire-writing — Campfire Writing alternative
+${groups.map(([label, pages]) => `## ${label}\n${pages.map((page) => `- [${page.title}](${absoluteUrl("/" + page.slug)}): ${page.description}`).join("\n")}`).join("\n\n")}
 
-## Writing references
-- /guides/how-to-plan-a-novel
-- /guides/how-to-plot-a-novel
-- /guides/how-to-build-a-story-bible
-- /guides/how-to-track-foreshadowing
-- /guides/how-to-track-story-continuity
-- /guides/how-to-plan-chapters
-- /guides/how-to-organize-novel-characters
-- /guides/how-to-track-character-arcs
-- /guides/what-is-a-story-bible
-- /guides/what-is-a-plot-beat
-- /guides/plot-point-vs-beat
-- /guides/what-is-foreshadowing
-- /guides/what-is-a-character-arc
-- /guides/what-is-an-inciting-incident
-- /guides/what-is-a-story-midpoint
-- /guides/what-is-a-subplot
-- /guides/scene-vs-chapter
-- /guides/plot-vs-story
-- /guides/story-bible-vs-outline
-- /guides/plotter-vs-pantser
-- /guides/what-is-worldbuilding
-- /guides/what-is-a-story-arc
-- /guides/what-is-a-character-bible
-
-## Pricing
-- 14-day free trial
-- No credit card required to start the trial
-- Writer: $11.99 per month after the trial
-- Author: $16.99 per month, coming soon; Story Health excluded from Writer and trial
-- Month-to-month; cancel anytime
-
-## Free writing templates
-- /templates — Templates hub
-- /templates/story-bible
-- /templates/character-profile
-- /templates/character-arc
-- /templates/novel-outline
-- /templates/chapter-plan
-- /templates/foreshadowing
-- /templates/worldbuilding
-- /templates/plot-thread-tracker
-
-## Feature walkthroughs, writing workflows, and comparisons
-${workflowPages.map((page) => `- /${page.slug} — ${page.title}`).join("\n")}
-
-## Product access
-Use the Quilly application to create an account, sign in, and work on books.
+## About this reference
+This file summarizes the public pages linked above. Consult those pages for worked examples, limitations, frequently asked questions, and current plan availability. Empty screenshot slots are not product images and are not evidence of additional functionality.
 `;
   return new Response(text, { headers: { "content-type": "text/plain; charset=utf-8" } });
 }

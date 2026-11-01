@@ -3,6 +3,7 @@ import { Inter, Libre_Baskerville, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
+import { jsonLd, siteUrl } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,12 +28,6 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
-const productionHost = process.env.NEXT_PUBLIC_SITE_URL
-  ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
-const siteUrl = productionHost;
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -40,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s | Quilly",
   },
   description:
-    "Quilly is a writing and story-planning workspace for novelists. Draft manuscripts, organize plots, build characters and worlds, track foreshadowing, relationships, story health, and writing progress in one connected place. Start with a 14-day free trial—no credit card required—plans from $11.99/month.",
+    "Write your novel and connect chapters, plot points, characters, worldbuilding, and foreshadowing in Quilly. Try Writer free for 14 days, no card required.",
   keywords: [
     "novel writing software",
     "story planning software",
@@ -90,15 +85,15 @@ export const metadata: Metadata = {
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "@id": siteUrl + "/#software",
   name: "Quilly",
   applicationCategory: "WritingApplication",
   operatingSystem: "Web",
   url: siteUrl,
   description:
-    "A connected writing and story-planning workspace for novelists with manuscript editing, story structure, characters, worldbuilding, relationships, story health, and writing progress.",
+    "A connected writing and story-planning workspace for novelists with manuscript editing, story structure, characters, worldbuilding, relationships, and writing progress. Story Health is coming soon in Author.",
   offers: [
     { "@type": "Offer", name: "Writer", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Writer writing and planning tools. 14-day free trial, no card required." },
-    { "@type": "Offer", name: "Author", availability: "https://schema.org/PreOrder", price: "16.99", priceCurrency: "USD", category: "subscription", description: "Everything in Writer plus AI-assisted Story Health, coming soon. Story Health is not included in the free trial." },
   ],
   featureList: [
     "Chapter-based manuscript editor with focus mode",
@@ -121,17 +116,29 @@ const softwareSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": siteUrl + "/#website",
   name: "Quilly",
   url: siteUrl,
   description: "Novel writing and story planning software for fiction authors.",
+  publisher: { "@id": siteUrl + "/#organization" },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": siteUrl + "/#organization",
+  name: "Quilly",
+  url: siteUrl,
+  logo: siteUrl + "/quilly-logo-transparent.svg",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${libre.variable} ${playfair.variable}`}>
       <body>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(softwareSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(websiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(organizationSchema) }} />
         {children}
         <Analytics mode="production" />
         <SpeedInsights />
