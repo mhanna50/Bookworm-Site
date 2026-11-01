@@ -7,9 +7,10 @@ import { competitorExpansionPages } from "./competitor-expansion";
 import { aioReferencePages } from "./aio-reference";
 import { templatePages } from "./templates";
 import { workflowPages } from "./workflows";
+import { deepenPage } from "./depth";
 import type { ContentPage } from "./types";
 
-export const contentPages: ContentPage[] = [
+const basePages: ContentPage[] = [
   ...commercialPages,
   ...comparisonPages,
   ...guidePages,
@@ -20,6 +21,8 @@ export const contentPages: ContentPage[] = [
   ...templatePages,
   ...workflowPages,
 ];
+
+export const contentPages: ContentPage[] = basePages.map(deepenPage);
 
 export const contentPageMap = new Map(contentPages.map((page) => [page.slug, page]));
 

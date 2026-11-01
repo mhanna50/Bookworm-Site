@@ -419,6 +419,21 @@ em{font-weight:500;color:var(--mocha)}
 
 /* Search-intent resources */
 .resource-page{position:relative}
+.resource-body{min-width:0}
+.resource-byline{margin:18px 0 0;color:var(--muted);font-size:.75rem;line-height:1.7}
+.resource-byline a{color:var(--mocha);text-decoration:underline;text-underline-offset:3px}
+.resource-takeaways{margin:18px 0 0;padding:16px 0 0 20px;border-top:1px solid var(--line);display:grid;gap:8px;color:var(--smoke);font-size:.85rem;line-height:1.7}
+.resource-visual{margin:0 0 48px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--paper)}
+.resource-visual-reserved{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;max-height:400px;background:linear-gradient(135deg,#f5f0e9,#ede5da);color:var(--muted);border-bottom:1px dashed var(--line-strong);font-size:.78rem;letter-spacing:.02em}
+.resource-visual-image{display:block;width:100%;height:auto}
+.resource-visual figcaption{padding:20px 22px;display:grid;gap:7px;font-size:.8rem;line-height:1.7;color:var(--smoke)}
+.resource-visual figcaption strong{color:var(--ink);font-weight:600}
+.resource-faq{margin:0 0 48px;scroll-margin-top:110px}
+.resource-faq h2{font-family:var(--font-playfair),Georgia,serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:500;line-height:1.15;margin:12px 0 24px}
+.resource-faq-item{padding:24px 0;border-top:1px solid var(--line)}
+.resource-faq-item h3{font-size:1rem;line-height:1.5;font-weight:600;margin:0 0 12px;color:var(--ink)}
+.resource-faq-item p{font-family:var(--font-libre),Georgia,serif;font-size:.9rem;line-height:1.9;color:var(--smoke);margin:0}
+.resource-step-card h3{font-size:.9rem;line-height:1.5;margin:0 0 9px;color:var(--ink);font-weight:600}
 .resource-hero{padding:86px 0 62px;border-bottom:1px solid var(--line);background:rgba(250,247,241,.38)}
 .resource-narrow{max-width:860px}
 .breadcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:28px;font-size:.72rem;color:var(--muted);text-transform:capitalize}

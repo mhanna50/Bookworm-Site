@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { ArrowRight, BookOpen, Check, CheckCircle2, ExternalLink } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
+import { ResourceVisual } from "@/components/ResourceVisual";
 import { contentPages, getContentPage } from "@/content";
 import type { ContentPage } from "@/content/types";
+import { breadcrumbSchema, resourceBreadcrumbs, resourceDescription, resourceSchema, toSectionId } from "@/lib/resource-seo";
+import { jsonLd } from "@/lib/site";
 
 const appSignup = "https://app.quillywriter.com/login?mode=signup";
-
-function toSectionId(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-");
-}
 
 function practicalSteps(intent: ContentPage["intent"]) {
   if (intent === "comparison") {
@@ -72,9 +68,7 @@ export async function generateMetadata({
   const key = slug.join("/");
   const page = getContentPage(key);
   if (!page) return {};
-  const description = /story health/i.test(page.description) && !/coming soon/i.test(page.description)
-    ? `${page.description} Story Health is coming soon in Author and excluded from Writer and the trial.`
-    : page.description;
+  const description = resourceDescription(page);
   return {
     title: page.title,
     description,
@@ -84,7 +78,9 @@ export async function generateMetadata({
       description,
       type: "article",
       url: "/" + page.slug,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Quilly — novel writing and story planning" }],
     },
+    twitter: { card: "summary_large_image", title: page.title, description, images: ["/twitter-image"] },
   };
 }
 
@@ -98,57 +94,35 @@ export default async function SearchContentPage({
   const page = getContentPage(key);
   if (!page) notFound();
 
-  const breadcrumbItems = page.slug.split("/");
+  const breadcrumbItems = resourceBreadcrumbs(page);
   const steps = practicalSteps(page.intent);
   const mentionsStoryHealth = /story health/i.test(JSON.stringify(page));
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": page.intent === "guide" ? "Article" : "WebPage",
-    name: page.title,
-    headline: page.title,
-    description: page.description,
-    about: "Novel writing and story planning",
-    isPartOf: { "@type": "WebSite", name: "Quilly" },
-  };
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Quilly", item: "/" },
-      ...breadcrumbItems.map((item, index) => ({
-        "@type": "ListItem",
-        position: index + 2,
-        name: item.replaceAll("-", " "),
-        item: "/" + breadcrumbItems.slice(0, index + 1).join("/"),
-      })),
-    ],
-  };
+  const schema = resourceSchema(page);
+  const breadcrumbs = breadcrumbSchema(page);
 
   return (
     <SiteShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbs) }} />
 
       <article className="resource-page">
         <header className="resource-hero">
           <div className="site-container resource-hero-layout">
             <div className="resource-hero-main">
               <nav className="breadcrumb" aria-label="Breadcrumb">
-                <Link href="/">Quilly</Link>
-                <span>/</span>
-                {breadcrumbItems.length > 1 && (
-                  <>
-                    <Link href={page.intent === "guide" ? "/resources" : "/" + breadcrumbItems[0]}>
-                      {breadcrumbItems[0].replaceAll("-", " ")}
-                    </Link>
-                    <span>/</span>
-                  </>
-                )}
-                <span aria-current="page">{breadcrumbItems.at(-1)?.replaceAll("-", " ")}</span>
+                {breadcrumbItems.map((item, index) => (
+                  <Fragment key={item.href}>
+                    {index > 0 && <span aria-hidden="true">/</span>}
+                    {index === breadcrumbItems.length - 1
+                      ? <span aria-current="page">{item.label}</span>
+                      : <Link href={item.href}>{item.label}</Link>}
+                  </Fragment>
+                ))}
               </nav>
               <span className="eyebrow">{page.eyebrow}</span>
               <h1>{page.title}</h1>
               <p className="resource-lede">{page.intro}</p>
+              {page.updatedAt && <p className="resource-byline">By <Link href="/about">Quilly</Link><span aria-hidden="true"> · </span>Updated <time dateTime={page.updatedAt}>{new Date(page.updatedAt + "T12:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time></p>}
               <div className="resource-summary">
                 <span><Check size={14} /> Written for novelists</span>
                 <span><Check size={14} /> Practical, not template-heavy</span>
@@ -160,7 +134,7 @@ export default async function SearchContentPage({
 
         <div className="site-container resource-layout">
           <div className="resource-body">
-            {mentionsStoryHealth && (
+            {mentionsStoryHealth && !page.summary && (
               <section className="resource-quick-answer" aria-label="Story Health availability">
                 <span className="small-caps">Story Health · coming soon</span>
                 <p>Story Health is planned for the Author plan and is not available in Writer or the 14-day free trial. References to its diagnostics on this page describe the upcoming feature. <Link href="/pricing">See current plans.</Link></p>
@@ -168,7 +142,8 @@ export default async function SearchContentPage({
             )}
             <section className="resource-quick-answer" aria-label="Quick answer">
               <span className="small-caps">Quick answer</span>
-              <p>{page.description}</p>
+              <p>{page.summary ?? resourceDescription(page)}</p>
+              {page.takeaways && <ul className="resource-takeaways">{page.takeaways.map((item) => <li key={item}>{item}</li>)}</ul>}
             </section>
 
             <nav className="resource-on-page" aria-label="On this page">
@@ -181,11 +156,13 @@ export default async function SearchContentPage({
                 ))}
                 {page.table && <a href="#comparison-table">{page.table.caption}</a>}
                 <a href="#practical-next-steps">Practical next steps</a>
+                {page.faqs?.length ? <a href="#frequently-asked-questions">Frequently asked questions</a> : null}
               </div>
             </nav>
 
             {page.sections.map((section) => (
-              <section key={section.heading} id={toSectionId(section.heading)} className="resource-section">
+              <Fragment key={section.heading}>
+              <section id={toSectionId(section.heading)} className="resource-section">
                 <h2>{section.heading}</h2>
                 {section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 {section.bullets && (
@@ -194,6 +171,8 @@ export default async function SearchContentPage({
                   </ul>
                 )}
               </section>
+              {page.visuals?.filter((visual) => visual.afterSection === section.heading).map((visual) => <ResourceVisual visual={visual} key={visual.id} />)}
+              </Fragment>
             ))}
 
             {page.table && (
@@ -218,19 +197,28 @@ export default async function SearchContentPage({
 
             <section className="resource-practical-section" id="practical-next-steps">
               <span className="eyebrow">Use the page, then write</span>
-              <h2>{practicalHeading(page.intent)}</h2>
+              <h2>{page.workflow?.title ?? practicalHeading(page.intent)}</h2>
               <p className="resource-practical-intro">
-                Good planning should reduce uncertainty and make the next writing decision easier. Use these steps to turn the ideas above into something concrete without adding unnecessary process.
+                {page.workflow?.intro ?? "Good planning should reduce uncertainty and make the next writing decision easier. Use these steps to turn the ideas above into something concrete without adding unnecessary process."}
               </p>
               <div className="resource-step-grid">
-                {steps.map((step, index) => (
-                  <div className="resource-step-card" key={step}>
+                {(page.workflow?.steps ?? steps.map((body) => ({ title: "", body }))).map((step, index) => (
+                  <div className="resource-step-card" key={step.title || step.body}>
                     <span>{String(index + 1).padStart(2, "0")}</span>
-                    <p>{step}</p>
+                    {step.title && <h3>{step.title}</h3>}
+                    <p>{step.body}</p>
                   </div>
                 ))}
               </div>
             </section>
+
+            {page.faqs?.length ? (
+              <section className="resource-faq" id="frequently-asked-questions">
+                <span className="small-caps">Questions writers ask</span>
+                <h2>Frequently asked questions</h2>
+                {page.faqs.map((faq) => <div className="resource-faq-item" key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}
+              </section>
+            ) : null}
 
             {page.slug === "resources" && (
               <section className="resource-directory">
