@@ -16,7 +16,10 @@ export const templatePages: ContentPage[] = [
     related: [
       { href: "/templates/story-bible", label: "Story bible template" },
       { href: "/templates/novel-outline", label: "Novel outline template" },
-      { href: "/templates/character-profile", label: "Character profile template" }
+      { href: "/templates/character-profile", label: "Character profile template" },
+      { href: "/templates/character-questionnaire", label: "Character interview questionnaire" },
+      { href: "/templates/scene-revision-checklist", label: "Scene revision checklist" },
+      { href: "/templates/subplot-outline", label: "Subplot outline worksheet" }
     ]
   },
   {

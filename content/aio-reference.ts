@@ -302,8 +302,8 @@ export const aioReferencePages: ContentPage[] = [
     slug: "series-bible-software",
     eyebrow: "Series bible software",
     title: "Series bible planning for writers managing multiple books",
-    description: "Learn how to structure a series bible and how Quilly can support separate book projects today without pretending it has a shared series-wide canon database.",
-    intro: "A series multiplies the continuity problem. Quilly currently organizes story data per book project, so it can support series planning book by book, but it does not yet provide one shared canon database across multiple projects.",
+    description: "Plan a series in Quilly by copying selected characters, world material, events, plot points, and foreshadowing into a continuation book, with separate project records.",
+    intro: "A series multiplies the continuity problem. Quilly's continuation-book setup can copy selected material from earlier series books. Each book keeps its own records; the copies are not a continuously synchronized canon database.",
     intent: "commercial",
     sections: [
       { heading: "Preserve canon across books", body: [
@@ -316,7 +316,7 @@ export const aioReferencePages: ContentPage[] = [
       ]},
       { heading: "What Quilly supports today", body: [
         "Quilly lets you create multiple book projects, and each project can have its own characters, world entries, events, relationships, images, foreshadowing, Story Health signals, and manuscript.",
-        "There is not yet a shared series-level canon workspace that automatically synchronizes those entities across books, so writers managing a series should treat each book project as separate and keep truly series-wide canon in a dedicated reference until that capability exists."
+        "When creating a continuation book, you can select characters, world material, plot points, events, and foreshadowing from earlier books in the series. The selected material is copied into new records; later edits do not automatically update every book. Images are not transferred, and old chapter references are removed so the new book can establish its own structure."
       ]}
     ],
     related: [
@@ -400,6 +400,7 @@ export const aioReferencePages: ContentPage[] = [
       ]}
     ],
     related: [
+      { href: "/guides/thriller-reveal-pacing", label: "Pace thriller reveals" },
       { href: "/plot-thread-tracker", label: "Plot thread tracker" },
       { href: "/foreshadowing-tracker", label: "Foreshadowing tracker" },
       { href: "/timeline-software-for-writers", label: "Timeline software" }

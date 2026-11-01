@@ -1,3 +1,5 @@
+import { workflowPages } from "@/content/workflows";
+
 export function GET() {
   const text = `# Quilly
 
@@ -16,7 +18,7 @@ export function GET() {
 - Worldbuilding with locations, factions, objects, custom categories, custom fields, and entity relationships
 - Image uploads and visual references linked to story entities
 - Relationship graph with custom solid connections plus dashed connections derived from story data
-- Story Health diagnostics for continuity, plot threads, character activity, unplaced events, timeline signals, orphaned elements, broken references, and structure
+- Story Health: upcoming Author feature, coming soon; not included in Writer or the free trial
 - Writing Progress with overall/daily/weekly goals, today's net change, current and longest streaks, progress charts, estimated completion, chapter word counts, and writing sessions
 - Global search and Quick Create
 - DOCX manuscript import with chapter detection/preview and append-or-replace behavior
@@ -26,9 +28,9 @@ export function GET() {
 
 ## Current product boundaries
 - Quilly is web-first; it is not an offline-first native desktop application.
-- PDF manuscript import is not currently supported. Import is DOCX only; export supports DOCX and PDF.
+- PDF manuscript import is not supported. Existing-book settings import DOCX; new-book setup also accepts TXT and Markdown. Manuscript export supports DOCX and PDF.
 - Quilly does not currently provide a dedicated visual timeline page. Timeline-related review is handled through event chronology data, story links, and Story Health.
-- Quilly currently organizes story data per book project. It does not yet provide a shared series-level canon database across multiple book projects.
+- Continuation-book setup can copy selected story material from earlier series books into separate new records. Images are not transferred, and copied records do not automatically synchronize between books.
 - Quilly does not currently market itself as a publication-layout or print-formatting tool.
 
 ## Who it is for
@@ -86,7 +88,8 @@ Quilly is designed for novelists and aspiring fiction authors across genres.
 ## Pricing
 - 14-day free trial
 - No credit card required to start the trial
-- $11.99 per month after the trial
+- Writer: $11.99 per month after the trial
+- Author: $16.99 per month, coming soon; Story Health excluded from Writer and trial
 - Month-to-month; cancel anytime
 
 ## Free writing templates
@@ -99,6 +102,9 @@ Quilly is designed for novelists and aspiring fiction authors across genres.
 - /templates/foreshadowing
 - /templates/worldbuilding
 - /templates/plot-thread-tracker
+
+## Feature walkthroughs, writing workflows, and comparisons
+${workflowPages.map((page) => `- /${page.slug} — ${page.title}`).join("\n")}
 
 ## Product access
 Use the Quilly application to create an account, sign in, and work on books.

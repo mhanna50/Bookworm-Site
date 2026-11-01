@@ -140,6 +140,7 @@ export const expansionPages: ContentPage[] = [
       }
     ],
     related: [
+      { href: "/guides/track-magic-system-rules", label: "Track magic-system rules" },
       { href: "/worldbuilding-software-for-writers", label: "Worldbuilding software" },
       { href: "/story-bible-software", label: "Story bible software" },
       { href: "/guides/how-to-track-story-continuity", label: "Track story continuity" }
@@ -176,6 +177,7 @@ export const expansionPages: ContentPage[] = [
       }
     ],
     related: [
+      { href: "/guides/mystery-clue-reveal-map", label: "Map a mystery clue trail" },
       { href: "/foreshadowing-tracker", label: "Foreshadowing tracker" },
       { href: "/story-continuity-checker", label: "Story continuity checker" },
       { href: "/guides/how-to-track-foreshadowing", label: "How to track foreshadowing" }
@@ -211,6 +213,7 @@ export const expansionPages: ContentPage[] = [
       }
     ],
     related: [
+      { href: "/guides/romance-relationship-arc", label: "Plan a romance relationship arc" },
       { href: "/character-management-for-writers", label: "Character management" },
       { href: "/guides/how-to-track-character-arcs", label: "Track character arcs" },
       { href: "/chapter-planning-software", label: "Chapter planning software" }
@@ -353,6 +356,7 @@ export const expansionPages: ContentPage[] = [
       }
     ],
     related: [
+      { href: "/features/story-builder", label: "Inside Story Builder" },
       { href: "/story-planning-software", label: "Story planning software" },
       { href: "/plotting-software-for-novelists", label: "Plotting software" },
       { href: "/guides/how-to-plot-a-novel", label: "How to plot a novel" }

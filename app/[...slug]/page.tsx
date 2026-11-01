@@ -72,13 +72,16 @@ export async function generateMetadata({
   const key = slug.join("/");
   const page = getContentPage(key);
   if (!page) return {};
+  const description = /story health/i.test(page.description) && !/coming soon/i.test(page.description)
+    ? `${page.description} Story Health is coming soon in Author and excluded from Writer and the trial.`
+    : page.description;
   return {
     title: page.title,
-    description: page.description,
+    description,
     alternates: { canonical: "/" + page.slug },
     openGraph: {
       title: page.title,
-      description: page.description,
+      description,
       type: "article",
       url: "/" + page.slug,
     },
@@ -97,6 +100,7 @@ export default async function SearchContentPage({
 
   const breadcrumbItems = page.slug.split("/");
   const steps = practicalSteps(page.intent);
+  const mentionsStoryHealth = /story health/i.test(JSON.stringify(page));
   const schema = {
     "@context": "https://schema.org",
     "@type": page.intent === "guide" ? "Article" : "WebPage",
@@ -156,6 +160,12 @@ export default async function SearchContentPage({
 
         <div className="site-container resource-layout">
           <div className="resource-body">
+            {mentionsStoryHealth && (
+              <section className="resource-quick-answer" aria-label="Story Health availability">
+                <span className="small-caps">Story Health · coming soon</span>
+                <p>Story Health is planned for the Author plan and is not available in Writer or the 14-day free trial. References to its diagnostics on this page describe the upcoming feature. <Link href="/pricing">See current plans.</Link></p>
+              </section>
+            )}
             <section className="resource-quick-answer" aria-label="Quick answer">
               <span className="small-caps">Quick answer</span>
               <p>{page.description}</p>
@@ -247,8 +257,8 @@ export default async function SearchContentPage({
 
             {page.sources && page.sources.length > 0 && (
               <section className="resource-sources">
-                <span className="small-caps">Sources for current competitor details</span>
-                <p>Competitor features and pricing change. These comparison details were checked against official public pages in October 2026.</p>
+                <span className="small-caps">Official sources and further reading</span>
+                <p>External products and instructions can change. Check the linked official pages for current details.</p>
                 <div>
                   {page.sources.map((source) => (
                     <a key={source.href} href={source.href} target="_blank" rel="noreferrer">
