@@ -97,8 +97,8 @@ const softwareSchema = {
   description:
     "A connected writing and story-planning workspace for novelists with manuscript editing, story structure, characters, worldbuilding, relationships, story health, and writing progress.",
   offers: [
-    { "@type": "Offer", name: "Quilly Basic", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Basic writing and planning tools. 14-day free trial, no card required." },
-    { "@type": "Offer", name: "Quilly Plus", price: "16.99", priceCurrency: "USD", category: "subscription", description: "Everything in Basic plus Story Health diagnostics. Story Health is not included in the free trial." },
+    { "@type": "Offer", name: "Writer", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Writer writing and planning tools. 14-day free trial, no card required." },
+    { "@type": "Offer", name: "Author", availability: "https://schema.org/PreOrder", price: "16.99", priceCurrency: "USD", category: "subscription", description: "Everything in Writer plus AI-assisted Story Health, coming soon. Story Health is not included in the free trial." },
   ],
   featureList: [
     "Chapter-based manuscript editor with focus mode",
@@ -110,7 +110,7 @@ const softwareSchema = {
     "Flexible worldbuilding with custom categories and fields",
     "Plot points, story events and foreshadowing",
     "Relationship graph with custom and derived connections",
-    "Story Health diagnostics (Plus)",
+    "AI-assisted Story Health (Author, coming soon)",
     "Writing goals, streaks, chapter word counts and writing sessions",
     "DOCX manuscript import",
     "DOCX and PDF manuscript export",

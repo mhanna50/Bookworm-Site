@@ -19,7 +19,7 @@ const features = [
   { icon: GitFork, title: "Story Builder", text: "Shape acts, chapters, plot points, and beats without losing the big picture." },
   { icon: Users, title: "Characters", text: "Track goals, conflicts, arc, history, secrets, aliases, relationships, and where characters connect to the story." },
   { icon: Map, title: "World", text: "Organize locations, factions, objects, and custom world entries with flexible fields and relationships." },
-  { icon: HeartPulse, title: "Story Health · Plus", text: "Review continuity, plot threads, character activity, timeline signals, orphaned elements, broken references, and structure." },
+  { icon: HeartPulse, title: "Story Health · Author · coming soon", text: "Review continuity, plot threads, character activity, timeline signals, orphaned elements, broken references, and structure." },
   { icon: Sparkles, title: "Foreshadowing", text: "Plant clues with intention and trace where each promise is eventually paid off." },
 ];
 
