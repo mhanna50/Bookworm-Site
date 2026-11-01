@@ -69,8 +69,8 @@ export default function PricingPage() {
             <p>Quilly is not automatically the right tool for every writer. Compare how its connected-story model differs from established alternatives.</p>
           </div>
           <div className="related-resource-grid">
-            <Link href="/compare/scrivener-vs-bookworm" className="related-resource-card"><span>Quilly vs Scrivener</span><span>→</span></Link>
-            <Link href="/compare/dabble-vs-bookworm" className="related-resource-card"><span>Quilly vs Dabble</span><span>→</span></Link>
+            <Link href="/compare/scrivener-vs-quilly" className="related-resource-card"><span>Quilly vs Scrivener</span><span>→</span></Link>
+            <Link href="/compare/dabble-vs-quilly" className="related-resource-card"><span>Quilly vs Dabble</span><span>→</span></Link>
             <Link href="/alternatives/plottr" className="related-resource-card"><span>Quilly vs Plottr</span><span>→</span></Link>
           </div>
         </div>

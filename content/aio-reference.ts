@@ -19,7 +19,7 @@ export const aioReferencePages: ContentPage[] = [
       ]},
       { heading: "How to use beats in an outline", body: [
         "Use beats only where more detail helps you write. A compact beat list can reduce blank-page friction without turning an outline into a second draft.",
-        "Bookworm keeps Beats nested beneath Plot Points so the two levels remain visually distinct."
+        "Quilly keeps Beats nested beneath Plot Points so the two levels remain visually distinct."
       ]}
     ],
     related: [
@@ -127,7 +127,7 @@ export const aioReferencePages: ContentPage[] = [
       ]},
       { heading: "Which should you outline?", body: [
         "Outline at the level that helps you think. If your novel is chapter-driven, plan chapters first and identify scenes inside them. If you think in discrete dramatic units, plan scenes and group them into chapters later.",
-        "Bookworm currently treats chapters as the primary manuscript unit while allowing plot points, beats, events, characters, and locations to provide finer context."
+        "Quilly currently treats chapters as the primary manuscript unit while allowing plot points, beats, events, characters, and locations to provide finer context."
       ]}
     ],
     related: [
@@ -181,7 +181,7 @@ export const aioReferencePages: ContentPage[] = [
       ]},
       { heading: "Connect them without duplicating them", body: [
         "A chapter in the outline can reference a location from the story bible instead of copying the location description into the chapter note. A reveal can connect to the character or clue it affects.",
-        "Bookworm follows this model by keeping story entities separate from Story Builder while allowing them to connect."
+        "Quilly follows this model by keeping story entities separate from Story Builder while allowing them to connect."
       ]}
     ],
     related: [
@@ -235,7 +235,7 @@ export const aioReferencePages: ContentPage[] = [
       ]},
       { heading: "How much should you build?", body: [
         "Build enough to make current scenes coherent, then expand as the manuscript creates questions. This keeps research and lore from replacing drafting.",
-        "Bookworm's flexible world categories are designed for that incremental approach."
+        "Quilly's flexible world categories are designed for that incremental approach."
       ]}
     ],
     related: [
@@ -302,8 +302,8 @@ export const aioReferencePages: ContentPage[] = [
     slug: "series-bible-software",
     eyebrow: "Series bible software",
     title: "Series bible planning for writers managing multiple books",
-    description: "Learn how to structure a series bible and how Bookworm can support separate book projects today without pretending it has a shared series-wide canon database.",
-    intro: "A series multiplies the continuity problem. Bookworm currently organizes story data per book project, so it can support series planning book by book, but it does not yet provide one shared canon database across multiple projects.",
+    description: "Learn how to structure a series bible and how Quilly can support separate book projects today without pretending it has a shared series-wide canon database.",
+    intro: "A series multiplies the continuity problem. Quilly currently organizes story data per book project, so it can support series planning book by book, but it does not yet provide one shared canon database across multiple projects.",
     intent: "commercial",
     sections: [
       { heading: "Preserve canon across books", body: [
@@ -314,8 +314,8 @@ export const aioReferencePages: ContentPage[] = [
         "Relationships evolve, rulers change, places are destroyed, characters learn secrets, and world rules may be clarified. A useful series bible records the events that caused those changes.",
         "That is why event and relationship data become increasingly important across multiple books."
       ]},
-      { heading: "What Bookworm supports today", body: [
-        "Bookworm lets you create multiple book projects, and each project can have its own characters, world entries, events, relationships, images, foreshadowing, Story Health signals, and manuscript.",
+      { heading: "What Quilly supports today", body: [
+        "Quilly lets you create multiple book projects, and each project can have its own characters, world entries, events, relationships, images, foreshadowing, Story Health signals, and manuscript.",
         "There is not yet a shared series-level canon workspace that automatically synchronizes those entities across books, so writers managing a series should treat each book project as separate and keep truly series-wide canon in a dedicated reference until that capability exists."
       ]}
     ],
@@ -329,20 +329,20 @@ export const aioReferencePages: ContentPage[] = [
     slug: "timeline-software-for-writers",
     eyebrow: "Timeline software for writers",
     title: "Timeline planning for writers using connected story events",
-    description: "Use Bookworm's event chronology fields and Story Health timeline signals to reason about event order; Bookworm does not currently include a standalone visual timeline page.",
+    description: "Use Quilly's event chronology fields and Story Health timeline signals to reason about event order; Quilly does not currently include a standalone visual timeline page.",
     intro: "Timeline problems appear when the order readers experience events differs from the order those events actually happen. Flashbacks, parallel viewpoints, travel, investigations, and long time spans make that distinction important.",
     intent: "commercial",
     sections: [
       { heading: "Chronology and manuscript order are different", body: [
         "A chapter can reveal an event long after it occurred. Two chapters can cover the same day from different viewpoints. An important event can happen off-page.",
-        "Bookworm keeps chronology-related information on events instead of presenting a separate timeline canvas."
+        "Quilly keeps chronology-related information on events instead of presenting a separate timeline canvas."
       ]},
-      { heading: "What Bookworm actually tracks", body: [
+      { heading: "What Quilly actually tracks", body: [
         "Story events can carry start/end labels, parent-child event structure, location, related characters, related chapters, related plot points, foreshadowing, continuity notes, consequence notes, logistics notes, and open questions.",
         "Story Health can then surface timeline-related signals for review alongside continuity and broken-reference checks."
       ]},
       { heading: "What is not there yet", body: [
-        "Bookworm does not currently ship a standalone visual calendar or drag-and-drop timeline page. The old timeline route redirects into Story Builder, so timeline planning is currently handled through event data, chapter structure, and Story Health."
+        "Quilly does not currently ship a standalone visual calendar or drag-and-drop timeline page. The old timeline route redirects into Story Builder, so timeline planning is currently handled through event data, chapter structure, and Story Health."
       ]}
     ],
     related: [
@@ -355,7 +355,7 @@ export const aioReferencePages: ContentPage[] = [
     slug: "writing-software-for-science-fiction-authors",
     eyebrow: "Science fiction writing software",
     title: "Writing software for science fiction authors managing systems, chronology, and world rules",
-    description: "Organize a science fiction manuscript, technology, factions, locations, terminology, characters, events, chronology notes, and continuity in Bookworm.",
+    description: "Organize a science fiction manuscript, technology, factions, locations, terminology, characters, events, chronology notes, and continuity in Quilly.",
     intro: "Science fiction often asks readers to understand unfamiliar systems while still following character and plot. The writer has to keep those systems consistent without burying the manuscript under reference material.",
     intent: "commercial",
     sections: [
@@ -369,7 +369,7 @@ export const aioReferencePages: ContentPage[] = [
       ]},
       { heading: "Keep exposition tied to narrative need", body: [
         "A reference system is valuable when it lets the author know more than the reader without forcing all of that information onto the page.",
-        "Bookworm keeps world information outside the manuscript while connecting it back to the characters and events that make it relevant."
+        "Quilly keeps world information outside the manuscript while connecting it back to the characters and events that make it relevant."
       ]}
     ],
     related: [
@@ -382,7 +382,7 @@ export const aioReferencePages: ContentPage[] = [
     slug: "writing-software-for-thriller-authors",
     eyebrow: "Thriller writing software",
     title: "Writing software for thriller authors tracking pressure, reveals, event order, and plot threads",
-    description: "Plan thriller chapters, escalating stakes, clues, reveals, events, chronology, relationships, and unresolved plot threads in Bookworm.",
+    description: "Plan thriller chapters, escalating stakes, clues, reveals, events, chronology, relationships, and unresolved plot threads in Quilly.",
     intro: "Thrillers depend on controlled information and escalating pressure. The challenge is maintaining momentum while making sure reveals, clues, character decisions, and timing remain believable.",
     intent: "commercial",
     sections: [

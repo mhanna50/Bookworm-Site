@@ -106,7 +106,7 @@ export function ProductShowcases() {
           <div className="showcase-copy">
             <span className="eyebrow">Story Health</span>
             <h2>Catch the thread you forgot three chapters ago.</h2>
-            <p>Bookworm surfaces signals worth reviewing without pretending an algorithm can judge your story for you.</p>
+            <p>Quilly surfaces signals worth reviewing without pretending an algorithm can judge your story for you.</p>
             <div className="mini-tabs">
               <button className={healthTab === "continuity" ? "active" : ""} onClick={() => setHealthTab("continuity")}>Continuity</button>
               <button className={healthTab === "threads" ? "active" : ""} onClick={() => setHealthTab("threads")}>Open threads</button>

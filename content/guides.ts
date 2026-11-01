@@ -23,7 +23,7 @@ export const guidePages: ContentPage[] = [
       ] },
       { heading: "Track the information that can break continuity", body: [
         "As planning deepens, record characters, locations, important objects, clues, promises, timeline facts, and world rules separately from chapter prose. This makes them easier to update when the outline changes.",
-        "Bookworm follows this model by separating story entities from the Story Builder while allowing them to connect back to chapters and events."
+        "Quilly follows this model by separating story entities from the Story Builder while allowing them to connect back to chapters and events."
       ] }
     ],
     related: [
@@ -54,7 +54,7 @@ export const guidePages: ContentPage[] = [
       ] },
       { heading: "Separate plot points from scene detail", body: [
         "A plot point is a meaningful change in story direction. A beat is a smaller unit that helps execute that change. Keeping those levels separate prevents an outline from becoming unreadable.",
-        "Bookworm's Story Builder reflects this distinction with Acts → Chapters → Plot Points → Beats."
+        "Quilly's Story Builder reflects this distinction with Acts → Chapters → Plot Points → Beats."
       ] }
     ],
     related: [
@@ -112,7 +112,7 @@ export const guidePages: ContentPage[] = [
       ] },
       { heading: "Separate clues from unresolved threads", body: [
         "Not every unresolved question is foreshadowing. Some are open plot threads, character goals, mysteries, or world questions. Labeling the type of promise helps you understand what kind of payoff readers are waiting for.",
-        "Bookworm keeps Foreshadowing as a dedicated concept while Story Health can separately surface unresolved threads."
+        "Quilly keeps Foreshadowing as a dedicated concept while Story Health can separately surface unresolved threads."
       ] },
       { heading: "Audit before the final revision", body: [
         "Near the end of revision, review every clue and ask whether it still points to something that exists in the current draft. Plot changes often leave behind setup for scenes that were removed.",
@@ -147,7 +147,7 @@ export const guidePages: ContentPage[] = [
       ] },
       { heading: "Run continuity reviews at milestones", body: [
         "Do not try to continuously validate every detail while drafting. Review continuity after an act, after a major restructuring pass, and before line editing. Those checkpoints catch more problems with less interruption.",
-        "Bookworm's Story Health is intended to support this kind of review by surfacing concrete signals instead of interrupting prose with constant warnings."
+        "Quilly's Story Health is intended to support this kind of review by surfacing concrete signals instead of interrupting prose with constant warnings."
       ] }
     ],
     related: [

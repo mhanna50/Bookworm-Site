@@ -12,7 +12,7 @@ const base = (
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "https://bookwormsite.vercel.app")
+    : "https://quillywriter.com")
 ).replace(/\/$/, "");
 
 const contentDir = path.join(process.cwd(), "content");

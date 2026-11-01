@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Bookworm — novel writing and story planning software";
+export const alt = "Quilly — novel writing and story planning software";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -23,7 +23,7 @@ export default function Image() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
           <div style={{ width: 58, height: 58, borderRadius: 29, border: "2px solid #c9baa7", background: "#fffaf2", display: "flex", alignItems: "center", justifyContent: "center", color: "#6b4f3a", fontSize: 30 }}>❦</div>
-          <div style={{ fontSize: 34, fontWeight: 600 }}>Bookworm</div>
+          <div style={{ fontSize: 34, fontWeight: 600 }}>Quilly</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24, maxWidth: 940 }}>
           <div style={{ fontSize: 74, lineHeight: 1.02, letterSpacing: "-2px" }}>Your whole story, held in one place.</div>

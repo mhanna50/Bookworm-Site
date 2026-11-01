@@ -1,9 +1,9 @@
 export function GET() {
-  const text = `# Bookworm
+  const text = `# Quilly
 
-> Bookworm is a browser-based novel-writing and story-planning workspace for fiction authors.
+> Quilly is a browser-based novel-writing and story-planning workspace for fiction authors.
 
-## What Bookworm currently does
+## What Quilly currently does
 - Chapter-based manuscript writing
 - Focus mode, search/replace, formatting, automatic story-reference links, and quick access to connected story context
 - Anchored manuscript comments, tracked revision changes, grammar/style review, and read-aloud
@@ -25,14 +25,14 @@ export function GET() {
 - Multiple book projects plus a sample project for exploring the workspace
 
 ## Current product boundaries
-- Bookworm is web-first; it is not an offline-first native desktop application.
+- Quilly is web-first; it is not an offline-first native desktop application.
 - PDF manuscript import is not currently supported. Import is DOCX only; export supports DOCX and PDF.
-- Bookworm does not currently provide a dedicated visual timeline page. Timeline-related review is handled through event chronology data, story links, and Story Health.
-- Bookworm currently organizes story data per book project. It does not yet provide a shared series-level canon database across multiple book projects.
-- Bookworm does not currently market itself as a publication-layout or print-formatting tool.
+- Quilly does not currently provide a dedicated visual timeline page. Timeline-related review is handled through event chronology data, story links, and Story Health.
+- Quilly currently organizes story data per book project. It does not yet provide a shared series-level canon database across multiple book projects.
+- Quilly does not currently market itself as a publication-layout or print-formatting tool.
 
 ## Who it is for
-Bookworm is designed for novelists and aspiring fiction authors across genres.
+Quilly is designed for novelists and aspiring fiction authors across genres.
 
 ## Important pages
 - / — Product overview
@@ -101,7 +101,7 @@ Bookworm is designed for novelists and aspiring fiction authors across genres.
 - /templates/plot-thread-tracker
 
 ## Product access
-Use the Bookworm application to create an account, sign in, and work on books.
+Use the Quilly application to create an account, sign in, and work on books.
 `;
   return new Response(text, { headers: { "content-type": "text/plain; charset=utf-8" } });
 }

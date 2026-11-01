@@ -5,8 +5,8 @@ export const competitorExpansionPages: ContentPage[] = [
     slug: "alternatives/plottr",
     eyebrow: "Plottr alternative",
     title: "A Plottr alternative for writers who want planning and manuscript in one place",
-    description: "Compare Bookworm and Plottr for visual outlining, manuscript writing, story bibles, worldbuilding, relationships, continuity, cloud access, and pricing model.",
-    intro: "Plottr is a strong specialist tool for visual outlining and series planning. Bookworm is a broader author workspace for writers who want the planning structure, manuscript, story entities, continuity signals, and progress to live together.",
+    description: "Compare Quilly and Plottr for visual outlining, manuscript writing, story bibles, worldbuilding, relationships, continuity, cloud access, and pricing model.",
+    intro: "Plottr is a strong specialist tool for visual outlining and series planning. Quilly is a broader author workspace for writers who want the planning structure, manuscript, story entities, continuity signals, and progress to live together.",
     intent: "comparison",
     sections: [
       {
@@ -17,22 +17,22 @@ export const competitorExpansionPages: ContentPage[] = [
         ]
       },
       {
-        heading: "Why a writer might choose Bookworm instead",
+        heading: "Why a writer might choose Quilly instead",
         body: [
-          "Bookworm includes a manuscript editor alongside Story Builder, characters, worldbuilding, events, foreshadowing, relationships, Story Health, images, and writing progress. That means the outline does not have to be handed off to a separate drafting environment.",
+          "Quilly includes a manuscript editor alongside Story Builder, characters, worldbuilding, events, foreshadowing, relationships, Story Health, images, and writing progress. That means the outline does not have to be handed off to a separate drafting environment.",
           "Its planning hierarchy is simpler and more opinionated: Acts → Chapters → Plot Points → Beats, with other story entities connected around that structure."
         ]
       },
       {
         heading: "The deciding question",
         body: [
-          "If visual outlining is the main job you need software to do, Plottr is a strong specialist choice. If your larger problem is keeping the outline, manuscript, cast, world, clues, and continuity connected while drafting, Bookworm is closer to that workflow."
+          "If visual outlining is the main job you need software to do, Plottr is a strong specialist choice. If your larger problem is keeping the outline, manuscript, cast, world, clues, and continuity connected while drafting, Quilly is closer to that workflow."
         ]
       }
     ],
     table: {
-      caption: "Bookworm vs Plottr",
-      columns: ["Area", "Bookworm", "Plottr"],
+      caption: "Quilly vs Plottr",
+      columns: ["Area", "Quilly", "Plottr"],
       rows: [
         ["Full manuscript editor", "Yes", "No full manuscript editor"],
         ["Visual planning", "Story Builder", "Timeline + templates"],
@@ -57,8 +57,8 @@ export const competitorExpansionPages: ContentPage[] = [
     slug: "alternatives/campfire-writing",
     eyebrow: "Campfire alternative",
     title: "A Campfire Writing alternative for authors who want lighter worldbuilding and tighter manuscript connections",
-    description: "Compare Bookworm and Campfire for manuscript writing, worldbuilding, characters, relationships, timelines, planning, continuity, and connected story organization.",
-    intro: "Campfire is one of the deepest worldbuilding-focused writing platforms. Bookworm takes a lighter approach: enough structure for a novel's world, but with more emphasis on how characters, events, clues, chapters, and continuity connect back to the manuscript.",
+    description: "Compare Quilly and Campfire for manuscript writing, worldbuilding, characters, relationships, timelines, planning, continuity, and connected story organization.",
+    intro: "Campfire is one of the deepest worldbuilding-focused writing platforms. Quilly takes a lighter approach: enough structure for a novel's world, but with more emphasis on how characters, events, clues, chapters, and continuity connect back to the manuscript.",
     intent: "comparison",
     sections: [
       {
@@ -69,22 +69,22 @@ export const competitorExpansionPages: ContentPage[] = [
         ]
       },
       {
-        heading: "How Bookworm differs",
+        heading: "How Quilly differs",
         body: [
-          "Bookworm deliberately avoids making every worldbuilding category equally important. Writers can rename categories and fields, add what the project needs, and keep the world close to chapters and narrative events.",
-          "Bookworm also emphasizes Story Health, foreshadowing, a visual relationship graph, and a direct Acts → Chapters → Plot Points → Beats planning hierarchy."
+          "Quilly deliberately avoids making every worldbuilding category equally important. Writers can rename categories and fields, add what the project needs, and keep the world close to chapters and narrative events.",
+          "Quilly also emphasizes Story Health, foreshadowing, a visual relationship graph, and a direct Acts → Chapters → Plot Points → Beats planning hierarchy."
         ]
       },
       {
         heading: "Which is a better fit?",
         body: [
-          "Choose Campfire if deep modular worldbuilding is itself a major part of your creative process. Choose Bookworm if you want the worldbuilding to stay comparatively lean and serve a manuscript-centered workflow."
+          "Choose Campfire if deep modular worldbuilding is itself a major part of your creative process. Choose Quilly if you want the worldbuilding to stay comparatively lean and serve a manuscript-centered workflow."
         ]
       }
     ],
     table: {
-      caption: "Bookworm vs Campfire Writing",
-      columns: ["Area", "Bookworm", "Campfire"],
+      caption: "Quilly vs Campfire Writing",
+      columns: ["Area", "Quilly", "Campfire"],
       rows: [
         ["Manuscript writing", "Yes", "Yes"],
         ["Worldbuilding depth", "Flexible / moderate", "Very deep"],
@@ -108,7 +108,7 @@ export const competitorExpansionPages: ContentPage[] = [
     slug: "best-worldbuilding-software-for-writers",
     eyebrow: "Best worldbuilding software",
     title: "Best worldbuilding software for writers in 2026",
-    description: "Compare Bookworm, Campfire, Plottr, Scrivener, and general note tools for fictional worlds, characters, relationships, timelines, lore, and manuscript integration.",
+    description: "Compare Quilly, Campfire, Plottr, Scrivener, and general note tools for fictional worlds, characters, relationships, timelines, lore, and manuscript integration.",
     intro: "Worldbuilding software ranges from deep encyclopedic systems to lightweight notes attached to a manuscript. The best tool depends on whether worldbuilding is the project itself or a support system for the novel.",
     intent: "comparison",
     sections: [
@@ -122,7 +122,7 @@ export const competitorExpansionPages: ContentPage[] = [
       {
         heading: "For worldbuilding that stays close to the manuscript",
         body: [
-          "Bookworm is aimed at writers who want enough world structure to preserve continuity without maintaining a separate encyclopedia. Locations, custom world categories, characters, events, relationships, and images can connect to the same book project.",
+          "Quilly is aimed at writers who want enough world structure to preserve continuity without maintaining a separate encyclopedia. Locations, custom world categories, characters, events, relationships, and images can connect to the same book project.",
           "This makes it easier to move between world reference and actual chapters."
         ]
       },
@@ -137,7 +137,7 @@ export const competitorExpansionPages: ContentPage[] = [
       caption: "Worldbuilding tools by workflow",
       columns: ["Tool", "Best for", "World depth", "Manuscript integrated", "Visual relationships"],
       rows: [
-        ["Bookworm", "Novel-centered connected worldbuilding", "Moderate / flexible", "Yes", "Yes"],
+        ["Quilly", "Novel-centered connected worldbuilding", "Moderate / flexible", "Yes", "Yes"],
         ["Campfire", "Deep fictional universes", "Very deep", "Yes", "Yes"],
         ["Plottr", "Visual plot + series bible", "Moderate", "No full manuscript", "Some"],
         ["Scrivener", "Custom research documents", "DIY", "Yes", "Manual"],
@@ -173,14 +173,14 @@ export const competitorExpansionPages: ContentPage[] = [
       {
         heading: "If your priority is the story around the manuscript",
         body: [
-          "Bookworm is built around the information that accumulates around a novel: plot structure, characters, worldbuilding, events, foreshadowing, relationships, continuity signals, images, progress, backups, and recovery.",
+          "Quilly is built around the information that accumulates around a novel: plot structure, characters, worldbuilding, events, foreshadowing, relationships, continuity signals, images, progress, backups, and recovery.",
           "Its advantage is not a more complicated text editor; it is keeping those surrounding systems connected."
         ]
       },
       {
         heading: "If your priority is publishing",
         body: [
-          "A product such as Reedsy Studio or Atticus may be a better fit when print/ebook formatting and publication-ready export are the primary concerns. Bookworm is currently more focused on planning, drafting, and story management."
+          "A product such as Reedsy Studio or Atticus may be a better fit when print/ebook formatting and publication-ready export are the primary concerns. Quilly is currently more focused on planning, drafting, and story management."
         ]
       }
     ],
