@@ -103,6 +103,7 @@ export const commercialPages: ContentPage[] = [
       ] }
     ],
     related: [
+      { href: "/guides/track-magic-system-rules", label: "A magic-system workflow" },
       { href: "/story-bible-software", label: "Story bible software" },
       { href: "/guides/how-to-build-a-story-bible", label: "Build a story bible" },
       { href: "/features", label: "Explore Quilly features" }
@@ -129,6 +130,7 @@ export const commercialPages: ContentPage[] = [
       ] }
     ],
     related: [
+      { href: "/guides/mystery-clue-reveal-map", label: "A worked mystery clue trail" },
       { href: "/story-continuity-checker", label: "Story continuity checker" },
       { href: "/guides/how-to-track-foreshadowing", label: "How to track foreshadowing" },
       { href: "/guides/how-to-track-story-continuity", label: "How to track continuity" }
@@ -138,8 +140,8 @@ export const commercialPages: ContentPage[] = [
     slug: "story-continuity-checker",
     eyebrow: "Story continuity checker",
     title: "Catch continuity problems before they become revision problems",
-    description: "Quilly Story Health helps writers review timeline conflicts, unresolved threads, stale character appearances, unassigned events, and broken story references.",
-    intro: "Continuity checking is less about finding typos and more about finding contradictions in the story's logic. Quilly's Story Health page brings together signals that are difficult to notice when each chapter is viewed alone.",
+    description: "Explore Quilly's upcoming Author Story Health feature for continuity and plot-thread review. Coming soon; excluded from Writer and the free trial.",
+    intro: "Continuity checking is less about finding typos and more about finding contradictions in the story's logic. Story Health is coming soon in Author. The diagnostics described here are not included in Writer or the free trial; you can organize the underlying story references today.",
     intent: "commercial",
     sections: [
       { heading: "What Story Health looks for", body: [
@@ -205,6 +207,7 @@ export const commercialPages: ContentPage[] = [
       ] }
     ],
     related: [
+      { href: "/templates/scene-revision-checklist", label: "Scene revision checklist" },
       { href: "/story-planning-software", label: "Story planning software" },
       { href: "/guides/how-to-plan-chapters", label: "How to plan chapters" },
       { href: "/guides/how-to-plot-a-novel", label: "How to plot a novel" }

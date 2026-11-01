@@ -22,6 +22,7 @@ export const supplementalPages: ContentPage[] = [
       ] }
     ],
     related: [
+      { href: "/features/character-profiles", label: "Customizable character profiles" },
       { href: "/guides/how-to-organize-novel-characters", label: "How to organize novel characters" },
       { href: "/guides/how-to-track-character-arcs", label: "How to track character arcs" },
       { href: "/story-bible-software", label: "Story bible software" }
@@ -77,6 +78,7 @@ export const supplementalPages: ContentPage[] = [
       ] }
     ],
     related: [
+      { href: "/features/manuscript-editor", label: "Explore the manuscript editor" },
       { href: "/novel-writing-software", label: "Novel writing software" },
       { href: "/story-planning-software", label: "Story planning software" },
       { href: "/alternatives/scrivener", label: "Scrivener alternative" }
@@ -101,6 +103,7 @@ export const supplementalPages: ContentPage[] = [
       ] }
     ],
     related: [
+      { href: "/compare", label: "Compare writing workflows" },
       { href: "/guides/how-to-plan-a-novel", label: "Start with novel planning" },
       { href: "/novel-writing-software", label: "Explore novel writing software" },
       { href: "/alternatives/scrivener", label: "Compare Scrivener alternatives" }

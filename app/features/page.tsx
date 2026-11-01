@@ -118,6 +118,12 @@ export default function FeaturesPage() {
             <Link href="/story-planning-software" className="related-resource-card"><span>Story planning software</span><ArrowRight size={15}/></Link>
             <Link href="/story-continuity-checker" className="related-resource-card"><span>Story continuity checker</span><ArrowRight size={15}/></Link>
             <Link href="/writing-progress-tracker" className="related-resource-card"><span>Writing progress tracker</span><ArrowRight size={15}/></Link>
+            <Link href="/features/manuscript-editor" className="related-resource-card"><span>Manuscript editor</span><ArrowRight size={15}/></Link>
+            <Link href="/features/focus-mode" className="related-resource-card"><span>Focus mode</span><ArrowRight size={15}/></Link>
+            <Link href="/features/story-builder" className="related-resource-card"><span>Story Builder</span><ArrowRight size={15}/></Link>
+            <Link href="/features/character-profiles" className="related-resource-card"><span>Character profiles</span><ArrowRight size={15}/></Link>
+            <Link href="/features/manuscript-import-export" className="related-resource-card"><span>Manuscript import and export</span><ArrowRight size={15}/></Link>
+            <Link href="/features/backups-and-recovery" className="related-resource-card"><span>Backups and recovery</span><ArrowRight size={15}/></Link>
           </div>
         </div>
       </section>
