@@ -56,7 +56,7 @@ function practicalHeading(intent: ContentPage["intent"]) {
 }
 
 export function generateStaticParams() {
-  return contentPages.map((page) => ({ slug: page.slug.split("/") }));
+  return contentPages.filter((page) => page.slug !== "resources").map((page) => ({ slug: page.slug.split("/") }));
 }
 
 export async function generateMetadata({

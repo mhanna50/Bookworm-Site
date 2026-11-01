@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: base, changeFrequency: "weekly", priority: 1 },
     { url: base + "/features", changeFrequency: "monthly", priority: 0.9 },
     { url: base + "/pricing", changeFrequency: "monthly", priority: 0.8 },
-    { url: base + "/about", changeFrequency: "monthly", priority: 0.6 },
+    { url: base + "/about", lastModified: "2026-11-01", changeFrequency: "monthly", priority: 0.6 },
     ...contentPages.map((page) => ({
       url: base + "/" + page.slug,
       ...(page.updatedAt ? { lastModified: page.updatedAt } : {}),
