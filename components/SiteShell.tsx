@@ -78,12 +78,11 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
             <div className="resources-nav"
-              onMouseEnter={() => setResourcesOpen(true)}
               onMouseLeave={(event) => { if (!event.currentTarget.contains(document.activeElement)) setResourcesOpen(false); }}
               onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setResourcesOpen(false); }}
               onKeyDown={(event) => { if (event.key === "Escape") { setResourcesOpen(false); resourceToggle.current?.focus(); } }}>
               <div className="resources-trigger-row">
-                <Link className={resourceActive ? "nav-link active" : "nav-link"} href="/resources" onClick={() => setResourcesOpen(false)}>Resources</Link>
+                <Link className={resourceActive ? "nav-link active" : "nav-link"} href="/resources" onMouseEnter={() => setResourcesOpen(true)} onClick={() => setResourcesOpen(false)}>Resources</Link>
                 <button type="button" className="resources-toggle" aria-label="Browse resources" aria-expanded={resourcesOpen} aria-controls="resource-navigation" ref={resourceToggle} onClick={() => setResourcesOpen(!resourcesOpen)}><ChevronDown size={18} aria-hidden="true" /></button>
               </div>
               <div className="resources-dropdown" id="resource-navigation" hidden={!resourcesOpen}>

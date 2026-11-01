@@ -23,7 +23,7 @@ function writingTopic(slug: string) {
   if (/import|export|backup|recovery|move-google/.test(slug)) return "move";
   if (/character|worldbuilding|story-bible|series-bible/.test(slug)) return "people";
   if (/foreshadow|continuity|plot-thread|timeline|scene-revision/.test(slug)) return "review";
-  if (/plot|outline|story-planning|story-builder|chapter-plan|inciting|midpoint|subplot|story-arc|scene-vs/.test(slug)) return "plan";
+  if (/plot|outline|how-to-plan|story-planning|story-builder|chapter-plan|inciting|midpoint|subplot|story-arc|scene-vs/.test(slug)) return "plan";
   return "draft";
 }
 
