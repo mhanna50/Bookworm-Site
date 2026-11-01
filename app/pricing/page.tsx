@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, Minus, Sparkles } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
 import { PricingFaq } from "@/components/PricingFaq";
 
@@ -12,7 +12,7 @@ export default function PricingPage() {
         <div className="site-container narrow">
           <span className="eyebrow">Simple pricing</span>
           <h1>Try Quilly <em>free for 14 days.</em></h1>
-          <p>No credit card required. Explore Quilly’s Basic writing and planning tools, then choose Basic at $11.99/month or Plus at $16.99/month. Story Health requires a Plus subscription and is not included in the trial.</p>
+          <p>No credit card required. Explore Writer’s writing and planning tools, then continue for $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health. Story Health is not included in Writer or the free trial.</p>
           <div className="trial-callout" role="note" aria-label="Quilly trial terms">
             <strong>14 days free</strong>
             <span>No credit card required</span>
@@ -25,22 +25,40 @@ export default function PricingPage() {
       <section className="section pricing-section">
         <div className="site-container pricing-wrap">
           {([
-            { name: "Quilly Basic", price: "11.99", plus: false, description: "Your connected writing workspace." },
-            { name: "Quilly Plus", price: "16.99", plus: true, description: "Everything in Basic, plus Story Health diagnostics." },
-          ]).map(plan => <div className="price-card" key={plan.name}>
+            { name: "Writer", price: "11.99", author: false, description: "Your connected writing workspace." },
+            { name: "Author", price: "16.99", author: true, description: "Everything in Writer, plus AI-assisted Story Health." },
+          ]).map(plan => <article className={`price-card plan-card ${plan.author ? "plan-card-author" : ""}`} key={plan.name} aria-labelledby={`plan-${plan.name}`}>
+            {plan.author && <span className="plan-highlight"><Sparkles size={14} aria-hidden="true" /> More insight for your story</span>}
             <div className="price-card-top">
-              <span className="small-caps">{plan.name}</span>
+              <h2 id={`plan-${plan.name}`} className="plan-name">{plan.name}</h2>
               <div className="price"><strong>${plan.price}</strong><span>/ month</span></div>
               <p>{plan.description}</p>
+              {plan.author && <p className="fine-print">Planned features · not available yet</p>}
             </div>
-            <div className="price-features">
-              {["Multiple book projects","Manuscript editor + revision tools","Story Builder","Characters & flexible worldbuilding","Plot Points, Events & Foreshadowing","Relationships graph","Goals, streaks & writing sessions","DOCX import + DOCX/PDF export","Backups, snapshots & Trash recovery", ...(plan.plus ? ["Story Health diagnostics"] : [])].map(item => (
-                <div key={item}><Check size={15}/><span>{item}</span></div>
-              ))}
-            </div>
-            <a className="button large full" href={appSignup}>Start your free 14-day trial</a>
-            <p className="fine-print">No card upfront. Trial includes Basic features; Story Health is not included. Subscribe to {plan.name} for ${plan.price}/month after your trial. Cancel anytime.</p>
-          </div>)}
+            <ul className="plan-checklist">
+              {[
+                ["Multiple book projects", true],
+                ["Manuscript editor + revision tools", true],
+                ["Story Builder", true],
+                ["Characters & flexible worldbuilding", true],
+                ["Plot Points, Events & Foreshadowing", true],
+                ["Relationships graph", true],
+                ["Goals, streaks & writing sessions", true],
+                ["DOCX import + DOCX/PDF export", true],
+                ["Backups, snapshots & Trash recovery", true],
+                ["AI-assisted Story Health", plan.author],
+                ["Potential plot-hole detection", plan.author],
+                ["Story continuity suggestions", plan.author],
+                ["Character and timeline consistency checks", plan.author],
+                ["Unresolved threads & foreshadowing insights", plan.author],
+              ].map(([label, included]) => <li key={String(label)} className={included ? "" : "plan-excluded"}>
+                {included ? <Check size={17} aria-hidden="true" /> : <Minus size={17} aria-hidden="true" />}
+                <span><span className="sr-only">{included ? "Included: " : "Not included: "}</span>{label}</span>
+              </li>)}
+            </ul>
+            {plan.author ? <div className="plan-coming-soon" role="note"><strong>Coming soon</strong><span>Author is still in the works.<br />Start writing today with Writer.</span></div> : <a className="button large full" href={appSignup}>Try Writer free for 14 days</a>}
+            <p className="fine-print">{plan.author ? "Author is not available to purchase yet. AI suggestions will help guide your review; you stay in control of your story." : "No card upfront. Writer is $11.99/month after your trial. Story Health is not included. Cancel anytime."}</p>
+          </article>)}
         </div>
       </section>
 

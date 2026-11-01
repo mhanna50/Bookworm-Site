@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing — Basic $11.99 or Plus $16.99/Month",
-  description: "Try Quilly free for 14 days with no credit card required. Choose Basic for $11.99/month with writing, planning, relationships and exports, or Plus for $16.99/month including Story Health.",
+  title: "Pricing — Writer $11.99 or Author $16.99/Month",
+  description: "Try Quilly free for 14 days with no credit card required. Choose Writer for $11.99/month with writing, planning, relationships and exports, Author is coming soon at $16.99/month with AI-assisted Story Health.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -15,7 +15,7 @@ const faqSchema = {
       name: "Do I need a credit card for the Quilly free trial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Quilly includes a 14-day free trial of Basic features with no credit card required. Story Health is not included in the free trial."
+        text: "No. Quilly includes a 14-day free trial of Writer features with no credit card required. Story Health is not included in the free trial."
       }
     },
     {
@@ -23,7 +23,7 @@ const faqSchema = {
       name: "What does Quilly cost after the free trial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "After the 14-day free trial, Basic is $11.99/month and Plus is $16.99/month. Story Health is included in Plus."
+        text: "After the 14-day free trial, Writer is $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health."
       }
     },
     {

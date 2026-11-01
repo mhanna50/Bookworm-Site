@@ -4,8 +4,8 @@ import { Minus } from "lucide-react";
 import { useState } from "react";
 
 const faqs = [
-  ["Do I need a credit card for the free trial?", "No. Quilly includes a 14-day free trial with no credit card required. Your trial includes Basic writing and planning features. Story Health requires a Plus subscription and is not included in the free trial."],
-  ["What happens after the 14-day trial?", "After the trial ends, choose Basic at $11.99/month or Plus at $16.99/month. Plus includes Story Health diagnostics. You will be asked to add a payment method to continue using the workspace."],
+  ["Do I need a credit card for the free trial?", "No. Quilly includes a 14-day free trial with no credit card required. Your trial includes Writer writing and planning features. Story Health will be available with Author, which is coming soon and is not included in the free trial."],
+  ["What happens after the 14-day trial?", "After the trial ends, continue with Writer at $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health. You will be asked to add a payment method to continue using the workspace."],
   ["Can I cancel anytime?", "Yes. Quilly is a month-to-month subscription with no long-term contract."],
   ["Can I export my work?", "Export and recovery are treated as core ownership features, not premium lock-ins."],
   ["Is this only for fantasy writers?", "No. Quilly is built for long-form fiction across genres, including fantasy, mystery, romance, science fiction, thrillers, and more."],
