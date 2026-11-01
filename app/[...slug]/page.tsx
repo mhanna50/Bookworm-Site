@@ -104,13 +104,13 @@ export default async function SearchContentPage({
     headline: page.title,
     description: page.description,
     about: "Novel writing and story planning",
-    isPartOf: { "@type": "WebSite", name: "Bookworm" },
+    isPartOf: { "@type": "WebSite", name: "Quilly" },
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Bookworm", item: "/" },
+      { "@type": "ListItem", position: 1, name: "Quilly", item: "/" },
       ...breadcrumbItems.map((item, index) => ({
         "@type": "ListItem",
         position: index + 2,
@@ -130,7 +130,7 @@ export default async function SearchContentPage({
           <div className="site-container resource-hero-layout">
             <div className="resource-hero-main">
               <nav className="breadcrumb" aria-label="Breadcrumb">
-                <Link href="/">Bookworm</Link>
+                <Link href="/">Quilly</Link>
                 <span>/</span>
                 {breadcrumbItems.length > 1 && (
                   <>
@@ -148,7 +148,7 @@ export default async function SearchContentPage({
               <div className="resource-summary">
                 <span><Check size={14} /> Written for novelists</span>
                 <span><Check size={14} /> Practical, not template-heavy</span>
-                <span><Check size={14} /> Connected to relevant Bookworm tools</span>
+                <span><Check size={14} /> Connected to relevant Quilly tools</span>
               </div>
             </div>
           </div>
@@ -262,10 +262,10 @@ export default async function SearchContentPage({
 
           <aside className="resource-aside">
             <div className="resource-aside-card">
-              <span className="small-caps">In Bookworm</span>
+              <span className="small-caps">In Quilly</span>
               <BookOpen size={22} />
               <h2>{page.ctaTitle ?? "Keep the story connected while you write."}</h2>
-              <p>{page.ctaText ?? "Use Bookworm to move between manuscript, planning, characters, worldbuilding, events, clues, relationships, and progress without rebuilding context."}</p>
+              <p>{page.ctaText ?? "Use Quilly to move between manuscript, planning, characters, worldbuilding, events, clues, relationships, and progress without rebuilding context."}</p>
               <a className="button full" href={appSignup}>Start writing <ArrowRight size={14} /></a>
             </div>
 

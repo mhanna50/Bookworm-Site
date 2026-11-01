@@ -1,6 +1,6 @@
-# Bookworm Site
+# Quilly Site
 
-Public marketing site for Bookworm Author OS.
+Public marketing site for Quilly.
 
 ## Stack
 - Next.js
@@ -15,4 +15,4 @@ npm install
 npm run dev
 ```
 
-The visual direction intentionally carries the warm parchment, mocha, sage, serif typography, and paper-like surfaces from the Bookworm app into a more atmospheric public site.
+The visual direction intentionally carries the warm parchment, mocha, sage, serif typography, and paper-like surfaces from the Quilly app into a more atmospheric public site.

@@ -55,7 +55,7 @@ const rows = [
   {
     icon: GitFork,
     title: "Relationships that also reflect story data",
-    text: "Create custom relationship arrows between story entities. Bookworm also derives dashed connections automatically from chapter, character, location, plot-point, and event links, with focus and layout tools for dense graphs.",
+    text: "Create custom relationship arrows between story entities. Quilly also derives dashed connections automatically from chapter, character, location, plot-point, and event links, with focus and layout tools for dense graphs.",
   },
   {
     icon: Images,
@@ -84,10 +84,10 @@ export default function FeaturesPage() {
     <SiteShell>
       <section className="page-hero">
         <div className="site-container narrow">
-          <span className="eyebrow">What Bookworm actually includes</span>
+          <span className="eyebrow">What Quilly actually includes</span>
           <h1>Writing, planning, revision, and story context in <em>one connected workspace.</em></h1>
           <p>
-            Bookworm is a browser-based novel workspace built around the manuscript, with dedicated tools for structure,
+            Quilly is a browser-based novel workspace built around the manuscript, with dedicated tools for structure,
             characters, worldbuilding, events, foreshadowing, relationships, continuity, progress, and recovery.
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function FeaturesPage() {
         <div className="site-container">
           <div className="section-heading split-heading">
             <div><span className="eyebrow">Go deeper</span><h2>Explore the workflows behind the features.</h2></div>
-            <p>These pages explain the writing problems Bookworm is designed to help with, without implying features the product does not currently ship.</p>
+            <p>These pages explain the writing problems Quilly is designed to help with, without implying features the product does not currently ship.</p>
           </div>
           <div className="related-resource-grid">
             <Link href="/story-planning-software" className="related-resource-card"><span>Story planning software</span><ArrowRight size={15}/></Link>

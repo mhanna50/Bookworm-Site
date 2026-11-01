@@ -6,9 +6,9 @@ export default function AboutPage() {
     <SiteShell>
       <section className="page-hero">
         <div className="site-container narrow">
-          <span className="eyebrow">Why Bookworm exists</span>
+          <span className="eyebrow">Why Quilly exists</span>
           <h1>Writing software should feel closer to a <em>study than a dashboard.</em></h1>
-          <p>Bookworm is being built around a simple idea: serious story planning can be powerful without becoming cold, dense, or distracting.</p>
+          <p>Quilly is being built around a simple idea: serious story planning can be powerful without becoming cold, dense, or distracting.</p>
         </div>
       </section>
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
           <div className="story-note-mark">“</div>
           <div>
             <span className="eyebrow">The design principle</span>
-            <h2>Bookworm should disappear when you are writing and become useful the moment you look up.</h2>
+            <h2>Quilly should disappear when you are writing and become useful the moment you look up.</h2>
             <p>That is the standard for every feature we add.</p>
             <a className="inline-link" href="https://app.quillywriter.com/login?mode=signup">Try the workspace <ArrowRight size={15}/></a>
           </div>

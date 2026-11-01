@@ -5,7 +5,7 @@ export const expansionPages: ContentPage[] = [
     slug: "best-novel-writing-software",
     eyebrow: "Best novel writing software",
     title: "Best novel writing software in 2026: which tool fits your workflow?",
-    description: "Compare Bookworm, Scrivener, Dabble, NovelPad, Plottr, Campfire, and Reedsy Studio by drafting, planning, worldbuilding, continuity, collaboration, offline access, and price model.",
+    description: "Compare Quilly, Scrivener, Dabble, NovelPad, Plottr, Campfire, and Reedsy Studio by drafting, planning, worldbuilding, continuity, collaboration, offline access, and price model.",
     intro: "There is no single best novel writing app for every writer. The useful question is which part of your process is hardest: drafting, visual plotting, worldbuilding, continuity, collaboration, formatting, or staying organized across a large manuscript.",
     intent: "comparison",
     sections: [
@@ -13,20 +13,20 @@ export const expansionPages: ContentPage[] = [
         heading: "The short version",
         body: [
           "Scrivener remains one of the strongest choices for a mature desktop-first manuscript workflow. Dabble is a polished cloud writing suite with planning and collaboration. NovelPad is attractive for writers who value desktop ownership and offline use. Plottr is excellent when visual outlining is the main problem. Campfire is strongest when deep worldbuilding modules matter most. Reedsy Studio is compelling for writers who want a free web-based drafting and publishing workflow.",
-          "Bookworm is aimed at a different pain point: keeping the manuscript, plot, characters, world, events, clues, relationships, continuity signals, and progress connected inside one browser-based workspace."
+          "Quilly is aimed at a different pain point: keeping the manuscript, plot, characters, world, events, clues, relationships, continuity signals, and progress connected inside one browser-based workspace."
         ]
       },
       {
         heading: "Choose based on your bottleneck",
         body: [
-          "A feature list is less useful than identifying the thing that repeatedly slows you down. If compile and document control are the issue, Scrivener may fit. If you mainly want a visual timeline, Plottr may be enough. If your book contains dozens of characters, layered world rules, unresolved clues, and continuity problems, Bookworm's connected story model becomes more relevant.",
+          "A feature list is less useful than identifying the thing that repeatedly slows you down. If compile and document control are the issue, Scrivener may fit. If you mainly want a visual timeline, Plottr may be enough. If your book contains dozens of characters, layered world rules, unresolved clues, and continuity problems, Quilly's connected story model becomes more relevant.",
           "The right tool should remove friction from the part of writing you actually struggle with rather than adding a new system to maintain."
         ]
       },
       {
-        heading: "Where Bookworm fits",
+        heading: "Where Quilly fits",
         body: [
-          "Bookworm is strongest for writers who want story planning and story reference data to stay close to the manuscript. It models characters, locations, events, foreshadowing, images, and relationships as reusable story entities and adds Story Health signals for continuity-oriented review.",
+          "Quilly is strongest for writers who want story planning and story reference data to stay close to the manuscript. It models characters, locations, events, foreshadowing, images, and relationships as reusable story entities and adds Story Health signals for continuity-oriented review.",
           "It is not currently trying to replace every specialized strength of mature competitors. Writers who need advanced book formatting, a mature native desktop ecosystem, or extensive collaboration may prefer another tool."
         ]
       }
@@ -35,7 +35,7 @@ export const expansionPages: ContentPage[] = [
       caption: "Novel writing software at a glance",
       columns: ["Tool", "Best for", "Drafting", "Planning", "World/story data", "Offline"],
       rows: [
-        ["Bookworm", "Connected story planning + continuity", "Yes", "Strong", "Strong", "Web-first"],
+        ["Quilly", "Connected story planning + continuity", "Yes", "Strong", "Strong", "Web-first"],
         ["Scrivener", "Mature desktop long-form writing", "Yes", "Strong", "Flexible documents/metadata", "Yes"],
         ["Dabble", "Cloud drafting + planning", "Yes", "Strong", "Moderate", "Desktop apps"],
         ["NovelPad", "Ownership + offline drafting", "Yes", "Story boards", "Moderate", "Yes"],
@@ -60,7 +60,7 @@ export const expansionPages: ContentPage[] = [
     slug: "best-story-planning-software",
     eyebrow: "Best story planning software",
     title: "Best story planning software in 2026: pick the planning model that matches you",
-    description: "Compare Bookworm, Plottr, Scrivener, Dabble, and Campfire for visual structure, manuscript integration, worldbuilding, character tracking, relationships, and continuity.",
+    description: "Compare Quilly, Plottr, Scrivener, Dabble, and Campfire for visual structure, manuscript integration, worldbuilding, character tracking, relationships, and continuity.",
     intro: "Story-planning tools disagree about what planning should look like. Some use timelines, some grids, some document outlines, some worldbuilding modules, and some connected story entities. The best choice depends on how you think.",
     intent: "comparison",
     sections: [
@@ -68,21 +68,21 @@ export const expansionPages: ContentPage[] = [
         heading: "If you think in timelines",
         body: [
           "Plottr is purpose-built around visual timelines and templates. It is a strong choice when you want to see plotlines, character arcs, and scene order spatially before drafting elsewhere.",
-          "Bookworm is less template-driven. Its Story Builder uses Acts → Chapters → Plot Points → Beats and keeps events, characters, clues, locations, and manuscript context connected around that structure."
+          "Quilly is less template-driven. Its Story Builder uses Acts → Chapters → Plot Points → Beats and keeps events, characters, clues, locations, and manuscript context connected around that structure."
         ]
       },
       {
         heading: "If you plan while drafting",
         body: [
           "Scrivener and Dabble both make sense when planning needs to sit directly beside manuscript writing. Scrivener does this through a flexible project/document model; Dabble combines a manuscript with its Plot Grid and story notes.",
-          "Bookworm also keeps planning beside the manuscript, but treats story entities and continuity signals as first-class parts of the workspace rather than only notes around the draft."
+          "Quilly also keeps planning beside the manuscript, but treats story entities and continuity signals as first-class parts of the workspace rather than only notes around the draft."
         ]
       },
       {
         heading: "If worldbuilding is the hard part",
         body: [
-          "Campfire is one of the strongest specialist choices when deep worldbuilding modules are the priority. Bookworm takes a lighter approach: flexible categories, editable fields, connected locations and story entities, and images tied to narrative context.",
-          "That makes Bookworm more suitable for writers who want the world to stay connected to the novel without turning worldbuilding into a second project."
+          "Campfire is one of the strongest specialist choices when deep worldbuilding modules are the priority. Quilly takes a lighter approach: flexible categories, editable fields, connected locations and story entities, and images tied to narrative context.",
+          "That makes Quilly more suitable for writers who want the world to stay connected to the novel without turning worldbuilding into a second project."
         ]
       }
     ],
@@ -90,7 +90,7 @@ export const expansionPages: ContentPage[] = [
       caption: "Story-planning approaches",
       columns: ["Tool", "Planning model", "Manuscript", "Worldbuilding", "Relationships", "Continuity signals"],
       rows: [
-        ["Bookworm", "Acts → Chapters → Plot Points → Beats", "Yes", "Flexible", "Graph", "Yes"],
+        ["Quilly", "Acts → Chapters → Plot Points → Beats", "Yes", "Flexible", "Graph", "Yes"],
         ["Plottr", "Visual timelines + templates", "No full manuscript", "Series bible", "Character tools", "No"],
         ["Scrivener", "Binder/Corkboard/Outliner", "Yes", "Document-based", "Custom/manual", "Manual"],
         ["Dabble", "Plot Grid", "Yes", "Story notes", "Character profiles", "Limited"],
@@ -113,7 +113,7 @@ export const expansionPages: ContentPage[] = [
     slug: "writing-software-for-fantasy-authors",
     eyebrow: "Fantasy writing software",
     title: "Writing software for fantasy authors who need the world to stay consistent",
-    description: "Organize a fantasy manuscript, cast, locations, factions, lore, magic rules, events, clues, relationships, images, and continuity in Bookworm.",
+    description: "Organize a fantasy manuscript, cast, locations, factions, lore, magic rules, events, clues, relationships, images, and continuity in Quilly.",
     intro: "Fantasy novels create an unusually large memory problem. A manuscript can contain invented geography, political structures, magic rules, terminology, long timelines, large casts, and promises that pay off hundreds of pages later.",
     intent: "commercial",
     sections: [
@@ -121,13 +121,13 @@ export const expansionPages: ContentPage[] = [
         heading: "Fantasy needs more than a manuscript pane",
         body: [
           "A fantasy writing tool becomes useful when it can answer questions such as: Which characters belong to this faction? What rule limits this magic? Where was this place first introduced? Which prophecy clue has already appeared? Which chapter contradicts a world fact?",
-          "Bookworm keeps those details in connected story entities so they can be referenced from chapters, events, relationships, and world categories."
+          "Quilly keeps those details in connected story entities so they can be referenced from chapters, events, relationships, and world categories."
         ]
       },
       {
         heading: "Keep worldbuilding subordinate to the story",
         body: [
-          "Fantasy writers can easily spend more time designing a world than writing in it. Bookworm's world system is intentionally flexible rather than encyclopedic by default. Rename categories, rename fields, and only add structure the book actually needs.",
+          "Fantasy writers can easily spend more time designing a world than writing in it. Quilly's world system is intentionally flexible rather than encyclopedic by default. Rename categories, rename fields, and only add structure the book actually needs.",
           "The goal is a usable source of truth, not the largest possible lore database."
         ]
       },
@@ -149,7 +149,7 @@ export const expansionPages: ContentPage[] = [
     slug: "writing-software-for-mystery-writers",
     eyebrow: "Mystery writing software",
     title: "Writing software for mystery writers tracking clues, suspects, and reveals",
-    description: "Use Bookworm to organize mystery clues, suspects, events, timelines, relationships, foreshadowing, chapters, reveals, and continuity.",
+    description: "Use Quilly to organize mystery clues, suspects, events, timelines, relationships, foreshadowing, chapters, reveals, and continuity.",
     intro: "Mystery writers have a special planning problem: the reader must receive enough information for the ending to feel fair without receiving so much that the solution becomes obvious.",
     intent: "commercial",
     sections: [
@@ -157,7 +157,7 @@ export const expansionPages: ContentPage[] = [
         heading: "Track clue → interpretation → payoff",
         body: [
           "A clue is not useful to the author merely because it exists. Track where it appears, what the reader is likely to infer from it, what it actually means, and which later event or reveal pays it off.",
-          "Bookworm's dedicated Foreshadowing records can connect clues to chapters, plot points, and events instead of burying them inside outline notes."
+          "Quilly's dedicated Foreshadowing records can connect clues to chapters, plot points, and events instead of burying them inside outline notes."
         ]
       },
       {
@@ -185,7 +185,7 @@ export const expansionPages: ContentPage[] = [
     slug: "writing-software-for-romance-authors",
     eyebrow: "Romance writing software",
     title: "Writing software for romance authors tracking relationship change across the book",
-    description: "Plan romance beats, character arcs, relationships, chapters, events, conflict, foreshadowing, and writing progress in Bookworm.",
+    description: "Plan romance beats, character arcs, relationships, chapters, events, conflict, foreshadowing, and writing progress in Quilly.",
     intro: "A romance plot is driven by relationship change. The useful planning question is not simply which beat comes next, but what each scene changes about trust, attraction, conflict, vulnerability, or commitment.",
     intent: "commercial",
     sections: [
@@ -193,14 +193,14 @@ export const expansionPages: ContentPage[] = [
         heading: "Track the relationship as a changing state",
         body: [
           "A romance can feel repetitive when scenes create chemistry without changing the relationship. Track what each major chapter or event changes: a new vulnerability, a misunderstanding, a boundary, a commitment, or a loss of trust.",
-          "Bookworm's character relationships and chapter connections make that evolution easier to review across the whole manuscript."
+          "Quilly's character relationships and chapter connections make that evolution easier to review across the whole manuscript."
         ]
       },
       {
         heading: "Use beats without letting them become a checklist",
         body: [
           "Romance frameworks can be valuable diagnostics. They help identify long stretches with no escalation or an emotional turn that has not been earned. They work best as flexible landmarks rather than mandatory scene orders.",
-          "Bookworm's Plot Points and Beats can hold your chosen structure without forcing a specific romance template."
+          "Quilly's Plot Points and Beats can hold your chosen structure without forcing a specific romance template."
         ]
       },
       {
@@ -235,7 +235,7 @@ export const expansionPages: ContentPage[] = [
         heading: "Avoid rebuilding your system halfway through",
         body: [
           "The challenge with starting in a plain document is not that plain documents are bad. It is that later you may need characters, timelines, clues, images, chapter plans, and progress tracking, then end up maintaining several separate tools.",
-          "Bookworm is designed so you can start with the manuscript and grow into the rest of the workspace over time."
+          "Quilly is designed so you can start with the manuscript and grow into the rest of the workspace over time."
         ]
       },
       {
@@ -256,7 +256,7 @@ export const expansionPages: ContentPage[] = [
     slug: "character-relationship-mapper-for-writers",
     eyebrow: "Character relationship mapper",
     title: "Character relationship mapping for novels with complicated casts",
-    description: "Map character, location, and event relationships in Bookworm and keep the graph connected to the rest of your novel.",
+    description: "Map character, location, and event relationships in Quilly and keep the graph connected to the rest of your novel.",
     intro: "A relationship map becomes useful when a cast is too interconnected to understand as a list. It should answer who is connected, why the connection matters, and which events or places created that relationship.",
     intent: "commercial",
     sections: [
@@ -264,13 +264,13 @@ export const expansionPages: ContentPage[] = [
         heading: "Map more than friend vs enemy",
         body: [
           "Useful relationships include family, romance, rivalry, debt, loyalty, command, secrecy, mentorship, political alliance, shared history, and temporary cooperation. The label matters less than the narrative consequence.",
-          "Bookworm's relationship graph can include characters, locations, and events so the network reflects the story rather than only the cast."
+          "Quilly's relationship graph can include characters, locations, and events so the network reflects the story rather than only the cast."
         ]
       },
       {
         heading: "Keep the graph readable",
         body: [
-          "Large relationship maps become useless when every node overlaps. Bookworm automatically creates connections from story relationships and uses layout/focus behavior to make dense networks easier to inspect.",
+          "Large relationship maps become useless when every node overlaps. Quilly automatically creates connections from story relationships and uses layout/focus behavior to make dense networks easier to inspect.",
           "The goal is not to display every possible link at once. It is to reveal the subset that helps answer the current story question."
         ]
       },
@@ -291,7 +291,7 @@ export const expansionPages: ContentPage[] = [
     slug: "plot-thread-tracker",
     eyebrow: "Plot thread tracker",
     title: "Track plot threads so promises do not disappear during revision",
-    description: "Track unresolved plot threads, clues, events, characters, chapter connections, and payoffs in Bookworm.",
+    description: "Track unresolved plot threads, clues, events, characters, chapter connections, and payoffs in Quilly.",
     intro: "A plot thread is an open question, goal, conflict, promise, mystery, or relationship tension that the story has asked the reader to remember. Long novels accumulate more of them than most writers can reliably hold in memory.",
     intent: "commercial",
     sections: [
@@ -306,7 +306,7 @@ export const expansionPages: ContentPage[] = [
         heading: "Connect threads to concrete story events",
         body: [
           "Threads become easier to manage when linked to the chapters, events, characters, or clues that advance them. Otherwise they remain vague reminders such as 'resolve king subplot.'",
-          "Bookworm separates events and foreshadowing while Story Health can surface unresolved threads for review."
+          "Quilly separates events and foreshadowing while Story Health can surface unresolved threads for review."
         ]
       },
       {
@@ -327,7 +327,7 @@ export const expansionPages: ContentPage[] = [
     slug: "novel-outline-software",
     eyebrow: "Novel outline software",
     title: "Novel outline software that can grow with the draft",
-    description: "Outline acts, chapters, plot points, beats, events, characters, and story connections in Bookworm.",
+    description: "Outline acts, chapters, plot points, beats, events, characters, and story connections in Quilly.",
     intro: "A useful novel outline should be detailed enough to remove uncertainty but flexible enough to survive contact with the manuscript.",
     intent: "commercial",
     sections: [
@@ -335,7 +335,7 @@ export const expansionPages: ContentPage[] = [
         heading: "Outline in layers",
         body: [
           "Begin with the few largest structural turns. Then create chapters between them. Add plot points and beats only where you need more certainty. This layered approach keeps the outline readable while still allowing detailed planning.",
-          "Bookworm's Story Builder mirrors that hierarchy with Acts → Chapters → Plot Points → Beats."
+          "Quilly's Story Builder mirrors that hierarchy with Acts → Chapters → Plot Points → Beats."
         ]
       },
       {
@@ -420,7 +420,7 @@ export const expansionPages: ContentPage[] = [
         heading: "How to use both in an outline",
         body: [
           "Keep plot points visible at a higher level so you can scan the shape of the novel. Nest beats underneath only when a chapter needs more planning detail.",
-          "That is why Bookworm's Story Builder keeps Plot Points and Beats at separate levels."
+          "That is why Quilly's Story Builder keeps Plot Points and Beats at separate levels."
         ]
       }
     ],
@@ -456,7 +456,7 @@ export const expansionPages: ContentPage[] = [
         heading: "Why tracking matters",
         body: [
           "Revisions often remove payoffs while leaving setup behind, or add a large reveal without enough prior support. Tracking setup and payoff together makes that easier to audit.",
-          "Bookworm gives foreshadowing its own record so clues can connect to chapters, events, and plot points."
+          "Quilly gives foreshadowing its own record so clues can connect to chapters, events, and plot points."
         ]
       }
     ],
