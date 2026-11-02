@@ -13,6 +13,7 @@ export default function PricingPage() {
           <span className="eyebrow">Simple pricing</span>
           <h1>Try Quilly <em>free for 30 days.</em></h1>
           <p>No credit card required. Explore Writer’s writing and planning tools, then continue for $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health. Story Health is not included in Writer or the free trial.</p>
+          <p className="fine-print">Prefer a yearly plan? Writer is $119.99/year (about 17% less than paying monthly). Author is planned at $179.99/year once launched.</p>
           <div className="trial-callout" role="note" aria-label="Quilly trial terms">
             <strong>30 days free</strong>
             <span>No credit card required</span>
@@ -25,13 +26,14 @@ export default function PricingPage() {
       <section className="section pricing-section">
         <div className="site-container pricing-wrap">
           {([
-            { name: "Writer", price: "11.99", author: false, description: "Your connected writing workspace." },
-            { name: "Author", price: "16.99", author: true, description: "Everything in Writer, plus AI-assisted Story Health." },
+            { name: "Writer", price: "11.99", annual: "119.99", author: false, description: "Your connected writing workspace." },
+            { name: "Author", price: "16.99", annual: "179.99", author: true, description: "Everything in Writer, plus AI-assisted Story Health." },
           ]).map(plan => <article className={`price-card plan-card ${plan.author ? "plan-card-author" : ""}`} key={plan.name} aria-labelledby={`plan-${plan.name}`}>
             {plan.author && <span className="plan-highlight"><Sparkles size={14} aria-hidden="true" /> More insight for your story</span>}
             <div className="price-card-top">
               <h2 id={`plan-${plan.name}`} className="plan-name">{plan.name}</h2>
               <div className="price"><strong>${plan.price}</strong><span>/ month</span></div>
+              <p className="fine-print">Or ${plan.annual}/year{!plan.author && " · save about 17%"}</p>
               <p>{plan.description}</p>
               {plan.author && <p className="fine-print">Planned features · not available yet</p>}
             </div>
@@ -59,6 +61,15 @@ export default function PricingPage() {
             {plan.author ? <div className="plan-coming-soon" role="note"><strong>Coming soon</strong><span>Author is still in the works.<br />Start writing today with Writer.</span></div> : <a className="button large full" href={appSignup}>Try Writer free for 30 days</a>}
             <p className="fine-print">{plan.author ? "Author is not available to purchase yet. AI suggestions will help guide your review; you stay in control of your story." : "No card upfront. Writer is $11.99/month after your trial. Story Health is not included. Cancel anytime."}</p>
           </article>)}
+        </div>
+      </section>
+
+      <section className="section section-paper">
+        <div className="site-container narrow">
+          <span className="eyebrow">For our earliest supporters</span>
+          <h2>Founding Writers get 20% off.</h2>
+          <p>The first 250 eligible new paid subscriptions can receive 20% off ongoing subscription charges, applied automatically at checkout while spots remain. No code required. The discount stays with that uninterrupted subscription; if you cancel, it doesn't automatically transfer to a new one.</p>
+          <p>After your 30-day no-card trial, choose monthly or annual billing. Your manuscripts remain exportable even if you don't subscribe.</p>
         </div>
       </section>
 
