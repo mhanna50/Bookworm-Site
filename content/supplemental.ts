@@ -86,9 +86,10 @@ export const supplementalPages: ContentPage[] = [
   },
   {
     slug: "resources",
+    updatedAt: "2026-11-01",
     eyebrow: "Quilly resources",
-    title: "Practical guides for planning, writing, and keeping a novel consistent",
-    description: "Explore Quilly's writing resources on novel planning, plotting, chapters, story bibles, characters, foreshadowing, continuity, worldbuilding, and writing software.",
+    title: "Writing Resources, Free Templates & Software Comparisons",
+    description: "Browse Quilly's writing resources by task or genre. Find practical guides, free templates, worked examples, and writing-software comparisons.",
     intro: "These resources are organized around the problems that appear during a long fiction project: making a plan, keeping a large story understandable, and revising without losing track of what changed.",
     intent: "hub",
     sections: [
