@@ -36,11 +36,11 @@ export default function HomePage() {
               Meet Quilly, your creative corner for writing, plotting, and bringing every part of your story together. A little less juggling, a lot more storytelling.
             </p>
             <div className="hero-actions">
-              <a className="button large" href="https://app.quillywriter.com/login?mode=signup">Start free for 14 days <ArrowRight size={16} /></a>
+              <a className="button large" href="https://app.quillywriter.com/login?mode=signup">Start free for 30 days <ArrowRight size={16} /></a>
               <Link className="button ghost large" href="/features">Take a look around</Link>
             </div>
             <div className="hero-notes">
-              <span><Check size={14} /> 14-day free trial</span>
+              <span><Check size={14} /> 30-day free trial</span>
               <span><Check size={14} /> No credit card required</span>
               <span><Check size={14} /> Plans from $11.99/month</span>
             </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
           <BookOpen size={28} strokeWidth={1.5} />
           <span className="eyebrow">Every story starts somewhere</span>
           <h2>Your next chapter starts here.</h2>
-          <p>Start from a blank project, explore the sample book, or import an existing DOCX manuscript. Your first 14 days are free—no card required.</p>
+          <p>Start from a blank project, explore the sample book, or import an existing DOCX manuscript. Your first 30 days are free—no card required.</p>
           <a className="button large" href="https://app.quillywriter.com/login?mode=signup">Start free <ArrowRight size={16} /></a>
         </div>
       </section>
