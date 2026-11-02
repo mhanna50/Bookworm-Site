@@ -68,7 +68,7 @@ export default function PricingPage() {
         <div className="site-container narrow">
           <span className="eyebrow">For our earliest supporters</span>
           <h2>Founding Writers get 20% off.</h2>
-          <p>The first 250 eligible new paid subscriptions can receive 20% off ongoing subscription charges, applied automatically at checkout while spots remain. No code required. The discount stays with that uninterrupted subscription; if you cancel, it doesn't automatically transfer to a new one.</p>
+          <p>The first 100 eligible new paid subscriptions can receive 20% off ongoing subscription charges, applied automatically at checkout while spots remain. No code required. The discount stays with that uninterrupted subscription; if you cancel, it doesn't automatically transfer to a new one.</p>
           <p>After your 30-day no-card trial, choose monthly or annual billing. Your manuscripts remain exportable even if you don't subscribe.</p>
         </div>
       </section>
