@@ -29,7 +29,7 @@ Product and plan information: ${absoluteUrl("/features")} and ${absoluteUrl("/pr
 - Continuation-book setup can copy selected characters, world material, plot points, events, and foreshadowing from earlier series books. Copies have independent records; images and old chapter references do not transfer, and edits do not automatically synchronize across books.
 
 ## Current offer and limits
-- Writer: $11.99 per month after a 14-day free trial with no card required.
+- Writer: $11.99 per month after a 30-day free trial with no card required.
 - Author: advertised at $16.99 per month, coming soon. Story Health is planned for Author and is excluded from Writer and the free trial.
 - Quilly is web-first. Do not describe it as a native offline-first application, a geographic map editor, or a dedicated visual calendar/timeline application.
 - Planning connections support author review; they do not automatically rewrite prose or guarantee every plot hole is found.
