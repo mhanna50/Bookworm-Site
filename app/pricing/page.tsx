@@ -11,10 +11,10 @@ export default function PricingPage() {
       <section className="page-hero">
         <div className="site-container narrow">
           <span className="eyebrow">Simple pricing</span>
-          <h1>Try Quilly <em>free for 14 days.</em></h1>
+          <h1>Try Quilly <em>free for 30 days.</em></h1>
           <p>No credit card required. Explore Writer’s writing and planning tools, then continue for $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health. Story Health is not included in Writer or the free trial.</p>
           <div className="trial-callout" role="note" aria-label="Quilly trial terms">
-            <strong>14 days free</strong>
+            <strong>30 days free</strong>
             <span>No credit card required</span>
             <span>Plans from $11.99/month</span>
             <span>Cancel anytime</span>
@@ -56,7 +56,7 @@ export default function PricingPage() {
                 <span><span className="sr-only">{included ? "Included: " : "Not included: "}</span>{label}</span>
               </li>)}
             </ul>
-            {plan.author ? <div className="plan-coming-soon" role="note"><strong>Coming soon</strong><span>Author is still in the works.<br />Start writing today with Writer.</span></div> : <a className="button large full" href={appSignup}>Try Writer free for 14 days</a>}
+            {plan.author ? <div className="plan-coming-soon" role="note"><strong>Coming soon</strong><span>Author is still in the works.<br />Start writing today with Writer.</span></div> : <a className="button large full" href={appSignup}>Try Writer free for 30 days</a>}
             <p className="fine-print">{plan.author ? "Author is not available to purchase yet. AI suggestions will help guide your review; you stay in control of your story." : "No card upfront. Writer is $11.99/month after your trial. Story Health is not included. Cancel anytime."}</p>
           </article>)}
         </div>
