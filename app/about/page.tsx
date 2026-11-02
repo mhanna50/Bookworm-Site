@@ -47,7 +47,7 @@ export default function AboutPage() {
         <article><Heart size={24} strokeWidth={1.4} aria-hidden="true" /><h2>Care in the small things</h2><p>The details of a writing space matter. My aim is to make the everyday moments of working on a book feel a little easier.</p></article>
       </div></div></section>
 
-      <section className="founder-invitation site-container"><span className="eyebrow">Make a little room for your story</span><h2>For the story you keep<br />coming back to.</h2><p>Bring the idea, the messy draft, or the character you cannot stop thinking about. You can take the next step from here.</p><div><a className="button" href="https://app.quillywriter.com/login?mode=signup">Try Quilly free for 14 days <ArrowRight size={15} aria-hidden="true" /></a><Link className="inline-link" href="/resources">Find a little writing inspiration <ArrowRight size={15} aria-hidden="true" /></Link></div></section>
+      <section className="founder-invitation site-container"><span className="eyebrow">Make a little room for your story</span><h2>For the story you keep<br />coming back to.</h2><p>Bring the idea, the messy draft, or the character you cannot stop thinking about. You can take the next step from here.</p><div><a className="button" href="https://app.quillywriter.com/login?mode=signup">Try Quilly free for 30 days <ArrowRight size={15} aria-hidden="true" /></a><Link className="inline-link" href="/resources">Find a little writing inspiration <ArrowRight size={15} aria-hidden="true" /></Link></div></section>
     </SiteShell>
   );
 }
