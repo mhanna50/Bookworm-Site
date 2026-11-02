@@ -30,7 +30,7 @@ export default function Image() {
           <div style={{ fontSize: 29, lineHeight: 1.4, color: "#63584f" }}>Write, plan, build your world, track continuity, and keep every thread connected.</div>
         </div>
         <div style={{ display: "flex", gap: 18, alignItems: "center", fontFamily: "Arial, sans-serif", fontSize: 22 }}>
-          <div style={{ background: "#6b4f3a", color: "#fffaf4", padding: "14px 22px", borderRadius: 999 }}>14 days free</div>
+          <div style={{ background: "#6b4f3a", color: "#fffaf4", padding: "14px 22px", borderRadius: 999 }}>30 days free</div>
           <div>No credit card required · then $11.99/month</div>
         </div>
       </div>
