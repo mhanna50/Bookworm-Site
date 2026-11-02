@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s | Quilly",
   },
   description:
-    "Write your novel and connect chapters, plot points, characters, worldbuilding, and foreshadowing in Quilly. Try Writer free for 14 days, no card required.",
+    "Write your novel and connect chapters, plot points, characters, worldbuilding, and foreshadowing in Quilly. Try Writer free for 30 days, no card required.",
   keywords: [
     "novel writing software",
     "story planning software",
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Quilly | Novel Writing & Story Planning Software",
     description:
-      "Write your manuscript, plan your plot, build your world, and keep every story thread connected. 14 days free, no card required, plans from $11.99/month.",
+      "Write your manuscript, plan your plot, build your world, and keep every story thread connected. 30 days free, no card required, plans from $11.99/month.",
     siteName: "Quilly",
   },
   twitter: {
     card: "summary_large_image",
     title: "Quilly | Novel Writing & Story Planning Software",
     description:
-      "A connected writing workspace for novelists. Try it free for 14 days with no credit card required.",
+      "A connected writing workspace for novelists. Try it free for 30 days with no credit card required.",
   },
   robots: {
     index: true,
@@ -93,7 +93,7 @@ const softwareSchema = {
   description:
     "A connected writing and story-planning workspace for novelists with manuscript editing, story structure, characters, worldbuilding, relationships, and writing progress. Story Health is coming soon in Author.",
   offers: [
-    { "@type": "Offer", name: "Writer", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Writer writing and planning tools. 14-day free trial, no card required." },
+    { "@type": "Offer", name: "Writer", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Writer writing and planning tools. 30-day free trial, no card required." },
   ],
   featureList: [
     "Chapter-based manuscript editor with focus mode",

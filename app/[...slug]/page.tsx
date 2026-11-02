@@ -137,7 +137,7 @@ export default async function SearchContentPage({
             {mentionsStoryHealth && !page.summary && (
               <section className="resource-quick-answer" aria-label="Story Health availability">
                 <span className="small-caps">Story Health · coming soon</span>
-                <p>Story Health is planned for the Author plan and is not available in Writer or the 14-day free trial. References to its diagnostics on this page describe the upcoming feature. <Link href="/pricing">See current plans.</Link></p>
+                <p>Story Health is planned for the Author plan and is not available in Writer or the 30-day free trial. References to its diagnostics on this page describe the upcoming feature. <Link href="/pricing">See current plans.</Link></p>
               </section>
             )}
             <section className="resource-quick-answer" aria-label="Quick answer">

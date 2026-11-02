@@ -110,7 +110,7 @@ export const comparisonPages: ContentPage[] = [
         "Dabble's current strengths include collaboration, versioning, comments, read-to-me, grammar/style tools on higher plans, and a mature multi-device ecosystem."
       ] },
       { heading: "Pricing context", body: [
-        "Dabble's public Writer plan is currently listed at $19 per month, with higher Author and Bestseller tiers. Quilly is $11.99 per month after a 14-day free trial that does not require a credit card."
+        "Dabble's public Writer plan is currently listed at $19 per month, with higher Author and Bestseller tiers. Quilly is $11.99 per month after a 30-day free trial that does not require a credit card."
       ] }
     ],
     sources: [
