@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
 import { ProductShowcases } from "@/components/ProductShowcases";
+import { jsonLd } from "@/lib/site";
 
 const features = [
   { icon: PenLine, title: "Manuscript", text: "Draft chapter by chapter with focus mode, comments, tracked changes, grammar/style review, read-aloud, and automatic story-reference links." },
@@ -23,9 +24,25 @@ const features = [
   { icon: Sparkles, title: "Foreshadowing", text: "Plant clues with intention and trace where each promise is eventually paid off." },
 ];
 
+const homeFaqs = [
+  { question: "What is Quilly?", answer: "Quilly is web-based novel-writing and story-planning software. Draft your manuscript and organize chapters, plot points, characters, worldbuilding, and foreshadowing in one connected workspace." },
+  { question: "Can I import a manuscript I have already started?", answer: "Yes. You can import an existing DOCX manuscript into Quilly, or start a new project from scratch." },
+  { question: "Can I export my writing?", answer: "Yes. You can export your manuscript as DOCX or PDF, so you can keep a copy of your writing outside Quilly." },
+  { question: "Is Quilly only for fantasy writers?", answer: "No. Quilly supports long-form fiction across genres. Use the planning tools that fit your story, whether you are writing romance, mystery, science fiction, fantasy, or another genre." },
+  { question: "What is included in the free trial?", answer: "The 30-day free trial includes Writer's writing and planning tools with no credit card required. After 30 days, explicitly purchase Writer for $11.99/month or $119.99/year to continue editing. You are not automatically charged. Annual billing saves 17% compared with monthly billing, with the full annual total charged upfront. AI-assisted Story Health is coming soon in Author and is not included in Writer or the free trial." },
+];
+
 export default function HomePage() {
   return (
     <SiteShell>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: homeFaqs.map(({ question, answer }) => ({
+          "@type": "Question", name: question,
+          acceptedAnswer: { "@type": "Answer", text: answer },
+        })),
+      }) }} />
       <section className="hero">
         <div className="hero-glow" />
         <div className="site-container hero-grid">
@@ -33,7 +50,7 @@ export default function HomePage() {
             <div className="eyebrow"><span className="eyebrow-mark">✦</span> A happier home for your next big idea</div>
             <h1>Big ideas. Messy drafts.<br /><em>Brilliant stories.</em></h1>
             <p className="hero-lede">
-              Meet Quilly, your creative corner for writing, plotting, and bringing every part of your story together. A little less juggling, a lot more storytelling.
+              Quilly is novel-writing and story-planning software that brings your manuscript, characters, plot, and world together. A little less juggling, a lot more storytelling.
             </p>
             <div className="hero-actions">
               <a className="button large" href="https://app.quillywriter.com/login?mode=signup">Start free for 30 days <ArrowRight size={16} /></a>
@@ -42,11 +59,11 @@ export default function HomePage() {
             <div className="hero-notes">
               <span><Check size={14} /> 30-day free trial</span>
               <span><Check size={14} /> No credit card required</span>
-              <span><Check size={14} /> Plans from $11.99/month</span>
+              <span><Check size={14} /> Writer from $10.00/month, billed annually</span>
             </div>
           </div>
 
-          <div className="hero-visual" aria-label="Quilly workspace preview">
+          <div className="hero-visual" aria-label="Illustrative Quilly workspace preview; Story Health is coming soon in Author">
             <div className="ornament ornament-top">❦</div>
             <div className="mock-window">
               <div className="mock-sidebar">
@@ -78,7 +95,7 @@ export default function HomePage() {
             </div>
             <div className="floating-card card-health">
               <HeartPulse size={16} />
-              <div><strong>Story health</strong><span>2 threads need attention</span></div>
+              <div><strong>Story Health · preview</strong><span>Author · coming soon</span></div>
             </div>
             <div className="floating-card card-link">
               <WandSparkles size={16} />
@@ -136,6 +153,22 @@ export default function HomePage() {
             <Link href="/templates" className="related-resource-card"><span>Free novel-writing templates</span><ArrowRight size={15}/></Link>
           </div>
           <Link className="inline-link resource-home-link" href="/resources">Explore all writing resources <ArrowRight size={15}/></Link>
+        </div>
+      </section>
+
+      <section className="section section-paper" aria-labelledby="home-faq-heading">
+        <div className="site-container faq-wrap">
+          <span className="eyebrow">Before your first chapter</span>
+          <h2 id="home-faq-heading">A few things to know.</h2>
+          <div className="faq-list">
+            {homeFaqs.map(({ question, answer }) => (
+              <div className="resource-faq-item" key={question}>
+                <h3>{question}</h3>
+                <p>{answer}</p>
+              </div>
+            ))}
+          </div>
+          <Link className="inline-link" href="/pricing">Compare plans and trial details <ArrowRight size={14} /></Link>
         </div>
       </section>
 

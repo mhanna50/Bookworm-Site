@@ -1,58 +1,36 @@
 import type { Metadata } from "next";
+import { pricingFaqs } from "@/lib/pricing";
+import { jsonLd } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Pricing — Writer $11.99 or Author $16.99/Month",
-  description: "Try Quilly free for 30 days with no credit card required. Choose Writer for $11.99/month with writing, planning, relationships and exports, Author is coming soon at $16.99/month with AI-assisted Story Health.",
+  description: "Try Quilly free for 30 days, no card required. Writer is $11.99/month or $119.99/year (save 17%). Author is coming soon at $16.99/month or $179.99/year (save 12%).",
   alternates: { canonical: "/pricing" },
+  openGraph: {
+    type: "website",
+    url: "/pricing",
+    siteName: "Quilly",
+    title: "Quilly Pricing | Writer $11.99/Month · 30 Days Free",
+    description: "Writer: $11.99/month or $119.99/year (save 17%). Try free for 30 days, no card required. Author is coming soon: $16.99/month or $179.99/year (save 12%).",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Quilly — novel writing and story planning" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quilly Pricing | Writer $11.99/Month · 30 Days Free",
+    description: "Writer: $11.99/month or $119.99/year (save 17%). Try free for 30 days, no card required. Author is coming soon: $16.99/month or $179.99/year (save 12%).",
+    images: ["/twitter-image"],
+  },
 };
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Do I need a credit card for the Quilly free trial?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Quilly includes a 30-day free trial of Writer features with no credit card required. Story Health is not included in the free trial."
-      }
-    },
-    {
-      "@type": "Question",
-      name: "What does Quilly cost after the free trial?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "After the 30-day free trial, Writer is $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health."
-      }
-    },
-    {
-      "@type": "Question",
-      name: "Can I cancel Quilly anytime?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Quilly is a month-to-month subscription with no long-term contract."
-      }
-    },
-    {
-      "@type": "Question",
-      name: "Can I export my work?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Export and recovery are treated as core ownership features, not premium lock-ins."
-      }
-    },
-    {
-      "@type": "Question",
-      name: "Is Quilly only for fantasy writers?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Quilly is built for long-form fiction across genres."
-      }
-    }
-  ]
+  mainEntity: pricingFaqs.map(([question, answer]) => ({
+    "@type": "Question", name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />{children}</>;
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />{children}</>;
 }
