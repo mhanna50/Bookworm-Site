@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "Pricing — Writer $11.99 or Author $16.99/Month",
   description: "Try Quilly free for 30 days with no credit card required. Choose Writer for $11.99/month with writing, planning, relationships and exports, Author is coming soon at $16.99/month with AI-assisted Story Health.",
   alternates: { canonical: "/pricing" },
+  openGraph: {
+    type: "website",
+    url: "/pricing",
+    siteName: "Quilly",
+    title: "Quilly Pricing | Writer $11.99/Month · 30 Days Free",
+    description: "Try Writer free for 30 days, no card required, then $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Quilly — novel writing and story planning" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quilly Pricing | Writer $11.99/Month · 30 Days Free",
+    description: "Try Writer free for 30 days, no card required, then $11.99/month. Author is coming soon at $16.99/month with AI-assisted Story Health.",
+    images: ["/twitter-image"],
+  },
 };
 
 const faqSchema = {
