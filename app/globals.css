@@ -1058,3 +1058,37 @@ body:before { opacity:.10; }
 .plan-coming-soon strong{display:block;font-size:1.7rem;color:var(--mocha)}
 .plan-coming-soon span{display:block;margin-top:9px;font-size:.88rem;line-height:1.6;color:var(--smoke)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+
+/* Three-plan pricing comparison */
+.billing-options{text-align:center;padding:0 24px 36px}
+.billing-toggle{display:inline-flex;gap:4px;padding:5px;border:1px solid var(--line-strong);border-radius:999px;background:var(--ivory)}
+.billing-toggle button{border:0;border-radius:999px;background:transparent;color:var(--smoke);font:inherit;padding:12px 24px;cursor:pointer}
+.billing-toggle button[aria-pressed="true"]{background:var(--mocha);color:var(--ivory);box-shadow:0 3px 10px rgba(80,45,30,.12)}
+.billing-toggle button:focus-visible{outline:2px solid var(--mocha);outline-offset:3px}
+.billing-options p{font-size:.85rem;line-height:1.7;max-width:620px;margin:16px auto 0;color:var(--smoke)}
+.pricing-three{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pricing-three .price-card{padding:28px 22px}
+.pricing-three .price-card-top{display:grid;grid-template-rows:46px 64px 26px 64px 72px;padding-bottom:12px}
+.pricing-three .plan-name{margin:0}
+.pricing-three .price{margin:0;align-items:baseline;gap:5px}
+.pricing-three .price strong{font-size:clamp(2.5rem,4.4vw,3.6rem)}
+.pricing-three .price span{font-size:.8rem;white-space:nowrap}
+.pricing-three .billing-total{margin:4px 0 0;font-size:.8rem}
+.pricing-badge{align-self:center;display:inline-flex;align-items:center;min-height:28px;margin:0 0 24px;padding:5px 12px;border-radius:999px;font-size:.72rem;background:#eee4d5;color:var(--mocha)}
+.plan-card-writer{background:#fffdf8;border-color:var(--mocha)}
+.plan-card-writer .pricing-badge{background:var(--mocha);color:var(--ivory)}
+.badge-author{border:1px solid var(--mocha);background:transparent}
+.annual-saving{display:flex;flex-direction:column;justify-content:center;gap:5px;font-size:.75rem;color:var(--smoke)}
+.annual-saving strong{color:var(--sage)}
+.pricing-three .plan-description{font-size:.86rem;margin:10px 0 0}
+.pricing-three .plan-checklist{display:grid;grid-template-rows:repeat(11,76px);gap:0;padding:14px 0;flex:1}
+.pricing-three .plan-checklist li{padding:10px 0;border-bottom:1px solid var(--line);font-size:.8rem}
+.book-allowance>span{display:flex;flex-direction:column;gap:3px}
+.planned-feature{display:block;color:var(--mocha);font-size:.68rem;margin-top:3px}
+.plan-action{margin-top:auto}
+.plan-action .button:disabled{opacity:.6;cursor:not-allowed}
+.plan-action .fine-print{min-height:58px;font-size:.73rem}
+.pricing-terms{max-width:900px;text-align:center;margin-top:30px;color:var(--smoke);font-size:.78rem;line-height:1.8}
+.pricing-terms p+p{margin-top:10px}
+@media(max-width:900px){.pricing-three{grid-template-columns:1fr;max-width:540px}.pricing-three .price strong{font-size:3.6rem}.pricing-three .price-card{padding:28px}.pricing-three .price-card-top{grid-template-rows:46px 64px 26px 64px auto}.pricing-three .plan-description{min-height:54px}.pricing-three .plan-checklist{grid-template-rows:none}.pricing-three .plan-checklist li{min-height:48px}}

@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Quilly | Novel Writing & Story Planning Software",
     description:
-      "Write your manuscript, plan your plot, build your world, and keep every story thread connected. 30 days free, no card required, plans from $11.99/month.",
+      "Write your manuscript, plan your plot, build your world, and keep every story thread connected. 30 days free, no card required, Writer $11.99/month or $119.99/year.",
     siteName: "Quilly",
   },
   twitter: {
@@ -93,7 +93,8 @@ const softwareSchema = {
   description:
     "A connected writing and story-planning workspace for novelists with manuscript editing, story structure, characters, worldbuilding, relationships, and writing progress. Story Health is coming soon in Author.",
   offers: [
-    { "@type": "Offer", name: "Writer", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Writer writing and planning tools. 30-day free trial, no card required." },
+    { "@type": "Offer", name: "Writer", price: "11.99", priceCurrency: "USD", category: "subscription", description: "Writer writing and planning tools, billed monthly. 30-day free trial, no card required; subscription purchase is explicit." },
+    { "@type": "Offer", name: "Writer annual", price: "119.99", priceCurrency: "USD", category: "subscription", description: "Writer billed annually upfront. About $10.00/month; save 17% compared with monthly billing." },
   ],
   featureList: [
     "Chapter-based manuscript editor with focus mode",

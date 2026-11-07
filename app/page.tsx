@@ -29,7 +29,7 @@ const homeFaqs = [
   { question: "Can I import a manuscript I have already started?", answer: "Yes. You can import an existing DOCX manuscript into Quilly, or start a new project from scratch." },
   { question: "Can I export my writing?", answer: "Yes. You can export your manuscript as DOCX or PDF, so you can keep a copy of your writing outside Quilly." },
   { question: "Is Quilly only for fantasy writers?", answer: "No. Quilly supports long-form fiction across genres. Use the planning tools that fit your story, whether you are writing romance, mystery, science fiction, fantasy, or another genre." },
-  { question: "What is included in the free trial?", answer: "The 30-day free trial includes Writer's writing and planning tools with no credit card required. Writer costs $11.99/month after the trial. AI-assisted Story Health is coming soon in Author and is not included in Writer or the free trial." },
+  { question: "What is included in the free trial?", answer: "The 30-day free trial includes Writer's writing and planning tools with no credit card required. After 30 days, explicitly purchase Writer for $11.99/month or $119.99/year to continue editing. You are not automatically charged. Annual billing saves 17% compared with monthly billing, with the full annual total charged upfront. AI-assisted Story Health is coming soon in Author and is not included in Writer or the free trial." },
 ];
 
 export default function HomePage() {
@@ -59,7 +59,7 @@ export default function HomePage() {
             <div className="hero-notes">
               <span><Check size={14} /> 30-day free trial</span>
               <span><Check size={14} /> No credit card required</span>
-              <span><Check size={14} /> Plans from $11.99/month</span>
+              <span><Check size={14} /> Writer from $10.00/month, billed annually</span>
             </div>
           </div>
 
